@@ -1,0 +1,40 @@
+Abstract
+========================================================
+
+### All Statistics are Wrong, but Some Statistics are Useful
+
+### Nicholas Horton and Danny Kaplan
+
+Imagine if scientists, statisticians and policy makers practiced what we teach.  They would rarely be able to say anything about causation in realistic settings because experiments, however ideal, are often impractical.  They would have to qualify every conclusion with an unverifiable "if the assumptions hold."  When faced with from a non-randomized trial, they would be paralyzed by "other factors" which might the underlying cause of the observed effect.  Instead of being empowered by their study of statistics, they would be hobbled.
+
+We believe that students in introductory courses should see how and why statistics can guide them in making decisions and taking action in realistic settings including observational settings with confounding. To achieve this goal, we've reconsidered many traditional topics incorporated into introductory statistics and statistical literacy courses.   We'll describe some of the foundations for a statistics course that students can use to guide action --- modeling, simulation, computation.  We'll propose simple steps that can move our courses in this direction, and discuss how anticipated changes in the K-12 curriculum in the United States might support such a shift.
+
+### Biographies
+
+**Nicholas Horton** received his doctorate in Biostatistics (with minors
+in Psychosocial Comorbidity and Theoretical Statistics) from the
+Harvard School of Public Health in 1999.  He is a Professor of
+Mathematics and Statistics at Smith College in Northampton,
+Massachusetts with methodologic research interests in longitudinal
+regression models and missing data methods applied to
+psychiatric epidemiology and substance abuse research.  He has published
+more than 100 papers in the statistical and biomedical research
+literature as well as co-authored 3 books on statistical computing.
+
+Nick's research in statistics education has focused on informal
+inference, the role of multiple regression as a component of
+introductory statistics, and ways to utilize modeling early in the
+curriculum to help communicate the excitement of statistics.
+
+Nick was the recipient of the Waller Education Award from the
+American Statistical Association in 2009.  He also received an
+excellence in teaching award from the Boston University School of
+Public Health, from the Smith College Student Association, and received
+the Smith College Sherrerd award for distinguished teaching.  He is a
+Fellow of the American Statistical Association (ASA), and
+serves on the Board of Directors of the ASA.  Nick also founded the
+statistics haiku project.
+
+**Danny Kaplan** is the DeWitt Wallace Professor of Mathematics, Computer Science, and Statistics at Macalester College in Saint Paul, Minnesota.  His doctorate is in biomedical engineering.  He's authored "Understanding Nonlinear Dynamics," "Introduction to Scientific Computation and Programming," and "Statistical Modeling: A Fresh Approach."  He directs Project MOSAIC, and NSF-sponsored project that is seeking to forge stronger connections among modeling, statistics, computation and calculus in the undergraduate curriculum.  He's been deeply involved in curriculum development in quantitative and statistical literacy, culminating in the launch of a liberal arts epidemiology course.  In 2006, he won Macalester's annual Excellence in Teaching award.  More than half of all students at Macalester take one or more of the introductory courses he's developed.  Among his current projects is a big-data oriented introduction to computation for science students sponsored by the Howard Hughes Medical Institute.
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **MD** toolbar button for help on Markdown).
+

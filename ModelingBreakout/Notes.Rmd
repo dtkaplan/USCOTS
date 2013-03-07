@@ -1,0 +1,26 @@
+Notes
+====================
+
+Title: A tutorial on modeling with multiple variables
+
+Date: 
+
+## Ideas
+
+### Saratoga Houses
+
+Data from Dick De Veaux
+
+Estimate the value of a fireplace. 
+* See [ISM notes from 2013-03-06](http://rpubs.com/dtkaplan/M155-2013-03-06-class) in "Activity"
+* 
+
+### Little r and Big R
+
+Little r as an angle. [ISM notes from 2013-03-01](http://rpubs.com/dtkaplan/M155-2013-03-01-class)
+
+Little r applet: `fetchData("littleR.R")` then `littleR()`
+
+SAT example with angles between frac and expenditure, sat and expenditure, sat and frac.
+
+Need a cardboard layout with a plumb bob.
