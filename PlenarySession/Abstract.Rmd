@@ -38,3 +38,32 @@ statistics haiku project.
 **Danny Kaplan** is the DeWitt Wallace Professor of Mathematics, Computer Science, and Statistics at Macalester College in Saint Paul, Minnesota.  His doctorate is in biomedical engineering.  He's authored "Understanding Nonlinear Dynamics," "Introduction to Scientific Computation and Programming," and "Statistical Modeling: A Fresh Approach."  He directs Project MOSAIC, and NSF-sponsored project that is seeking to forge stronger connections among modeling, statistics, computation and calculus in the undergraduate curriculum.  He's been deeply involved in curriculum development in quantitative and statistical literacy, culminating in the launch of a liberal arts epidemiology course.  In 2006, he won Macalester's annual Excellence in Teaching award.  More than half of all students at Macalester take one or more of the introductory courses he's developed.  Among his current projects is a big-data oriented introduction to computation for science students sponsored by the Howard Hughes Medical Institute.
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **MD** toolbar button for help on Markdown).
 
+### Some ideas.  
+
+#### Iconic Graphics
+
+Ask participants at the start to draw an iconic graph
+
+On the back, have a few graphs for them to vote on.
+
+Ask them also where their students are heading: 
+* lab research
+* medicine
+* business
+* ...
+
+#### A note from Jeff Witmer
+
+Today in class I mentioned an article in the 4/24/13 Chronicle of Higher Ed about recent research on oxygen therapy for premature babies. In a nutshell: Doctors have used varying levels of oxygen because there was no clear evidence about what level was best. A randomized trial was conducted, but both the federal Office for Human Research Protections and the group Public Citizen warned parents that the trial was risky. The trial was done anyway and showed that "high oxygen" is the best choice -- although even then the morality rate is 16% -- and babies in the trial had better survival than those in "the neonatal research network." So a clinical trial has provided evidence that should guide medical practice in the future.
+
+That's all background information; what I want to discuss is the following. A student asked whether such trials are ever ended early if the data show a clear "winner" between two treatments. I responded by talking about interim analysis, sequential testing, and related issues.  As it happens, just a couple of weeks ago in my Bayesian course we discussed the fact that one can "sample to a foregone conclusion" as follows: Toss a fair coin n times and after each toss use the data collected so far to test H0: p=0.5 against a two-sided alternative. If you ever get a p-value below 0.05 then stop and declare that you have statistically significant evidence that the coin is not fair. As n goes to infinity the probability of such a false alarm goes to 1, but even if you agree that you will toss the coin no more than 100 times you have a type I error rate of about 22% and if you are willing to toss the coin up to 5,000 times then you have about a 50-50 chance of rejecting the (true) null hypothesis. (We ran some computer simulations in class to explore these numbers.)
+
+Interim analyses will similarly inflate the type I error rate: If you plan to collect 15 observations, do a test, and then collect 50 more observations if the test retained H0, stopping at 65 total observations, then you have a 7.5% chance of rejecting a true H0 when using a nominal 5% alpha for each of the two tests.
+
+A correction for such an inflated false alarm rate is to be conservative (Bonferroni-ish) on each test. Well, a better(?!) correction is to do a Bayesian analysis ;-)  [I will set aside the issue that the frequentist analysis suffers from the problem that two researchers who are looking at the same set of data -- say 65 total observations -- will draw different conclusions if one of them did a test after 15 observations were collected, retained H0, and kept on sampling but the other did not look at the data at time n=15.]
+
+My students had recently learned about ANOVA, the multiple testing problem, the file-drawer problem, the Ioannidis paper on Why Most Published Research Findings Are False, and related complications. One could argue (as I probably have in the past) that it is hard enough for a student to learn how to do ANOVA, say, and to complicate matters by talking about how p-values and tests cannot be trusted -- at least not in the simple way that the STAT 101 student would like to trust them -- only makes a difficult course even more difficult for the typical student. But one could also argue, as I tend to these days, that most students are only going to take one statistics course and if they leave thinking that everything is nice and neat (once the right formulas are learned or the right computer commands are learned) then they will go on to perpetuate the kinds of problems that we see in the use of hypothesis tests.
+
+Do others of you worry about this? Have you found a happy balance between celebrating what statistical inference can show and bemoaning the limitations of classical inference? Do you have advice?
+
+
