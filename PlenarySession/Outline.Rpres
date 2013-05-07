@@ -3,8 +3,15 @@ All Statistics is Wrong; Some Statistics is Useful
 author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
 
+Notes
+========================================================
+type: prompt
 
-PROMPT
+Nick will say something about our being honored to be here.
+
+Danny will say something brief about gratefulness for the support he's received from the statistics community over the past four difficult months.
+
+Notes
 ========================================================
 type: prompt
 
@@ -205,26 +212,86 @@ New England Journal Results
 
 Quick summary of Nick's paper
 
-Even a Newspaper Reader Needs This 
+A Simple Cup of Coffee
+=========================================================
+**A Daily Habit Of Green Tea Or Coffee Cuts Stroke Risk**
+
+by Allison Aubrey, NPR - March 15, 2013
+
+A daily habit of coffee or tea drinking cuts the risk of stroke by 20%, according to a report in the American Heart Association journal *Stroke*.  
+
+> ... recent studies have linked a regular coffee habit to a range of benefits — from a reduced risk of Type 2 diabetes to a protective effect against Parkinson's disease.
+
+> It's interesting to note how much the thinking about caffeine and coffee has changed.
+
+Coffee and Smoking
 =========================================================
 
-Coffee story
+> In the 1980s, surveys found that many Americans were trying to avoid it; caffeine was thought to be harmful, even at moderate doses.
 
-How it's done at Macalester
+> One reason? Meir Stampfer of the Harvard School of Public Health says back then, coffee drinkers also tended to be heavy smokers. And in early studies, it was very tough to disentangle the two habits.
+
+> ``So it made coffee look bad in terms of health outcomes," says Stampfer.
+
+> But as newer studies began to separate out the effects of coffee and tea, a new picture emerged suggesting benefits, not risks.
+
+
+
+Skills for Future Coffee-ologists
+=========================================================
+> Researchers say there's still a lot to learn here --- they haven't nailed down all the mechanisms by which coffee and tea influence our health. Nor have they ruled out that it may be other lifestyle habits among coffee and tea drinkers that's leading to the reduced risk of disease.
+
+* How to take covariates into account
+* How to choose covariates
+* How to discount previous studies without discounting statistical method.
+
+
+Change at Macalester
 =========================================================
 
-Danny will do this
+12 years ago, with support of HHMI and Keck, we decided to change our entire introductory Math/Stats curriculum
+* Was: Calc I, II, III, t-test course
 
-Emphasize the role of modeling.  Moving from stratification to linear models.
+**Applied Calculus** a no-prerequisite course about 
+* Modeling
+* Multiple variables
+* Computation
+* De-emphasis on algebra in favor of computation
 
+**Introduction to Statistical Modeling**
+* Modeling
+* Multiple variables
+* Computation
+* Resampling/Randomization approach to introduce inference
 
-Experiments are Better than Models1
+Intro to Statistical Modeling
+=========================================================
+The same method from Week 3: **Linear Models**
+
+A consistent computer notation that lets students quickly generalize from simple settings (means, proportions) to multivariable linear models.
+
+**Central Question**:
+Which covariates to include in a model?
+
+* Partial versus total change.
+* Strength of Evidence
+* Causality
+
+Results
+=========================================================
+Macalester is a liberal arts college: about 2000 students
+
+* About 40% of all students will take Intro to Stat Modeling
+* Taught in 8 sections by multiple faculty
+* Higher interest in upper-level courses: First a stat minor. Four years ago we introduced an Applied Math and Statistics major. 
+
+Experiments are Better than Models!
 =========================================================
 Yes, when you can do them.
 
-Even when you do an experiment, you may want to use covariates.
+* Even when you do an experiment, you may want to use covariates.
 
-Especially because experiments are generally not perfect.
+* Especially because experiments are generally not perfect.
 
 > Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
 
