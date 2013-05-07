@@ -90,6 +90,21 @@ But Statistics Should Not Be Nihilistic
 
 From <http://XKCD.com/552>
 
+Stat Course Flow Chart?
+=========================================================
+
+(render into tikz)
+
+Can you randomize X?    ----->  yes: Hooray
+
+-----> no : wait for Stat 2
+
+
+But how many take Stat 2?
+
+Look what happened with Calculus.  Five semester calc sequence.  Half-life is one course.
+
+
 
 What Do You Think?
 =========================================================
@@ -125,13 +140,13 @@ Decisions need to be made
 Ronald Fisher & Austin Bradford Hill
 ========================================================
 
-Picture of Fisher 
+<img src="Images/ronald-fisher.jpg" width="300">
 
 ***
 
-Picture of Austin Bradford Hill
+<img src="Images/hill-lecturing.jpg" width="310">
 
-PROMPT
+NOTES
 ========================================================
 type: prompt
 
@@ -142,10 +157,6 @@ Different positions smoking and cancer
 > "[I]n passing from association to causation I believe in 'real life' we shall have to consider what flows from that decision. ... In asking for very strong evidence I would, however, repeat emphatically that this does not imply crossing every `t', and swords with every critic, before we act." AB Hill, "The environment and disease: association or causation?" (1965) *Proceedings of the Royal Society of Medicine* 58:295-300 [link](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1898525/)
 
 Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the inadequacies of the fare."
-
-
-
-
 
 Graphical Icons of Stats Education
 ========================================================
@@ -169,3 +180,100 @@ type: section
 The "Directed Acyclic Graph"
 
 ![DAG](Images/DAG-draft.png)
+
+Settings Where We Need Causation without Experiment
+=========================================================
+
+* Substance Abuse
+* Parole
+* [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
+
+
+How to do this using a traditional textbook
+=========================================================
+
+TO DO ITEM
+
+Nick will work on this
+
+How to include modeling when using a traditional textbook.
+
+Stratification.
+
+New England Journal Results
+=========================================================
+
+Quick summary of Nick's paper
+
+Even a Newspaper Reader Needs This 
+=========================================================
+
+Coffee story
+
+How it's done at Macalester
+=========================================================
+
+Danny will do this
+
+Emphasize the role of modeling.  Moving from stratification to linear models.
+
+
+Experiments are Better than Models1
+=========================================================
+Yes, when you can do them.
+
+Even when you do an experiment, you may want to use covariates.
+
+Especially because experiments are generally not perfect.
+
+> Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
+
+Making Change Happen: The Common Core
+=========================================================
+
+Will this become an iconic image of change in statistics education?
+
+<img src="Images/Common-Core-states-2013.png" width="800">
+
+Grade 8 in the Common Core
+=========================================================
+
+<img src="Images/CC-grade8.png" width="1000">
+
+High School in the Common Core
+=========================================================
+<img src="Images/CC-modeling4.png" width="800">
+
+<img src="Images/CC-modeling4.png" width="800">
+
+Statistics in the Common Core
+=========================================================
+<img src="Images/CC-stat1.png" width="1000">
+
+Don't Dis Variation.
+
+Variation is what we try to explain in statistics, partitioning it into modeled and unmodeled variation.
+
+Statistics and Decision Making
+=========================================================
+The Common Core rightly looks for utility in statistics: Decision-making
+
+But the syllabus misses some big points:
+* Decision-making is often rooted in understanding causation.
+* Need to account for covariates when making decisions.
+* Statistics is about describing variation in the context of what remain unexplained.
+
+
+The Common Core
+=========================================================
+
+An emphasis on **decision-making**.
+
+* Modeling is important, but vaguely stated.
+* The description of statistics does not make a relationship to modeling.
+Better if it did, but in any event ...
+* Under the Common Core, your students will likely see more about modeling and decision making.
+* Build on this so that your students can use statistics.
+
+Make Statistics about Modeling!
+

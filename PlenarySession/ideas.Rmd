@@ -1,0 +1,25 @@
+Pictures of population sign from Saint Paul and population by age breakdown for Northampton.
+
+The Northampton data shows some patterns.
+* Somewhat more old people and many fewer kids than compared to the state and US
+* Lots more college-age people.
+* Quite a few more people in the 45 to 54 bracket and fewer in the 55 to 64 bracket.
+
+Are there really fewer in the 55 to 64 bracket?  Is the deficit of children relating to the surplus of college-aged people or to a different population dynamic than statewide or nationwide?  Is there a difference between the distribution in Massachusetts and the US as a whole?  As a very first step in answering these questions, it helps to put a margin of error on the bars.  That's a standard introductory statistic operation.  It might be an exam question to ask what additional information would need to be provided to find the margins of error or perhaps to perform a chi-square test to compare Massachusetts to the US.
+
+But the real questions of interest relate to why the population of Northampton and Massachusetts and the US have somewhat different age structures.  Some factors are obvious: Northampton is a college town.  Is Northhampton health care better?  Is it a retirement haven?  Is the birthrate lower, or are the schools bad?
+
+The Saint Paul sign is simpler.  I included it to introduce a story.  Almost 15 years ago, our family was driving back home from the hospital (in Minneapolis) where our new daughter had been born the day before.  As we passed the sign, I told my wife and oldest daughter, then six, that we should stop and increment the number on the sign by one.  My daughter thought this was a serious request, and that we should actually stop.  She didn't understand that the number on the sign was really just an approximation and that one more person didn't warrant a change to the number.
+
+This idea of approximation is common sense (except to a six-year old with a new sister).  I suspect few people in the audience would argue that the last digit on the sign has much more than a 1/10 chance of being correct, and that the last two digits are likely right with probability about 1 percent.  But what about the last three or four digits?
+
+Some people will say that the sign isn't based on a random sample, so we can't say how precise it is.  But what if we needed to know the precision, for example to justify a federal funds allocation that applies only to cities with a population above 250K.
+
+How might we do this?
+
+Here's another problem that is related in a vague sense:
+
+The population of Mexico in 1990 was about 90M, growing to 100M in 2000.  The population of the US in 1990 was about 290M, growing to 300M in 2000.  When will the population of Mexico be greater than that of the US?
+
+Lincoln's 1862 State of the Union speech --- population growth in the US up through 1930.
+
