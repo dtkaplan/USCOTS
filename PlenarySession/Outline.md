@@ -273,9 +273,7 @@ The importance of multiple regression
 
 More results from the NEJM
 =========================================================
-
-
-![DAG](Images/accum.png)
+![accumulated proportion NEJM](Images/accum.png)
 
 
 Importance of teaching multiple regression
@@ -283,6 +281,23 @@ Importance of teaching multiple regression
 - allows students to delve into more complex causal relationships
 - prepares them to ask leading questions when analyzing observational data
 - doesn't *paralyze* them (a la XKCD)
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-ques1.png)
+THIS IS JUST A PLACEHOLDER: IS IT USEFUL?  SHOULD IT BE EARLIER?
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-ques2.png)
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-ques3.png)
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-solution.png)
 
 
 How to include this in an intro course
