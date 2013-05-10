@@ -178,6 +178,14 @@ Graphical Icons of Stats Education
 
 Graphical Icons of Stats Education
 ========================================================
+![Two meanings of random](Images/sleuth.png)
+
+Graphical Icons of Stats Education
+========================================================
+![When I see, I remember](Images/wild.png)
+
+Graphical Icons of Stats Education
+========================================================
 ![Correlation](Images/Correlation-draft.png)
 
 Graphical Icons of Stats Education
