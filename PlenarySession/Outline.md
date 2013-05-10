@@ -255,8 +255,17 @@ Residual standard error: 33.7 on 47 degrees of freedom
 ```
 Conclusion?
 
-Take-home message
+Results (95% confidence interval for salary)
+=========================================================
+![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
 
+Take-home message?
+
+
+New England Journal Results
+=========================================================
+
+Quick summary of Nick's paper
 
 How to do this using a traditional textbook
 =========================================================
