@@ -220,53 +220,39 @@ Case study: Teacher Salaries and SAT scores
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
-
-```r
-summary(lm(sat ~ salary, data=SAT))
 ```
-
-```
-
-Call:
-lm(formula = sat ~ salary, data = SAT)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--147.12  -45.35    4.07   42.19  125.28 
+> summary(lm(sat ~ salary, data=SAT))
 
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  1158.86      57.66   20.10   <2e-16 ***
-salary         -5.54       1.63   -3.39   0.0014 ** 
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+(Intercept)  1158.86      57.66   20.10   <2e-16 
+salary         -5.54       1.63   -3.39   0.0014 
 
 Residual standard error: 67.9 on 48 degrees of freedom
-Multiple R-squared:  0.193,	Adjusted R-squared:  0.177 
-F-statistic: 11.5 on 1 and 48 DF,  p-value: 0.00139
 ```
-
 Conclusion?
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
 
 
-![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
 
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
 incremental: true
-
-```r
-summary(lm(sat ~ salary + freq, data=SAT))
 ```
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  987.900     31.877   30.99   <2e-16
+salary         2.180      1.029    2.12    0.039   
+frac          -2.779      0.228  -12.16    4e-16 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
+Residual standard error: 33.7 on 47 degrees of freedom
 ```
-Error: object 'freq' not found
-```
-
 Conclusion?
 
 Take-home message
