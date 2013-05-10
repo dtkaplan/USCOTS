@@ -129,6 +129,13 @@ We need a new source of inspiration and guidance
 * Suited for working with data that are dirty, limited, and ambiguous
 * Oriented toward decision making and action rather than proof
 
+NOTES
+========================================================
+type: prompt
+
+I'd propose that we move the Epidemiology! intro to after the "Graphical icons"
+
+
 Epidemiology!
 =========================================================
 
@@ -167,12 +174,15 @@ Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the 
 
 Graphical Icons of Stats Education
 ========================================================
-
 ![Bias and variance](Images/BiasVariance.png)
 
-***
-
+Graphical Icons of Stats Education
+========================================================
 ![Correlation](Images/Correlation-draft.png)
+
+Graphical Icons of Stats Education
+========================================================
+![Correlation](Images/hotdogs.png)
 
 Suggestions for Other Iconic Stats Graphs
 =========================================================
@@ -191,9 +201,53 @@ The "Directed Acyclic Graph"
 Settings Where We Need Causation without Experiment
 =========================================================
 
+* XX MOVE EPIDEMIOLOGY HERE XX
+* Smoking and Lung Cancer
 * Substance Abuse
 * Parole
 * [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+```{r, echo=FALSE,message=FALSE}
+require(mosaic)
+trellis.par.set(theme=col.mosaic())
+options(digits=3)
+options(show.signif.stars=FALSE)
+xyplot(sat ~ salary, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
+```
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+```{r}
+summary(lm(sat ~ salary, data=SAT))
+```
+Conclusion?
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+
+```{r,echo=FALSE}
+SAT$fracgrp = cut(SAT$frac, breaks=c(0, 22, 49, 81), labels=c("low", "medium", "high"))
+xyplot(sat ~ salary, groups=fracgrp, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
+```
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+incremental: true
+```{r}
+summary(lm(sat ~ salary + freq, data=SAT))
+```
+Conclusion?
+
+Take-home message
 
 
 How to do this using a traditional textbook

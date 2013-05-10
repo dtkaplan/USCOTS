@@ -129,6 +129,13 @@ We need a new source of inspiration and guidance
 * Suited for working with data that are dirty, limited, and ambiguous
 * Oriented toward decision making and action rather than proof
 
+NOTES
+========================================================
+type: prompt
+
+I'd propose that we move the Epidemiology! intro to after the "Graphical icons"
+
+
 Epidemiology!
 =========================================================
 
@@ -167,12 +174,15 @@ Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the 
 
 Graphical Icons of Stats Education
 ========================================================
-
 ![Bias and variance](Images/BiasVariance.png)
 
-***
-
+Graphical Icons of Stats Education
+========================================================
 ![Correlation](Images/Correlation-draft.png)
+
+Graphical Icons of Stats Education
+========================================================
+![Correlation](Images/hotdogs.png)
 
 Suggestions for Other Iconic Stats Graphs
 =========================================================
@@ -191,9 +201,75 @@ The "Directed Acyclic Graph"
 Settings Where We Need Causation without Experiment
 =========================================================
 
+* XX MOVE EPIDEMIOLOGY HERE XX
+* Smoking and Lung Cancer
 * Substance Abuse
 * Parole
 * [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+```r
+summary(lm(sat ~ salary, data=SAT))
+```
+
+```
+
+Call:
+lm(formula = sat ~ salary, data = SAT)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-147.12  -45.35    4.07   42.19  125.28 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1158.86      57.66   20.10   <2e-16 ***
+salary         -5.54       1.63   -3.39   0.0014 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 67.9 on 48 degrees of freedom
+Multiple R-squared:  0.193,	Adjusted R-squared:  0.177 
+F-statistic: 11.5 on 1 and 48 DF,  p-value: 0.00139
+```
+
+Conclusion?
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+
+![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+incremental: true
+
+```r
+summary(lm(sat ~ salary + freq, data=SAT))
+```
+
+```
+Error: object 'freq' not found
+```
+
+Conclusion?
+
+Take-home message
 
 
 How to do this using a traditional textbook
