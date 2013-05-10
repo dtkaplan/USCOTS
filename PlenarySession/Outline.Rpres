@@ -1,4 +1,4 @@
-All Statistics is Wrong; Some Statistics is Useful 
+All Statistics are Wrong; Some Statistics are Useful 
 ========================================================
 author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
