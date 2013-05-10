@@ -232,16 +232,10 @@ Residual standard error: 67.9 on 48 degrees of freedom
 ```
 Conclusion?
 
-Case study: Teacher Salaries and SAT scores
-=========================================================
-
-
-![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
 
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
-incremental: true
 ```
 Coefficients:
             Estimate Std. Error t value Pr(>|t|)    
@@ -255,6 +249,15 @@ Residual standard error: 33.7 on 47 degrees of freedom
 ```
 Conclusion?
 
+What's going on?  (NICK TO ADD CORRELATION FIGURE)
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
+
+
+
 Results (95% confidence interval for salary)
 =========================================================
 ![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
@@ -262,26 +265,44 @@ Results (95% confidence interval for salary)
 Take-home message?
 
 
-New England Journal Results
+The importance of multiple regression
+=========================================================
+- Increasing sophisticated of statistical methods in the *New England Journal of Medicine* (NEJM, 2005; CHANCE, 2007)
+- Categorized papers using hierarchy due to Emerson and Colditz
+- Multiple regression use increased from 5% (1979) to 14% (1989) to more than 50% (2004)
+
+More results from the NEJM
 =========================================================
 
-Quick summary of Nick's paper
 
-How to do this using a traditional textbook
-=========================================================
+![DAG](Images/accum.png)
 
-TO DO ITEM
 
-Nick will work on this
+Importance of teaching multiple regression
+=====================================
+- allows students to delve into more complex causal relationships
+- prepares them to ask leading questions when analyzing observational data
+- doesn't *paralyze* them (a la XKCD)
 
-How to include modeling when using a traditional textbook.
 
-Stratification.
+How to include this in an intro course
+=====================================
+- stratification (quick and dirty)
+- (simple) multiple regression
+- Y ~ X + Z (parallel slopes)
+- Y ~ X * Z (interaction)
 
-New England Journal Results
-=========================================================
 
-Quick summary of Nick's paper
+How to include this in an intro course
+=====================================
+- introduce simple linear regression early (week 1, purely descriptive)
+- introduce multiple regression immediately afterwards (week 2, purely descriptive)
+- build concepts of sampling distributions and inference for an interval
+- jump to inference for simple linear regression (week 9)
+- extend to inference for multiple regression (week 10)
+- projects or extended case studies to close out the class
+
+
 
 A Simple Cup of Coffee
 =========================================================
@@ -400,6 +421,8 @@ But the syllabus misses some big points:
 * Decision-making is often rooted in understanding causation.
 * Need to account for covariates when making decisions.
 * Statistics is about describing variation in the context of what remain unexplained.
+* Students are often paralyzed when faced with analysis of observational data from a first course.
+* Need to empower...
 
 
 The Common Core
