@@ -1,4 +1,4 @@
-All Statistics is Wrong; Some Statistics is Useful 
+All Statistics are Wrong; Some Statistics are Useful 
 ========================================================
 author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
@@ -129,6 +129,13 @@ We need a new source of inspiration and guidance
 * Suited for working with data that are dirty, limited, and ambiguous
 * Oriented toward decision making and action rather than proof
 
+NOTES
+========================================================
+type: prompt
+
+I'd propose that we move the Epidemiology! intro to after the "Graphical icons"
+
+
 Epidemiology!
 =========================================================
 
@@ -167,12 +174,23 @@ Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the 
 
 Graphical Icons of Stats Education
 ========================================================
-
 ![Bias and variance](Images/BiasVariance.png)
 
-***
+Graphical Icons of Stats Education
+========================================================
+![Two meanings of random](Images/sleuth.png)
 
+Graphical Icons of Stats Education
+========================================================
+![When I see, I remember](Images/wild.png)
+
+Graphical Icons of Stats Education
+========================================================
 ![Correlation](Images/Correlation-draft.png)
+
+Graphical Icons of Stats Education
+========================================================
+![Correlation](Images/hotdogs.png)
 
 Suggestions for Other Iconic Stats Graphs
 =========================================================
@@ -191,26 +209,123 @@ The "Directed Acyclic Graph"
 Settings Where We Need Causation without Experiment
 =========================================================
 
+* XX MOVE EPIDEMIOLOGY HERE XX
+* Smoking and Lung Cancer
 * Substance Abuse
 * Parole
 * [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
 
 
-How to do this using a traditional textbook
+Case study: Teacher Salaries and SAT scores
 =========================================================
 
-TO DO ITEM
+Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
 
-Nick will work on this
+Case study: Teacher Salaries and SAT scores
+=========================================================
+![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
 
-How to include modeling when using a traditional textbook.
 
-Stratification.
+Case study: Teacher Salaries and SAT scores
+=========================================================
+```
+> summary(lm(sat ~ salary, data=SAT))
 
-New England Journal Results
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1158.86      57.66   20.10   <2e-16 
+salary         -5.54       1.63   -3.39   0.0014 
+
+Residual standard error: 67.9 on 48 degrees of freedom
+```
+Conclusion?
+
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+```
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  987.900     31.877   30.99   <2e-16
+salary         2.180      1.029    2.12    0.039   
+frac          -2.779      0.228  -12.16    4e-16 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 33.7 on 47 degrees of freedom
+```
+Conclusion?
+
+What's going on?  (NICK TO ADD CORRELATION FIGURE)
+
+Case study: Teacher Salaries and SAT scores
 =========================================================
 
-Quick summary of Nick's paper
+![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
+
+
+
+Results (95% confidence interval for salary)
+=========================================================
+![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
+
+Take-home message?
+
+
+The importance of multiple regression
+=========================================================
+- Increasing sophisticated of statistical methods in the *New England Journal of Medicine* (NEJM, 2005; CHANCE, 2007)
+- Categorized papers using hierarchy due to Emerson and Colditz
+- Multiple regression use increased from 5% (1979) to 14% (1989) to more than 50% (2004)
+
+More results from the NEJM
+=========================================================
+![accumulated proportion NEJM](Images/accum.png)
+
+
+Importance of teaching multiple regression
+=====================================
+- allows students to delve into more complex causal relationships
+- prepares them to ask leading questions when analyzing observational data
+- doesn't *paralyze* them (a la XKCD)
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-ques1.png)
+THIS IS JUST A PLACEHOLDER: IS IT USEFUL?  SHOULD IT BE EARLIER?
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-ques2.png)
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-ques3.png)
+
+State of the Art?  (AP Statistics)
+=========================================================
+![AP 1](Images/ap-solution.png)
+
+
+How to include this in an intro course
+=====================================
+- stratification (quick and dirty)
+- (simple) multiple regression
+- Y ~ X + Z (parallel slopes)
+- Y ~ X * Z (interaction)
+
+
+How to include this in an intro course
+=====================================
+- introduce simple linear regression early (week 1, purely descriptive)
+- introduce multiple regression immediately afterwards (week 2, purely descriptive)
+- build concepts of sampling distributions and inference for an interval
+- jump to inference for simple linear regression (week 9)
+- extend to inference for multiple regression (week 10)
+- projects or extended case studies to close out the class
+
+
 
 A Simple Cup of Coffee
 =========================================================
@@ -329,6 +444,8 @@ But the syllabus misses some big points:
 * Decision-making is often rooted in understanding causation.
 * Need to account for covariates when making decisions.
 * Statistics is about describing variation in the context of what remain unexplained.
+* Students are often paralyzed when faced with analysis of observational data from a first course.
+* Need to empower...
 
 
 The Common Core
