@@ -1,0 +1,199 @@
+Changing Times Call for Changing Stats
+========================================================
+author: Danny Kaplan
+date: USCOTS May 15, 2013
+
+A Lapsed Physicist
+========================================================
+
+* I studied physics, philosophy, and political science in college.  
+* I never took a statistics course.
+
+Why would I?  As Lord Rutherford said,
+
+"If your experiment needs statistics, you ought to have done a better experiment."
+
+Biomedical Engineering and Physiology
+========================================================
+
+My Ph.D. work was on the extraction of physiological information from signals such as the ECG, EEG, respiration, and Heart Rate
+* Signal processing
+* Classification and Bayes' Rule, not hypothesis testing
+* Sensitivity and specificity, not Type I and Type II
+
+But You Need a p-value
+========================================================
+
+Editors ask for p-values and confidence intervals.  Graduate students must comply.
+
+Sources for scientists:
+* *Numerical Recipes*
+* Brad Efron's *SIAM* "Thinking the Unthinkable"
+
+"Yes" is the Correct Answer
+=========================================================
+
+At a job interview in a Math/CS department, I was asked, 
+
+- "Can you teach intro stats?"
+
+I answered appropriately for getting a job.
+
+Thank goodness I wasn't asked, "What's a t-test?" 
+
+Students are Outsiders, Too
+=========================================================
+
+Not knowing anything about statistics was an advantage:
+
+* I could imagine what the students were thinking, since I had the same misconceptions.
+
+I was somewhat more mathematically and computationally sophisticated than most of my students.
+* I know an algorithm when I see one.
+* I asked "Why?" not just "How?"
+
+Mathematicians and Experiment
+====================================
+
+Odd that statistics is taught so much by mathematically trained people who have little experience with experiments ...
+
+... and yet they present experiment as the dominant form of information gathering.
+
+We present inductive reasoning as if it were deductive.  Experiment tries to connect the two, but it doesn't necessarily work.
+
+*"A theory is something nobody believes, except the person who made it. An experiment is something everybody believes, except the person who made it."* -- Albert Einstein
+
+Simpson's Paradox and Philosophy
+=========================================================
+I thought students should know something about inductive reasoning and its traps. 
+
+Simpson's Paradox seemed a good angle to give students an appropriate level of skepticism about induction.
+
+The Wrong Lesson
+=========================================================
+
+I thought I was teaching students about careful reasoning.
+* They were learning, "The data say anything you want, depending on how you cut it."
+
+Resampling Success
+=========================================================
+
+In my research, I had used resampling and permutation tests.(With Fourier magnitudes and phases, as befits a signal processor.)
+
+I figured students would find resampling and randomization accessible, if only they could do the computations.
+* So I wrote software to make this straightforward and natural, building on R.
+
+This worked.
+
+"Why is it called a 'Paradox'?"
+=========================================================
+
+I didn't want students to be powerless about covariation. They need to be able to deal with it.
+
+Calling it "Simpson's **Paradox**" suggests that it's mysterious.
+
+I set as my goal that students should think about covariation as an essential part of how they think about their analysis of the data, and not as a "gotcha".
+
+How to do this?  Could it be done?
+
+Linear algebra
+==========================
+
+My statistical epiphany came when I realized the connections between linear algebra and statistics.  I was trying to learn stats from intro stats books.
+
+Linear algebra education (at least, computational linear algebra) has changed a lot in the last 40 years, along with the changes in computation.
+
+Statistics formulas (e.g. correlation) are based on linear algebra but fail to present the operations at a high level.
+
+Example: Correlation is an angle.
+
+Ubiquitous Computation and Big Data
+==============================
+
+In the 16 years since my job interview, some things have changed:
+* Every student has access to a computer, in class and out.
+* Professional-level statistical software is free.
+* Exponential growth in availability of data 
+* Greater recognition of importance of data in decision-making: from Amazon/marketing to medical records to remote sensing to ...
+* Workplace is much more collaborative --- old tools don't work so well.  (How's your email account?)
+
+Suggestions for Positive Change
+=================================
+
+* Prepare students for technical computing.
+* Mathematics should be about multiple variables.
+* Make modeling central. 
+* Don't isolate related topics
+
+Modeling, Statistics, Calculus & Computation
+=================================
+
+The MOSAIC topics.
+
+Calculus should be about description.
+* That it's taught as an algorithmic process is a shame.
+* There are general algorithms for accumulation.
+* Teach **modeling-based** calculus
+
+Calculus topics essential to statistics
+* **NOT** "area is an integral"
+* Partial derivatives and partial difference
+* Linear and bilinear approximation to functions of multiple variables
+
+Change at Macalester
+=================================
+
+* Threw away Calc I.
+* Threw away t-test statistics course
+
+Instead:
+
+* A unified sequence: Applied Calculus and Statistical Modeling
+    * Multivariate from the very start
+    * De-emphasizes algebra
+    * Strongly emphasizes computation (in R)
+    
+Collaborative and Community Change
+=================================
+
+The R Project
+
+Randy Pruim & Nick Horton and Project MOSAIC
+
+JJ Allaire and RStudio
+
+Revolution in Publishing
+=================================
+
+In college, we shared work with the seminar using a mimeograph machine.
+
+In graduate school, we used a xerox machine.
+
+Now ...
+* Web distribution
+* Interactivity
+* Collaboration and revision
+
+The Golden Age of Statistics
+=================================
+
+**Now** is the golden age of statistics and scientific education.
+* The demand is there.
+* The technology is there.
+* What's missing is the human capital.
+
+“The world we have created today as a result of our thinking thus far has problems which cannot be solved by thinking the way we thought when we created them.” – Albert Einstein
+
+We need a new organization of educational work
+* More collaboration
+* More ongoing training
+* More accountability
+    
+Statistics at the Center
+================================
+
+Statistics is the quantitative/scientific/technical area that most strongly unites areas of research.  
+
+* This increases our responsibility to look after education generally.
+
+
