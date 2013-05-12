@@ -206,7 +206,7 @@ Decisions need to be made
 It's not about Chicken Salad!
 ==========================================================
 
-Table showing food poisoning? (Danny having second thoughts about this.)
+Table showing food poisoning? (Danny having second thoughts about this. XX NH concurs we should drop it.)
 
 
 Settings Where We Need Causation without Experiment
@@ -335,7 +335,7 @@ Practice has moved beyond this
 - Categorized papers using hierarchy due to Emerson and Colditz
 - Multiple regression use increased from 5% (1979) to 14% (1989) to more than 50% (2004)
 
-More results from the NEJM
+Results from the NEJM
 =========================================================
 ![accumulated proportion NEJM](Images/accum.png)
 
@@ -353,7 +353,14 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 Residual standard error: 33.7 on 47 degrees of freedom
 ```
-Conclusion: A somewhat positive relationship of SAT scores with teacher salary.
+Conclusion: A somewhat positive relationship of SAT scores with teacher salary
+
+
+Discrepancy between results (95% confidence interval for salary slope)
+=========================================================
+![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
+
+
 
 NOTES 
 =========================================================
@@ -366,15 +373,7 @@ Get quotes from here:
 
 
 
-Results (95% confidence interval for salary)
-=========================================================
-type: prompt
 
-Do we need this?
-
-![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
-
-Take-home message?
 
 Importance of teaching multiple regression
 =====================================
@@ -498,3 +497,11 @@ Better if it did, but in any event ...
 
 Make Statistics about Modeling!
 
+
+NOTES 
+=========================================================
+type: prompt
+
+Most Models are Wrong, Some Models are Useful
+
+Tie back to title

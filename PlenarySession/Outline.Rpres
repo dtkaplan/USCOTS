@@ -206,7 +206,7 @@ Decisions need to be made
 It's not about Chicken Salad!
 ==========================================================
 
-Table showing food poisoning? (Danny having second thoughts about this.)
+Table showing food poisoning? (Danny having second thoughts about this. XX NH concurs we should drop it.)
 
 
 Settings Where We Need Causation without Experiment
@@ -340,7 +340,7 @@ Practice has moved beyond this
 - Categorized papers using hierarchy due to Emerson and Colditz
 - Multiple regression use increased from 5% (1979) to 14% (1989) to more than 50% (2004)
 
-More results from the NEJM
+Results from the NEJM
 =========================================================
 ![accumulated proportion NEJM](Images/accum.png)
 
@@ -358,7 +358,29 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 Residual standard error: 33.7 on 47 degrees of freedom
 ```
-Conclusion: A somewhat positive relationship of SAT scores with teacher salary.
+Conclusion: A somewhat positive relationship of SAT scores with teacher salary
+
+
+Discrepancy between results (95% confidence interval for salary slope)
+=========================================================
+```{r,echo=FALSE}
+lm1 = lm(sat ~ salary, data=SAT)
+lm2 = lm(sat ~ salary + frac, data=SAT)
+c1 = confint(lm1)
+c2 = confint(lm2)
+ds = data.frame(y=c(1,1,2,2), x=c(c1[2,],c2[2,]))
+plot(c(-8.8, 4.2), c(0.2,.55), ylab="model", yaxt="n", xlab="slope", type="n")
+lwdval = 3
+lines(c1[2,], c(0.3, 0.3), lwd=lwdval)
+text(mean(c1[2,]), 0.25, "unadjusted")
+points(mean(c1[2,]), 0.3, pch=20, cex=2, col="red")
+lines(c2[2,], c(0.5, 0.5), lwd=lwdval)
+text(mean(c2[2,]), 0.45, "adjusted")
+points(mean(c2[2,]), 0.5, pch=20, cex=2, col="red")
+
+abline(v=0, lty=2)
+```
+
 
 NOTES 
 =========================================================
@@ -371,27 +393,7 @@ Get quotes from here:
 
 
 
-Results (95% confidence interval for salary)
-=========================================================
-type: prompt
 
-Do we need this?
-
-```{r,echo=FALSE}
-lm1 = lm(sat ~ salary, data=SAT)
-lm2 = lm(sat ~ salary + frac, data=SAT)
-c1 = confint(lm1)
-c2 = confint(lm2)
-ds = data.frame(y=c(1,1,2,2), x=c(c1[2,],c2[2,]))
-plot(c(-8.8, 4.2), c(0.2,.55), ylab="model", yaxt="n", xlab="slope", type="n")
-lwdval = 3
-lines(c1[2,], c(0.3, 0.3), lwd=lwdval)
-text(mean(c1[2,]), 0.25, "unadjusted")
-lines(c2[2,], c(0.5, 0.5), lwd=lwdval)
-text(mean(c2[2,]), 0.45, "adjusted")
-abline(v=0, lty=2)
-```
-Take-home message?
 
 Importance of teaching multiple regression
 =====================================
@@ -517,3 +519,11 @@ Better if it did, but in any event ...
 
 Make Statistics about Modeling!
 
+
+NOTES 
+=========================================================
+type: prompt
+
+Most Models are Wrong, Some Models are Useful
+
+Tie back to title
