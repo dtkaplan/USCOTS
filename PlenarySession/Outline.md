@@ -97,6 +97,21 @@ But Statistics Should Not Be Nihilistic
 
 From <http://XKCD.com/552>
 
+
+Right, but is it Useful?
+========================================================
+![Two meanings of random](Images/sleuth.png)
+
+Experiments are Better than Models!
+=========================================================
+Yes, when you can do them.
+
+* Even when you do an experiment, you may want to use covariates.
+
+* Especially because experiments are generally not perfect.
+
+> Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
+
 Stat Course Flow Chart?
 =========================================================
 
@@ -123,17 +138,54 @@ Ask the audience to draw a star by points they agree with and an X through point
 
 Also feel free to list other trends you think are important and should inform the design of statistics education.
 
+Iconic Graphics of Stats Education
+========================================================
+![Bias and variance](Images/BiasVariance.png)
+
+[Source: ]
+
+Graphical Icons of Stats Education
+========================================================
+![Correlation](Images/Correlation-draft.png)
+
+[Source:]
+
+
+Suggestions for Other Iconic Stats Graphs
+=========================================================
+type: prompt
+
+Sketch out one or two graphs you think should be included in the library of Iconic graphs
+
+Iconic is not Necessarily Schematic
+========================================================
+![Correlation](Images/hotdogs.png)
+
+* Use real data
+
+[Source: GAISE Report]
+
+An Emerging Iconic Graphic
+========================================================
+![When I see, I remember](Images/wild.png)
+
+[Source: Chris Wild, USCOTS 2011]
+
+
+Our Candidate for Iconic Status
+=========================================================
+type: section
+
+The "Directed Acyclic Graph"
+
+![DAG](Images/DAG-draft.png)
+
+
 Looking for Inspiration
 =========================================================
 We need a new source of inspiration and guidance
 * Suited for working with data that are dirty, limited, and ambiguous
 * Oriented toward decision making and action rather than proof
-
-NOTES
-========================================================
-type: prompt
-
-I'd propose that we move the Epidemiology! intro to after the "Graphical icons"
 
 
 Epidemiology!
@@ -149,6 +201,21 @@ Decisions need to be made
 * as quickly as possible
 * constructing the best study from available resources
 * in the presence of uncontrollable conditions
+
+
+It's not about Chicken Salad!
+==========================================================
+
+Table showing food poisoning? (Danny having second thoughts about this.)
+
+
+Settings Where We Need Causation without Experiment
+=========================================================
+
+* Smoking and Lung Cancer
+* Substance Abuse
+* Parole
+* [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
 
 
 Ronald Fisher & Austin Bradford Hill
@@ -171,161 +238,6 @@ Different positions smoking and cancer
 > "[I]n passing from association to causation I believe in 'real life' we shall have to consider what flows from that decision. ... In asking for very strong evidence I would, however, repeat emphatically that this does not imply crossing every `t', and swords with every critic, before we act." AB Hill, "The environment and disease: association or causation?" (1965) *Proceedings of the Royal Society of Medicine* 58:295-300 [link](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1898525/)
 
 Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the inadequacies of the fare."
-
-Graphical Icons of Stats Education
-========================================================
-![Bias and variance](Images/BiasVariance.png)
-
-Graphical Icons of Stats Education
-========================================================
-![Two meanings of random](Images/sleuth.png)
-
-Graphical Icons of Stats Education
-========================================================
-![When I see, I remember](Images/wild.png)
-
-Graphical Icons of Stats Education
-========================================================
-![Correlation](Images/Correlation-draft.png)
-
-Graphical Icons of Stats Education
-========================================================
-![Correlation](Images/hotdogs.png)
-
-Suggestions for Other Iconic Stats Graphs
-=========================================================
-type: prompt
-
-Sketch out one or two graphs you think should be included in the library of Iconic graphs
-
-Our Candidate for Stats Icon
-=========================================================
-type: section
-
-The "Directed Acyclic Graph"
-
-![DAG](Images/DAG-draft.png)
-
-Settings Where We Need Causation without Experiment
-=========================================================
-
-* XX MOVE EPIDEMIOLOGY HERE XX
-* Smoking and Lung Cancer
-* Substance Abuse
-* Parole
-* [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
-
-
-Case study: Teacher Salaries and SAT scores
-=========================================================
-
-Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
-
-Case study: Teacher Salaries and SAT scores
-=========================================================
-![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
-
-
-Case study: Teacher Salaries and SAT scores
-=========================================================
-```
-> summary(lm(sat ~ salary, data=SAT))
-
-Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  1158.86      57.66   20.10   <2e-16 
-salary         -5.54       1.63   -3.39   0.0014 
-
-Residual standard error: 67.9 on 48 degrees of freedom
-```
-Conclusion?
-
-
-
-Case study: Teacher Salaries and SAT scores
-=========================================================
-```
-Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  987.900     31.877   30.99   <2e-16
-salary         2.180      1.029    2.12    0.039   
-frac          -2.779      0.228  -12.16    4e-16 
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 33.7 on 47 degrees of freedom
-```
-Conclusion?
-
-What's going on?  (NICK TO ADD CORRELATION FIGURE)
-
-Case study: Teacher Salaries and SAT scores
-=========================================================
-
-![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
-
-
-
-Results (95% confidence interval for salary)
-=========================================================
-![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
-
-Take-home message?
-
-
-The importance of multiple regression
-=========================================================
-- Increasing sophisticated of statistical methods in the *New England Journal of Medicine* (NEJM, 2005; CHANCE, 2007)
-- Categorized papers using hierarchy due to Emerson and Colditz
-- Multiple regression use increased from 5% (1979) to 14% (1989) to more than 50% (2004)
-
-More results from the NEJM
-=========================================================
-![accumulated proportion NEJM](Images/accum.png)
-
-
-Importance of teaching multiple regression
-=====================================
-- allows students to delve into more complex causal relationships
-- prepares them to ask leading questions when analyzing observational data
-- doesn't *paralyze* them (a la XKCD)
-
-State of the Art?  (AP Statistics)
-=========================================================
-![AP 1](Images/ap-ques1.png)
-THIS IS JUST A PLACEHOLDER: IS IT USEFUL?  SHOULD IT BE EARLIER?
-
-State of the Art?  (AP Statistics)
-=========================================================
-![AP 1](Images/ap-ques2.png)
-
-State of the Art?  (AP Statistics)
-=========================================================
-![AP 1](Images/ap-ques3.png)
-
-State of the Art?  (AP Statistics)
-=========================================================
-![AP 1](Images/ap-solution.png)
-
-
-How to include this in an intro course
-=====================================
-- stratification (quick and dirty)
-- (simple) multiple regression
-- Y ~ X + Z (parallel slopes)
-- Y ~ X * Z (interaction)
-
-
-How to include this in an intro course
-=====================================
-- introduce simple linear regression early (week 1, purely descriptive)
-- introduce multiple regression immediately afterwards (week 2, purely descriptive)
-- build concepts of sampling distributions and inference for an interval
-- jump to inference for simple linear regression (week 9)
-- extend to inference for multiple regression (week 10)
-- projects or extended case studies to close out the class
-
-
 
 A Simple Cup of Coffee
 =========================================================
@@ -360,8 +272,142 @@ Skills for Future Coffee-ologists
 * How to choose covariates
 * How to discount previous studies without discounting statistical method.
 
+What's the Pattern Here?
+=========================================================
+![AP 1](Images/ap-ques1.png)
 
-Change at Macalester
+[Source: AP Statistics exam]
+
+NOTES
+=========================================================
+type: prompt
+
+We have to say something about this being a straw man.  It's an exam question taken in isolation.  But if this is representative of student knowledge after a course ...
+
+Test before Describing?   
+=========================================================
+![AP 1](Images/ap-ques2.png)
+
+What are the important questions?
+=========================================================
+![AP 1](Images/ap-ques3.png)
+
+* What's the purpose of collecting the data?
+* What covariates are there?
+
+Chartjunk!
+=========================================================
+![AP 1](Images/ap-solution.png)
+
+* Is this a meaningful alternative?  
+
+There is one letter different between H$_0$ and H$_a$.
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+Pick situations where you care!
+
+Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
+
+![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+```
+> summary(lm(sat ~ salary, data=SAT))
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1158.86      57.66   20.10   <2e-16 
+salary         -5.54       1.63   -3.39   0.0014 
+
+Residual standard error: 67.9 on 48 degrees of freedom
+```
+
+What should the advisory board conclude?
+
+Practice has moved beyond this
+=========================================================
+- Increasing sophisticated of statistical methods in the *New England Journal of Medicine* (NEJM, 2005; CHANCE, 2007)
+- Categorized papers using hierarchy due to Emerson and Colditz
+- Multiple regression use increased from 5% (1979) to 14% (1989) to more than 50% (2004)
+
+More results from the NEJM
+=========================================================
+![accumulated proportion NEJM](Images/accum.png)
+
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+```
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  987.900     31.877   30.99   <2e-16
+salary         2.180      1.029    2.12    0.039   
+frac          -2.779      0.228  -12.16    4e-16 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 33.7 on 47 degrees of freedom
+```
+Conclusion: A somewhat positive relationship of SAT scores with teacher salary.
+
+NOTES 
+=========================================================
+type: prompt
+
+Is there where to talk about class size?  If at all?
+
+Get quotes from here:
+* [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
+
+
+
+Results (95% confidence interval for salary)
+=========================================================
+type: prompt
+
+Do we need this?
+
+![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
+
+Take-home message?
+
+Importance of teaching multiple regression
+=====================================
+- allows students to delve into more complex causal relationships
+- prepares them to ask leading questions when analyzing observational data
+- doesn't *paralyze* them (a la XKCD)
+
+
+How to include this in an intro course
+=====================================
+- stratification (quick and dirty)
+- (simple) multiple regression
+- Y ~ X + Z (parallel slopes)
+- Y ~ X * Z (interaction)
+
+Case study: Teacher Salaries and SAT scores
+=========================================================
+
+![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
+
+
+
+Gradual Change for an Intro Course
+=====================================
+- introduce simple linear regression early (week 1, purely descriptive)
+- introduce multiple regression immediately afterwards (week 2, purely descriptive)
+- build concepts of sampling distributions and inference for an interval
+- jump to inference for simple linear regression (week 9)
+- extend to inference for multiple regression (week 10)
+- projects or extended case studies to close out the class
+
+
+A More Systematic Approach to Change
 =========================================================
 
 12 years ago, with support of HHMI and Keck, we decided to change our entire introductory Math/Stats curriculum
@@ -400,15 +446,6 @@ Macalester is a liberal arts college: about 2000 students
 * Taught in 8 sections by multiple faculty
 * Higher interest in upper-level courses: First a stat minor. Four years ago we introduced an Applied Math and Statistics major. 
 
-Experiments are Better than Models!
-=========================================================
-Yes, when you can do them.
-
-* Even when you do an experiment, you may want to use covariates.
-
-* Especially because experiments are generally not perfect.
-
-> Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
 
 Making Change Happen: The Common Core
 =========================================================
