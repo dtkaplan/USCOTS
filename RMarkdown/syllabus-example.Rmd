@@ -1,0 +1,28 @@
+Stat 101 Syllabus : USCOTS Version
+=================
+
+### Tuesday May 14
+
+* **Topics**: R, RStudio, and Markdown
+* **Readings**:
+   * "Start Teaching with R" (plum-covered book)
+   * "Compendium of Commands to Teach Statistics with R" (yellow-covered book)
+   * Example syllabi: 
+       * [Data and Computing Fundamentals](http://htmlpreview.github.io/?https://github.com/dtkaplan/DataAndComputingFundamentals/blob/master/Spring2013/syllabus2013.html)
+       * [Introduction to Statistical Modeling](http://rpubs.com/dtkaplan/1279)
+* **Assignment**:
+   * Make some course notes and link them here.
+* Notes for today : here are mine.  [DTK notes](http://rpubs.com/dtkaplan/6118) (make a link here to your notes)
+
+### Wednesday May 15
+
+* **Topics**: Randomization, Modeling
+* **Readings**:
+    * "Randomization-based Inference using mosaic" (2nd half of blue book)
+    * "Start Modeling with R" (blue book)
+* **Assignment**:
+
+* You
+
+### Thursday May 16
+
