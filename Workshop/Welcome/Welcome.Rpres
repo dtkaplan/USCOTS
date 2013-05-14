@@ -1,0 +1,26 @@
+Welcome to Teaching Statistics With R (and RStudio)
+========================================================
+author: Danny Kaplan, Nick Horton, and Randy Pruim
+date: USCOTS 2013
+
+Logging in
+=================
+* SAS login (if you are using a SAS PC)
+    * User: Student
+    * Password: Metadata0
+
+* Logging into RStudio Server
+    * Use **Chrome** as your browser
+    * Navigate to dahl.calvin.edu
+    * Select the RStudio server
+    * login using credentials you were sent in an email
+
+* having trouble: help is on the way (if you let us know)
+
+Introductions
+=============
+
+* Name
+* Statistics courses you have taught recently (will teach soon)
+* Something you hope to learn at this Workshop
+

@@ -1,8 +1,6 @@
-Welcome to R and RStudio
-========================================================
-author: Danny Kaplan, Nick Horton, and Randy Pruim
-date: USCOTS 2013
 
+R and RStudio
+=============
 This slide show introduces you to some basic commands in R, the `mosaic` package (which we'll be using in the USCOTS sessions), and RStudio.
 
 * R is the language/environment for doing statistical and data-oriented computing.
