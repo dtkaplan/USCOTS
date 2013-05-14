@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Welcome to R and RStudio</title>
+  <title>Welcome to Teaching Statistics With R (and RStudio)</title>
     
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -267,8 +267,44 @@ body {
    border: none;
 }
 
+.reveal section .fieldError {
+  margin-bottom: 25px;
+}
+
+.reveal section .fieldError span {
+  color: red;
+}
+
 .prompt .reveal .state-background {
    background: #C6D7DC;
+}
+
+.quiz .reveal .state-background {
+  background: rgba(254,220,179,1);
+}
+
+.quiz .reveal ul {
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.quiz .reveal li {
+  margin-top: 20px;
+}
+
+.quiz .reveal .quizFeedback {
+  margin-bottom: 40px;
+}
+
+.quiz .reveal .quizFeedback img {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.quiz .reveal .quizFeedback span {
+  font-size: 1.4em; 
+  margin-left: 12px;
 }
 
 .section .reveal .state-background {
@@ -514,7 +550,173 @@ body {
   </style>
   
   <!-- reveal print css -->
-  
+  <style type="text/css" media="print" >
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+/* SECTION 1: Set default width, margin, float, and
+   background. This prevents elements from extending
+   beyond the edge of the printed page, and prevents
+   unnecessary background images from printing */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	font-size: 18pt;
+	width: auto;
+	height: auto;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+@page {
+	size: letter landscape;
+	margin: 0;
+}
+
+/* SECTION 2: Remove any elements not needed in print.
+   This would include navigation, ads, sidebars, etc. */
+.nestedarrow,
+.controls,
+.reveal .progress,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+/* SECTION 3: Set body font face, size, and color.
+   Consider using a serif font for readability. */
+body, p, td, li, div {
+	font-size: 18pt;
+}
+
+/* SECTION 4: Set heading font face, sizes, and color.
+   Diffrentiate your headings from your body text.
+   Perhaps use a large sans-serif for distinction. */
+h1,h2,h3,h4,h5,h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+/* SECTION 5: Make hyperlinks more usable.
+   Ensure links are underlined, and consider appending
+   the URL to the end of the link for usability. */
+a:link,
+a:visited {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/* SECTION 6: more reveal.js specific additions by @skypanther */
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	padding: auto;
+
+	overflow: visible;
+	display: block;
+
+	text-align: center;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+.reveal .slides section {
+
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: static !important;
+	width: 100% !important;
+	height: auto !important;
+	min-height: initial !important;
+	display: block !important;
+	overflow: visible !important;
+
+	left: 0 !important;
+	top: 0 !important;
+	margin-left: 0px !important;
+	margin-top: 50px !important;
+	padding: 20px 0px !important;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+.reveal section.stack {
+	margin: 0px !important;
+	padding: 0px !important;
+	page-break-after: avoid !important;
+}
+.reveal section .fragment {
+	opacity: 1 !important;
+	visibility: visible !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+.reveal img {
+	box-shadow: none;
+}
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+.reveal small a {
+	font-size: 16pt !important;
+}
+
+</style>
   
 <!-- Styles for R syntax highlighter -->
 <style type="text/css">
@@ -559,6 +761,8 @@ hljs.initHighlightingOnLoad();
 
 
 
+
+
 </head>
 
 <body>
@@ -566,83 +770,45 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section">
-<h1>Welcome to R and RStudio</h1><p>Danny Kaplan, Nick Horton, and Randy Pruim<br/>USCOTS 2013</p>
+<h1>Welcome to Teaching Statistics With R (and RStudio)</h1><p>Danny Kaplan, Nick Horton, and Randy Pruim<br/>USCOTS 2013</p>
 
 <div class="slideContent">
-<p>This slide show introduces you to some basic commands in R, the <code>mosaic</code> package (which we&#39;ll be using in the USCOTS sessions), and RStudio.</p>
+
+</div>
+
+</section>
+<section>
+<h3>Logging in</h3>
+<div class="slideContent">
+<ul>
+<li><p>SAS login (if you are using a SAS PC)</p>
 
 <ul>
-<li>R is the language/environment for doing statistical and data-oriented computing.</li>
-<li><code>mosaic</code> provides a few additional commands that we find helpful in smoothing the path for students.</li>
-<li>RStudio is an &ldquo;integrated development environment&rdquo; (IDE) that makes it easier for instructors to produce notes and for students to access the computational power of R without having to install or manage anything on their own computer.</li>
+<li>User: Student</li>
+<li>Password: Metadata0</li>
+</ul></li>
+<li><p>Logging into RStudio Server</p>
+
+<ul>
+<li>Use <strong>Chrome</strong> as your browser</li>
+<li>Navigate to dahl.calvin.edu</li>
+<li>Select the RStudio server</li>
+<li>login using credentials you were sent in an email</li>
+</ul></li>
+<li><p>having trouble: help is on the way (if you let us know)</p></li>
 </ul>
 
 </div>
 
 </section>
 <section>
-<h3>Your RStudio Server account</h3>
+<h3>Introductions</h3>
 <div class="slideContent">
-<p>Each participant in the USCOTS workshop will be given an account on an RStudio web server.  You can also run R on your desktop, or even set up an RStudio web server of your own.  But for now, just use our server.</p>
-
-<p>Log in to that server now.</p>
-
 <ul>
-<li>Once you are logged in, select FILE/OPEN FILE and &hellip; how do we navigate to this <code>Welcome.Rpres</code> file?</li>
+<li>Name</li>
+<li>Statistics courses you have taught recently (will teach soon)</li>
+<li>Something you hope to learn at this Workshop</li>
 </ul>
-
-<p>Doing so will bring up these slides in the &ldquo;Presentation&rdquo; tab of your RStudio window.  Resize it as bests suits you.</p>
-
-</div>
-
-</section>
-<section>
-<h3>Why Look at Slides in RStudio?</h3>
-<div class="slideContent">
-<p>You can see these slides perfectly well in a web browser.  But still we want you to open them in RStudio.</p>
-
-<ul>
-<li>The slides, when open in RStudio, can interact with the R system itself.</li>
-</ul>
-
-<p>This is a brand new feature of RStudio.  </p>
-
-<ul>
-<li>It allows us to demo certain features of R without your having to give commands that are (as yet) unfamiliar.</li>
-<li>We suspect that there will be pedagogical advantages to students in having materials presented in this format.  We are just starting to explore this possibility; this is our first attempt.</li>
-</ul>
-
-</div>
-
-</section>
-<section>
-<h3>The Console and Basic Commands</h3>
-<div class="slideContent">
-<p>The RStudio display is divided into several <strong>panes</strong>.  You can resize these at will.  </p>
-
-<p>Panes contain <strong>tabs</strong> which give views into various aspects of R and RStudio.  </p>
-
-<p>This slide show has just maximized the size of the pane containing the <strong>Console</strong>.</p>
-
-<p>The console is where you enter commands interactively.  This is the most common way of using R, but there are others that you will see in these sessions.</p>
-
-<p>You&#39;ll also be using the <strong>Plots</strong> tab.</p>
-
-</div>
-
-</section>
-<section>
-<h3>Arithmetic</h3>
-<div class="slideContent">
-<p>We&#39;ve just put into the console commands illustrating basic arithmetic and exponentiation.</p>
-
-</div>
-
-</section>
-<section>
-<h3>Running R</h3>
-<div class="slideContent">
-<p>If you&#39;ve followed the previous</p>
 
 </div>
 
