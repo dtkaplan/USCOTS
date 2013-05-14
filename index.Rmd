@@ -53,8 +53,6 @@ displayFile <- function(path, text=path, type=c('html','Rmd','Rpres')) {
 
 This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned for updates.  
 
-
-
 ### Tuesday
 
  * Introduction
@@ -63,18 +61,19 @@ This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned 
  * Getting the most out of Formulas
  * Getting Started with RMarkdown
 
-Files By Topic
-==============
+### Files By Topic
 
 <!-- ### Files by topic -->
 ```{r, results='asis', echo=FALSE, eval=TRUE}
 directories <- dir('Workshop')
 files <- c()
 for (d in directories){
-  cat(paste('\n####', d, "\n"))
+  inProgress <- FALSE
   files <- dir(paste('Workshop/',d, sep=""))
   for (f in files) {
     if (grepl('.html', f) ) {
+      if (!inProgress)  cat(paste('\n####', d, "\n"))
+      inProgress <- TRUE
       cat(paste(' * [',d, "/", f,']', sep=""))
       cat(paste('(',d, "/", f,')\n', sep=""))
       }
