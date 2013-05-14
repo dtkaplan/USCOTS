@@ -55,7 +55,7 @@ This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned 
 
 ### Tuesday
 
- * `r I(displayFile("Workshop/RandRStudio/Welcome", "Welcome and Introductions"))`
+ * `r I(displayFile("Workshop/Welcome/Welcome", "Welcome and Introductions"))`
  * Getting Started with R and RStudio
  * Getting the most out of Formulas
  * Getting Started with RMarkdown
