@@ -68,7 +68,7 @@ This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned 
 
 ### Other Resources
 #### R Minis
-These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source (but not all of the dependencies) is available so you can see how these were done.
+These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source Rnw files (but not all of their dependencies) are available so you can see how these were done.
 
 * Getting Started with R 
 ([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.pdf),)
