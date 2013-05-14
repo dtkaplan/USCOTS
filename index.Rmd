@@ -66,6 +66,27 @@ This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned 
 
 ### Thursday morning
 
+### Other Resources
+#### R Minis
+These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source (but not all of the dependencies) is available so you can see how these were done.
+
+* Getting Started with R 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.pdf),)
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.Rnw))
+* Formulas in R 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/FormulasInR.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/FormulasInR.Rnw))
+* Modeling and Simulation 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/ModelingAndSimulation.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/ModelingAndSimulation.Rnw))
+* A Mosaic Sampler 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/MosaicSampler.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/MosaicSampler.Rnw))
+* Linear Algebra for Statistics 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.pdf), 
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.Rnw) )
+
+
 ### Files By Topic
 
 <!-- ### Files by topic -->
