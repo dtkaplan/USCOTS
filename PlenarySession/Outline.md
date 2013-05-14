@@ -33,6 +33,12 @@ Addressing the Needs of Our Students
    * In interpreting the news
    * In relating to scientific findings
 
+Notes
+========================================================
+type: prompt
+
+Nick to do world of data plus work and communication
+
 
 The World of Data
 ========================================================
@@ -63,6 +69,13 @@ Work and Communication
     * From inventory to logistics
     * From treatment to medical systems
     
+Notes
+========================================================
+type: prompt
+
+Danny to do Computation is essential and Statistics is Essential, as well as lead "What do you Think"
+
+
 Computation is Essential
 ========================================================
 
@@ -90,43 +103,6 @@ Our intellectual and pedagogical model is still rooted in the needs of the labor
 * An interest in provable statements and traditional curricula
 * "The Ptolemaic Curriculum" of *t*-tests and tables
 
-But Statistics Should Not Be Nihilistic
-=========================================================
-
-<img src="Images/correlation-xkcd.png" width="1000">
-
-From <http://XKCD.com/552>
-
-
-Right, but is it Useful?
-========================================================
-![Two meanings of random](Images/sleuth.png)
-
-Experiments are Better than Models!
-=========================================================
-Yes, when you can do them.
-
-* Even when you do an experiment, you may want to use covariates.
-
-* Especially because experiments are generally not perfect.
-
-> Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
-
-Stat Course Flow Chart?
-=========================================================
-
-(render into tikz)
-
-Can you randomize X?    ----->  yes: Hooray
-
------> no : wait for Stat 2
-
-
-But how many take Stat 2?
-
-Look what happened with Calculus.  Five semester calc sequence.  Half-life is one course.
-
-
 
 What Do You Think?
 =========================================================
@@ -138,17 +114,63 @@ Ask the audience to draw a star by points they agree with and an X through point
 
 Also feel free to list other trends you think are important and should inform the design of statistics education.
 
+
+
+Right, but does it paralyze?
+========================================================
+![Two meanings of random](Images/sleuth.png)
+
+
+
+Experiments are Better than Models!
+=========================================================
+Yes, when you can do them.
+
+* Even when you do an experiment, you may want to use covariates.
+
+* Especially because experiments are generally not perfect.
+
+> Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
+
+But Statistics Should Not Be Nihilistic
+=========================================================
+
+<img src="Images/correlation-xkcd.png" width="1000">
+
+From <http://XKCD.com/552>
+
+Stat Course Flow Chart?
+=========================================================
+
+(render into tikz)
+
+Can you randomize X?    ----->  yes: Hooray
+
+-----> no : note *other factors a concern* and wait for Stat 2?
+
+
+But how many take Stat 2?
+
+Look what happened with Calculus.  Five semester calc sequence.  Half-life is one course.
+
+
+Notes
+========================================================
+type: prompt
+
+Nick takes over for iconic graphics
+
 Iconic Graphics of Stats Education
 ========================================================
 ![Bias and variance](Images/BiasVariance.png)
 
-[Source: ]
+[Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
 Graphical Icons of Stats Education
 ========================================================
 ![Correlation](Images/Correlation-draft.png)
 
-[Source:]
+[Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
 
 Suggestions for Other Iconic Stats Graphs
@@ -163,7 +185,7 @@ Iconic is not Necessarily Schematic
 
 * Use real data
 
-[Source: GAISE Report]
+[Source: GAISE K-12 Report]
 
 An Emerging Iconic Graphic
 ========================================================
@@ -202,6 +224,11 @@ Decisions need to be made
 * constructing the best study from available resources
 * in the presence of uncontrollable conditions
 
+Notes
+========================================================
+type: prompt
+
+Danny takes over
 
 It's not about Chicken Salad!
 ==========================================================
@@ -276,7 +303,7 @@ What's the Pattern Here?
 =========================================================
 ![AP 1](Images/ap-ques1.png)
 
-[Source: AP Statistics exam]
+[Source: 2011 Form B AP Statistics exam]
 
 NOTES
 =========================================================
@@ -301,7 +328,16 @@ Chartjunk!
 
 * Is this a meaningful alternative?  
 
-There is one letter different between H$_0$ and H$_a$.
+There is one letter different between H$_0$ and H$_a$
+
+* Possible role of other factors?
+
+
+NOTES 
+=========================================================
+type: prompt
+
+Nick takes over here.
 
 
 Case study: Teacher Salaries and SAT scores
@@ -339,6 +375,12 @@ Results from the NEJM
 =========================================================
 ![accumulated proportion NEJM](Images/accum.png)
 
+Importance of teaching multiple regression
+=====================================
+- allows students to delve into more complex causal relationships
+- prepares them to ask leading questions when analyzing observational data
+- doesn't *paralyze* them (a la XKCD)
+
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
@@ -356,11 +398,11 @@ Residual standard error: 33.7 on 47 degrees of freedom
 Conclusion: A somewhat positive relationship of SAT scores with teacher salary
 
 
-Discrepancy between results (95% confidence interval for salary slope)
+Ask the wrong question... 
 =========================================================
 ![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
 
-
+point estimate plus 95% confidence interval for salary slope
 
 NOTES 
 =========================================================
@@ -368,18 +410,18 @@ type: prompt
 
 Is there where to talk about class size?  If at all?
 
+I SUGGEST NO.  PERHAPS CLOSING WITH THIS?
+
 Get quotes from here:
 * [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
 
 
 
 
-
-Importance of teaching multiple regression
+How to include this in an intro course
 =====================================
-- allows students to delve into more complex causal relationships
-- prepares them to ask leading questions when analyzing observational data
-- doesn't *paralyze* them (a la XKCD)
+- stratification (quick and dirty)
+![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
 
 
 How to include this in an intro course
@@ -388,13 +430,6 @@ How to include this in an intro course
 - (simple) multiple regression
 - Y ~ X + Z (parallel slopes)
 - Y ~ X * Z (interaction)
-
-Case study: Teacher Salaries and SAT scores
-=========================================================
-
-![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
-
-
 
 Gradual Change for an Intro Course
 =====================================
@@ -405,6 +440,11 @@ Gradual Change for an Intro Course
 - extend to inference for multiple regression (week 10)
 - projects or extended case studies to close out the class
 
+Notes
+=====================================
+type: prompt
+
+Danny takes over here
 
 A More Systematic Approach to Change
 =========================================================
@@ -445,6 +485,11 @@ Macalester is a liberal arts college: about 2000 students
 * Taught in 8 sections by multiple faculty
 * Higher interest in upper-level courses: First a stat minor. Four years ago we introduced an Applied Math and Statistics major. 
 
+Notes
+=====================================
+type: prompt
+
+This is abrupt!
 
 Making Change Happen: The Common Core
 =========================================================
@@ -481,7 +526,7 @@ But the syllabus misses some big points:
 * Need to account for covariates when making decisions.
 * Statistics is about describing variation in the context of what remain unexplained.
 * Students are often paralyzed when faced with analysis of observational data from a first course.
-* Need to empower...
+* Need to empower (not disable)...
 
 
 The Common Core
@@ -492,7 +537,7 @@ An emphasis on **decision-making**.
 * Modeling is important, but vaguely stated.
 * The description of statistics does not make a relationship to modeling.
 Better if it did, but in any event ...
-* Under the Common Core, your students will likely see more about modeling and decision making.
+* Under the Common Core, your students will likely see more about **modeling** and **decision making**.
 * Build on this so that your students can use statistics.
 
 Make Statistics about Modeling!
@@ -502,6 +547,10 @@ NOTES
 =========================================================
 type: prompt
 
+Need more explicit summary 
 Most Models are Wrong, Some Models are Useful
+
+Most Statistics are Wrong, Some Statistics are Useful
+
 
 Tie back to title
