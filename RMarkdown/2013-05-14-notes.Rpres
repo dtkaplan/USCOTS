@@ -53,6 +53,12 @@ require(mosaic)
 
 Use the `include=FALSE` flag, e.g. `{r include=FALSE}` to supporess printing.
 
+Small changes, then recompile
+==========================================================
+type: prompt
+
+Make a small change, one or two chunks or lines, and recompile.
+
 
 
 Calculation in R

@@ -76,7 +76,7 @@ type: prompt
 Danny to do Computation is essential and Statistics is Essential, as well as lead "What do you Think"
 
 
-Computation is Essential
+Technology Changes and We Change with It
 ========================================================
 
 Arithmetic became a standard part of the university curriculum (the "Quadrivium") only in medieval times.
@@ -86,23 +86,36 @@ Arithmetic became a standard part of the university curriculum (the "Quadrivium"
 * Increased need: double-entry book-keeping and complex commerce
 Eventually, arithmetic moved from a university topic to an elementary topic.
 
+
+Computation is Essential
+===================================
 Computational notation, algorithms, technology have improved in our lifetimes.  Need has increased dramatically.
 
-But who is teaching computation?
-* If not now, when?
-* If not us, who?
+What do people widely need to know about computing?
+* The organization of data.
+* A basis for learning what else they need to know about computing.
+
+But who is teaching computing?  Everyone teaches narrowly to their purposes:
+* Computer scientists and programming.
+* Mathematicians and computer algebra.
+* Statistics and p-values.
+
+Are these what students need?
+
     
-Statistics is Essential
+Statistics is Essential to Critical Thinking
 ========================================================
 
-The trends in the evolving world position statistics more centrally than ever.
+The laboratory statistics skills introduced by Fisher are now available by software.
+
+The trends in the evolving world position the concepts of statistics more centrally than ever.
 * But these changes have not been driven by statistics.
 
 Our intellectual and pedagogical model is still rooted in the needs of the laboratory and in the pedagogy of traditional mathematics
-* "No causation without experimentation"
+
 * An interest in provable statements and traditional curricula
 * "The Ptolemaic Curriculum" of *t*-tests and tables
-
+* "No causation without experimentation"
 
 What Do You Think?
 =========================================================
@@ -114,12 +127,93 @@ Ask the audience to draw a star by points they agree with and an X through point
 
 Also feel free to list other trends you think are important and should inform the design of statistics education.
 
+The reason we ask ...
 
+=======================================
+title: false
+type: prompt
 
-Right, but does it paralyze?
+We give people a few minutes to write.
+
+Nick takes over while Danny collects papers
+
+We Believe We should be the Agents of Change
+=======================================
+
+* If not now, when?
+* If not us, who?
+
+If we are not the agents of change, who will be?
+
+There are other points of view ...
+==========================================================
+
+* The computer scientists should teach computation.
+* Pedagogy should follow historical development: ontogeny recapitulates phylogeny. 
+* Statistics receiving appropriate status a peer of the classical disciplines.
+* There is only so much we can do.  Others have to step up to the plate as well.
+* We will need more resources to do ...
+
+What can we do?
+==================================
+
+* Let's start by looking at where we are.
+* Then we can decide if this leads where we want to be.
+
+Notes
 ========================================================
+type: prompt
+
+Nick takes over for iconic graphics
+
+Iconic Graphics of Stats Education
+========================================================
+![Bias and variance](Images/BiasVariance.png)
+
+[Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
+
+Iconic Graphics of Stats Education
+========================================================
+![Correlation](Images/Correlation-draft.png)
+
+[Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
+
+=========================================================
+title: false
+type: prompt
+
+Quickly look through the papers to see what iconic graphics have been added.
+
+Iconic is not Necessarily Schematic
+========================================================
+![Correlation](Images/hotdogs.png)
+
+* One of many lessons from GAISE: Use real data!
+
+[Source: GAISE K-12 Report]
+
+An Emerging Iconic Graphic
+========================================================
+![When I see, I remember](Images/wild.png)
+
+[Source: Chris Wild, USCOTS 2011]
+
+=====================================
+title: false
+type: prompt
+
+The middle of a plenary is not a good place for a nuanced and thoughtful evaluation of submissions.  So our apologies to anyone we overlook in our rush.
+
+Present a couple of submissions for iconic graphics.
+
+Critical Thinking and Statistics
+========================================================
+
+One aspect of Critical Thinking: The evaluation of evidence.
+
 ![Two meanings of random](Images/sleuth.png)
 
+It's right, but does it paralyze us?
 
 
 Experiments are Better than Models!
@@ -132,10 +226,10 @@ Yes, when you can do them.
 
 > Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
 
-But Statistics Should Not Be Nihilistic
+Statistics Should Not Be Nihilistic
 =========================================================
 
-<img src="Images/correlation-xkcd.png" width="1000">
+<img src="Images/correlation-xkcd.png" width="1200">
 
 From <http://XKCD.com/552>
 
@@ -154,44 +248,6 @@ But how many take Stat 2?
 Look what happened with Calculus.  Five semester calc sequence.  Half-life is one course.
 
 
-Notes
-========================================================
-type: prompt
-
-Nick takes over for iconic graphics
-
-Iconic Graphics of Stats Education
-========================================================
-![Bias and variance](Images/BiasVariance.png)
-
-[Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
-
-Graphical Icons of Stats Education
-========================================================
-![Correlation](Images/Correlation-draft.png)
-
-[Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
-
-
-Suggestions for Other Iconic Stats Graphs
-=========================================================
-type: prompt
-
-Sketch out one or two graphs you think should be included in the library of Iconic graphs
-
-Iconic is not Necessarily Schematic
-========================================================
-![Correlation](Images/hotdogs.png)
-
-* Use real data
-
-[Source: GAISE K-12 Report]
-
-An Emerging Iconic Graphic
-========================================================
-![When I see, I remember](Images/wild.png)
-
-[Source: Chris Wild, USCOTS 2011]
 
 
 Our Candidate for Iconic Status
@@ -202,6 +258,7 @@ The "Directed Acyclic Graph"
 
 ![DAG](Images/DAG-draft.png)
 
+[source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
 Looking for Inspiration
 =========================================================
@@ -224,25 +281,11 @@ Decisions need to be made
 * constructing the best study from available resources
 * in the presence of uncontrollable conditions
 
-Notes
 ========================================================
+title: false
 type: prompt
 
 Danny takes over
-
-It's not about Chicken Salad!
-==========================================================
-
-Table showing food poisoning? (Danny having second thoughts about this. XX NH concurs we should drop it.)
-
-
-Settings Where We Need Causation without Experiment
-=========================================================
-
-* Smoking and Lung Cancer
-* Substance Abuse
-* Parole
-* [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
 
 
 Ronald Fisher & Austin Bradford Hill
@@ -299,6 +342,13 @@ Skills for Future Coffee-ologists
 * How to choose covariates
 * How to discount previous studies without discounting statistical method.
 
+=======================
+title: false
+type: prompt
+
+Nick takes over here
+
+
 What's the Pattern Here?
 =========================================================
 ![AP 1](Images/ap-ques1.png)
@@ -311,7 +361,7 @@ type: prompt
 
 We have to say something about this being a straw man.  It's an exam question taken in isolation.  But if this is representative of student knowledge after a course ...
 
-Test before Describing?   
+We should Describe before We Test   
 =========================================================
 ![AP 1](Images/ap-ques2.png)
 
@@ -322,7 +372,7 @@ What are the important questions?
 * What's the purpose of collecting the data?
 * What covariates are there?
 
-Chartjunk!
+A Vanishingly Low Ink-to-Information Ratio
 =========================================================
 ![AP 1](Images/ap-solution.png)
 
@@ -333,11 +383,6 @@ There is one letter different between H$_0$ and H$_a$
 * Possible role of other factors?
 
 
-NOTES 
-=========================================================
-type: prompt
-
-Nick takes over here.
 
 
 Case study: Teacher Salaries and SAT scores
@@ -380,12 +425,6 @@ Results from the NEJM
 =========================================================
 ![accumulated proportion NEJM](Images/accum.png)
 
-Importance of teaching multiple regression
-=====================================
-- allows students to delve into more complex causal relationships
-- prepares them to ask leading questions when analyzing observational data
-- doesn't *paralyze* them (a la XKCD)
-
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
@@ -402,8 +441,14 @@ Residual standard error: 33.7 on 47 degrees of freedom
 ```
 Conclusion: A somewhat positive relationship of SAT scores with teacher salary
 
+Importance of teaching multiple regression
+=====================================
+- allows students to delve into more complex causal relationships
+- prepares them to ask leading questions when analyzing observational data
+- doesn't *paralyze* them (a la XKCD)
 
-Ask the wrong question... 
+
+DELETE Ask the wrong question... 
 =========================================================
 ```{r,echo=FALSE}
 lm1 = lm(sat ~ salary, data=SAT)
@@ -424,18 +469,6 @@ abline(v=0, lty=2)
 ```
 point estimate plus 95% confidence interval for salary slope
 
-NOTES 
-=========================================================
-type: prompt
-
-Is there where to talk about class size?  If at all?
-
-I SUGGEST NO.  PERHAPS CLOSING WITH THIS?
-
-Get quotes from here:
-* [Class Size](http://opinionator.blogs.nytimes.com/2013/05/04/does-class-size-count/)
-
-
 
 
 How to include this in an intro course
@@ -446,12 +479,14 @@ SAT$fracgrp = cut(SAT$frac, breaks=c(0, 22, 49, 81), labels=c("low", "medium", "
 xyplot(sat ~ salary, groups=fracgrp, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
 ```
 
+A reveal with the next slide.
+
 How to include this in an intro course
 =====================================
 - stratification (quick and dirty)
 - (simple) multiple regression
-- Y ~ X + Z (parallel slopes)
-- Y ~ X * Z (interaction)
+    - Y ~ X + Z (parallel slopes)
+    - Y ~ X * Z (interaction)
 
 Gradual Change for an Intro Course
 =====================================
@@ -462,15 +497,41 @@ Gradual Change for an Intro Course
 - extend to inference for multiple regression (week 10)
 - projects or extended case studies to close out the class
 
-Notes
+
 =====================================
+title: false
 type: prompt
 
 Danny takes over here
 
+
+
 A More Systematic Approach to Change
 =========================================================
 
+
+* Statistical Literacy
+* Computation/Data Literacy
+* Mathematics for modeling and description
+* Statistical modeling
+
+========================
+title: false
+type: prompt
+
+Math as a handmaiden rather than a queen.  A set of powerful tools to support inductive reasoning an end in itself.
+
+At the level of statistical literacy
+====================================
+
+Epidemiology
+
+At the level of data computation
+====================================
+DCF course
+
+Putting Math and Stat on an Equal Footing
+====================================
 12 years ago, with support of HHMI and Keck, we decided to change our entire introductory Math/Stats curriculum
 * Was: Calc I, II, III, t-test course
 
@@ -480,6 +541,10 @@ A More Systematic Approach to Change
 * Computation
 * De-emphasis on algebra in favor of computation
 
+Contour plot for Calculus
+
+Statistics 
+=========================
 **Introduction to Statistical Modeling**
 * Modeling
 * Multiple variables
@@ -492,6 +557,8 @@ The same method from Week 3: **Linear Models**
 
 A consistent computer notation that lets students quickly generalize from simple settings (means, proportions) to multivariable linear models.
 
+Swim Records graphics
+
 **Central Question**:
 Which covariates to include in a model?
 
@@ -499,19 +566,26 @@ Which covariates to include in a model?
 * Strength of Evidence
 * Causality
 
-Results
-=========================================================
-Macalester is a liberal arts college: about 2000 students
-
-* About 40% of all students will take Intro to Stat Modeling
-* Taught in 8 sections by multiple faculty
-* Higher interest in upper-level courses: First a stat minor. Four years ago we introduced an Applied Math and Statistics major. 
-
-Notes
-=====================================
+======================
+title: false
 type: prompt
 
-This is abrupt!
+Back to Nick
+
+Building on our Accomplishments
+=====================================
+
+* Interest in the pedagogy of statistics
+    * GAISE
+    * Cobb
+    * Gould
+    * Wild
+    * Next 36 Hours
+       * "Happy Statistics"
+       * Research Triangle
+
+* Developments at the primary and high-school level.
+
 
 Making Change Happen: The Common Core
 =========================================================
@@ -564,15 +638,18 @@ Better if it did, but in any event ...
 
 Make Statistics about Modeling!
 
+Evolution is Change toward Fitness for the Environment
+===========================
 
-NOTES 
-=========================================================
-type: prompt
+"All models are wrong; some models are useful."  --- George Box
 
-Need more explicit summary 
-Most Models are Wrong, Some Models are Useful
+It's not a question right vs wrong, but fitness for the environment.
 
-Most Statistics are Wrong, Some Statistics are Useful
+"We are all Keynesians now." --- Pres. Richard Nixon, 1971, on removing the US from the gold standard
 
+"When the facts change, I change my mind.  What do you do, sir?" --- John Maynard Keynes
 
-Tie back to title
+The world changes.  The needs of our students change.  We are changing accordingly.
+
+"All statistics are wrong; some statistics are useful."
+

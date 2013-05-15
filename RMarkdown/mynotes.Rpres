@@ -1,0 +1,125 @@
+Notes on Cool Stuff
+========================================================
+author: Us Collectively
+date: May 14, 2013
+
+* Make a slide presentation
+* Add some mathematical statements
+* Use `mosaic`
+* Display
+
+My Favorite Equations
+========================================================
+
+1. $E = m c^2$
+1. $ax^2 + bx + c = 0$
+
+Including mosaic
+========================================================
+
+```{r include=FALSE}
+require(mosaic)
+```
+
+* A Bullet point
+
+Review of the Standard Error of the Mean
+================================
+
+Remember $s$ is the sample standard deviation and $\sigma$ is the "population" standard deviation.
+
+The standard error of the mean is $s/\sqrt{n}$.
+
+Computing the Standard Error of the Mean
+================================
+
+We'll use the EPA dataset
+```{r}
+mean( mpg, data=EPA )
+sd( mpg, data=EPA )
+favstats(~mpg, EPA)
+```
+
+
+And now ... the SE of the mean
+====================
+```{r}
+4.489/sqrt(71)
+```
+
+
+Standard Error of the Difference of Two Means
+=============
+
+```{r}
+sd( mpg ~ drive, data=EPA )
+tally( ~ drive, data=EPA )
+```
+
+
+The Formula for the SE of the difference of two means
+=================
+
+$$\sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$
+
+<center>This is in the center</center>
+
+Too Hard for the Students
+========================
+
+```{r}
+t.test( mpg ~ drive, data=EPA)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+
+
+
+
+
