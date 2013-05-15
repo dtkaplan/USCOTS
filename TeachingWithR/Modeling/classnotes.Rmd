@@ -1,0 +1,119 @@
+Start Modeling with R --- Notes
+========================================================
+
+```{r include=FALSE}
+require(mosaic)
+```
+
+### Wednesday May 15, 2013
+
+## Review of "Formulas"
+
+### Sample Statistics
+
+```{r}
+mean( mpg, data=EPA )
+mean( mpg ~ drive, data=EPA)
+bwplot( mpg ~ drive, data=EPA )
+```
+
+### What's a Formula in R?
+
+Just as there are numbers and character strings and arrays, etc., there is a special kind of thing in R called a **formula**.
+
+* A formula is a way of stating a relationship among variables that doesn't evaluate things numerically: it's a symbolic statement.
+* Programmers, like us when building `mosaic` write functions that use the symbolic information in the formula.  (It's in the form of a parse tree, for those who care about such things.)
+* A `data=` argument provides a way to specify the context in which the specific values of thesymbolic quantities in the formula are to be found.
+
+Students, by and large, don't know enough about computation to find the formula funny.
+
+### The operations in formulas
+
+`+`, `-`, `*`, `&`, `|` have a metaphorical meaning, which we'll talk about.  It's pretty consistent across major R features.
+
+Can also use operations such as `==`, `>`, `sin()`, `sqrt()`, `log()`, etc.
+
+### One variable goes to the right of the Tilde `~`
+
+This is odd at first.  
+```{r}
+densityplot( ~ mpg, data=EPA )
+tally( ~ drive, data=EPA )
+mean( ~mpg, data=EPA )
+```
+
+We've overridden this for some basic operators (mean, sd, etc.) for compatibility with the fundamental operators that didn't use formulas.  That's why you can write
+```{r}
+mean( mpg, data=EPA )
+```
+
+I would be inclined to change `histogram()` etc. in a similar way, but that isn't our software.
+
+## Models and Fitting
+
+A model is a "representation for a purpose."  Some examples of common purposes:
+* make a prediction 
+* describe a system
+* describe a relationship in the context of other relationships.
+
+An early step in building a model should be recognizing what the purpose is.  This is not always what we do in teaching, where we are tempted to talk about methods and definitions and proofs.
+
+It can help to have a specific context so that a specific purpose makes sense.
+
+### The Trebuchet
+
+A medieval siege engine for throwing heavy objects long distances.  [Video of a trebuchet launch at Warwick Castle](http://www.youtube.com/watch?v=thiTa8wfZsc)
+
+Trebuchets have parameters e.g.:
+* lever length
+* sling length
+* counterweight
+* projectile weight
+* lever angle
+
+What would be the purpose of building a mathematical model of a trebuchet?
+* NOT: to scare the enemy with mathematics
+* To predict how far a given object will be thrown
+* To figure out how to configure the trebuchet to get a given object on target
+* To decide what sort of object can be thrown to a given target with a given configuration.
+
+```{r message=FALSE}
+require(fastR)
+```
+
+Let's build a mathematical model of a trebuchet.  Here are some variables on which we have data:
+```{r}
+names(trebuchet)
+```
+
+Any ideas?
+* What form should the function take?
+* What should the parameters be?
+
+An example model:
+```{r}
+dist = makeFun( counterWt - 5*projectileWt ~ counterWt & projectileWt)
+```
+
+Let's see what this looks like:
+```{r}
+plotFun( dist(counterWt=100,projectileWt=w) ~ w, w.lim=range(1,10))
+```
+
+What weight projectile to throw the thing 70 units?
+
+It's a function of two variables:
+```{r}
+plotFun( dist(counterWt=Wt,projectileWt=w) ~ w&Wt, w.lim=range(1,10),Wt.lim=range(50,300))
+```
+
+This sort of function could be used to decide what the counterweight and projectile weight can be to go a certain distance, letting us pick from a set of projectiles. Or perhaps to decide whether it's better to move the trebuchet or to change the counterweight.
+
+### QUESTIONS
+
+* How do we get a model that is informed by the data?
+* Does it have to be a straight-line model?  What sorts of functions are allowed?
+* Making a model with categorical inputs?
+
+
+
