@@ -1,2 +1,10 @@
 DTK-ignite-cache
 DTK-ignite.md
+DTK-beamer-*
+*.log
+*.nav
+*.gz
+*.snm
+*.tex
+*.toc
+*.sty

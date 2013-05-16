@@ -1,0 +1,22 @@
+Thursday's Session
+==========================================
+
+```{r include=FALSE}
+require(mosaic)
+```
+
+Here's the [Family Status document](https://dl.dropboxusercontent.com/u/5098197/Math155/ActiveDuty_MaritalStatus.xls)
+
+And the [o-ring data](https://dl.dropboxusercontent.com/u/5098197/Math155/Data/oring-damage.csv)
+
+And the [Google spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dFp6WFhaUkZmYkw0VUV0Zm91RWM1c1E&usp=sharing)
+
+To read in the Google spreadsheet to R [use this link](https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dFp6WFhaUkZmYkw0VUV0Zm91RWM1c1E&single=true&gid=0&output=csv)
+
+Just execute this line:
+```{r}
+mydata = fetchGoogle("https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dFp6WFhaUkZmYkw0VUV0Zm91RWM1c1E&single=true&gid=0&output=csv")
+```
+
+```{r}
+oring = read.csv("http://dl.dropboxusercontent.com/u/5098197/Math155/Data/oring-damage.csv")
