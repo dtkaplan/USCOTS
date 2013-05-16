@@ -45,16 +45,53 @@ The World of Data
 
 * Huge amounts of data are being generated,
     * Outside of experimental settings
+    * Often without a design
+
+
+The World of Data
+========================================================
+
+* Huge amounts of data are being generated,
+    * Outside of experimental settings
     * Often without a design.
 * Students need to be prepared for a world in which:
-    * The economy is more  invested in drawing useful conclusions from data than ever before.
+    * The economy is more  invested in drawing useful conclusions from data than ever before
     * Science is more driven by large amounts of data.
     * Personal decisions --- medical, educational --- connect with the research literature.
+
+    
+The World of Data
+========================================================
+
+* Huge amounts of data are being generated,
+    * Outside of experimental settings
+    * Often without a design
+* Students need to be prepared for a world in which:
+    * The economy is more  invested in drawing useful conclusions from data than ever before
+    * Science is more driven by large amounts of data
+    * Personal decisions --- medical, educational --- connect with the research literature
 * Individuals and the media believe that data is knowledge
-    * They want to know how to extract useful knowledge from data.
-    * They generally are not aware of the limitations of observational data.
+    * They want to know how to extract useful knowledge from data
+    * They generally are not aware of the limitations of observational data
 
+Work and Communication
+========================================================
 
+* Work is based in teams
+    * Collaboration, evaluation, specialization
+    * The model of exchanged notes (e.g. email) has broken down
+    
+Work and Communication
+========================================================
+
+* Work is based in teams
+    * Collaboration, evaluation, specialization
+    * The model of exchanged notes (e.g. email) has broken down
+* Publication is instant
+    * Old model: Get data, draft, redraft, publish
+    * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
+
+    
 Work and Communication
 ========================================================
 
@@ -93,12 +130,12 @@ Computational notation, algorithms, technology have improved in our lifetimes.  
 
 What do people widely need to know about computing?
 * The organization of data.
-* A basis for learning what else they need to know about computing.
+* A basis for learning what else they need to know about computing
 
 But who is teaching computing?  Everyone teaches narrowly to their purposes:
-* Computer scientists and programming.
-* Mathematicians and computer algebra.
-* Statistics and p-values.
+* Computer scientists and programming
+* Mathematicians and computer algebra
+* Statistics and p-values
 
 Are these what students need?
 
@@ -109,7 +146,7 @@ Statistics is Essential to Critical Thinking
 The laboratory statistics skills introduced by Fisher are now available by software.
 
 The trends in the evolving world position the concepts of statistics more centrally than ever.
-* But these changes have not been driven by statistics.
+* But these changes have not been driven by statistics
 
 Our intellectual and pedagogical model is still rooted in the needs of the laboratory and in the pedagogy of traditional mathematics
 
