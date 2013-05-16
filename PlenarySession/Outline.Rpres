@@ -233,7 +233,8 @@ One aspect of Critical Thinking: The evaluation of evidence.
 
 Experiments are Better than Models!
 =========================================================
-Yes, when you can do them.
+
+> The statistician who supposes that his main contribution to the planning of an experiment will involve statistical theory, finds repeatedly that he makes his most valuable contribution simply by persuading the investigator to explain why he wishes to do the experiment. --- Gertrude Cox
 
 * Even when you do an experiment, you may want to use covariates.
 
@@ -241,7 +242,8 @@ Yes, when you can do them.
 
 > Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
 
-<img src="images/gcox.jpg" height=300> |  <img src="images/einstein.jpg" height=300> 
+<center><img src="images/gcox.jpg" height=300>  <img src="images/einstein.jpg" height=300> </center>
+
 
 Statistics Should Not Be Nihilistic
 =========================================================
@@ -273,9 +275,9 @@ type: section
 
 The "Directed Acyclic Graph"
 
-![DAG](Images/DAG-draft.png)
+<center><img src="Images/DAG-draft.png", width=1000></center>
 
-[source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
+<small>[source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]</small>
 
 Looking for Inspiration
 =========================================================
@@ -298,33 +300,29 @@ Decisions need to be made
 * constructing the best study from available resources
 * in the presence of uncontrollable conditions
 
-========================================================
-title: false
-type: prompt
-
-Danny takes over
-
 
 Ronald Fisher & Austin Bradford Hill
 ========================================================
 
-<img src="Images/ronald-fisher.jpg" width="300">
+<img src="Images/ronald-fisher.jpg" width="500">
 
 ***
 
-<img src="Images/hill-lecturing.jpg" width="310">
+<img src="Images/hill-lecturing.jpg" width="510">
 
-NOTES
+Austin Bradford Hill
 ========================================================
-type: prompt
 
-ABH succeeded RF at president of the Royal Society
+Succeeded Fisher as president of the Royal Society
 
-Different positions smoking and cancer
 
-> "[I]n passing from association to causation I believe in 'real life' we shall have to consider what flows from that decision. ... In asking for very strong evidence I would, however, repeat emphatically that this does not imply crossing every `t', and swords with every critic, before we act." AB Hill, "The environment and disease: association or causation?" (1965) *Proceedings of the Royal Society of Medicine* 58:295-300 [link](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1898525/)
+> "[I]n passing from association to causation I believe in 'real life' we shall have to consider what flows from that decision. ... In asking for very strong evidence I would, however, repeat emphatically that this does not imply crossing every `t', and swords with every critic, before we act." AB Hill, 
 
-Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the inadequacies of the fare."
+<br>
+
+> "[T]he glitter of the *t* table diverts attention from the inadequacies of the fare." --- AB Hill
+
+<small>"The environment and disease: association or causation?" (1965) *Proceedings of the Royal Society of Medicine* 58:295-300 [link](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1898525/) </small>
 
 A Simple Cup of Coffee
 =========================================================
@@ -355,36 +353,26 @@ Skills for Future Coffee-ologists
 =========================================================
 > Researchers say there's still a lot to learn here --- they haven't nailed down all the mechanisms by which coffee and tea influence our health. Nor have they ruled out that it may be other lifestyle habits among coffee and tea drinkers that's leading to the reduced risk of disease.
 
+<br> 
+
 * How to take covariates into account
 * How to choose covariates
 * How to discount previous studies without discounting statistical method.
 
-=======================
-title: false
-type: prompt
 
-Nick takes over here
-
-
-What's the Pattern Here?
+But What are We Teaching?
 =========================================================
-![AP 1](Images/ap-ques1.png)
+<center><img src="Images/ap-ques1.png" width=800></center>
 
 [Source: 2011 Form B AP Statistics exam]
 
-NOTES
+We Should Describe before We Test   
 =========================================================
-type: prompt
-
-We have to say something about this being a straw man.  It's an exam question taken in isolation.  But if this is representative of student knowledge after a course ...
-
-We should Describe before We Test   
-=========================================================
-![AP 1](Images/ap-ques2.png)
+<center><img src="Images/ap-ques2.png" width=800></center>
 
 What are the important questions?
 =========================================================
-![AP 1](Images/ap-ques3.png)
+<center><img src="Images/ap-ques3.png" width=800></center>
 
 * What's the purpose of collecting the data?
 * What covariates are there?
@@ -409,7 +397,8 @@ Pick situations where you care!
 
 Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
 
-```{r, echo=FALSE,message=FALSE}
+
+```{r sat1,echo=FALSE,message=FALSE,fig.width=6}
 require(mosaic)
 trellis.par.set(theme=col.mosaic())
 options(digits=3)
@@ -417,8 +406,12 @@ options(show.signif.stars=FALSE)
 xyplot(sat ~ salary, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
 ```
 
+
+
 Case study: Teacher Salaries and SAT scores
 =========================================================
+
+HTML FORMAT
 ```
 > summary(lm(sat ~ salary, data=SAT))
 
@@ -460,50 +453,33 @@ Conclusion: A somewhat positive relationship of SAT scores with teacher salary
 
 Importance of teaching multiple regression
 =====================================
-- allows students to delve into more complex causal relationships
-- prepares them to ask leading questions when analyzing observational data
-- doesn't *paralyze* them (a la XKCD)
+- Allows students to delve into more complex causal relationships
+- Prepares them to ask leading questions when analyzing observational data
+- Doesn't *paralyze* them (a la XKCD)
 
-
-DELETE Ask the wrong question... 
-=========================================================
-```{r,echo=FALSE}
-lm1 = lm(sat ~ salary, data=SAT)
-lm2 = lm(sat ~ salary + frac, data=SAT)
-c1 = confint(lm1)
-c2 = confint(lm2)
-ds = data.frame(y=c(1,1,2,2), x=c(c1[2,],c2[2,]))
-plot(c(-8.8, 4.2), c(0.2,.55), ylab="model", yaxt="n", xlab="slope", type="n")
-lwdval = 3
-lines(c1[2,], c(0.3, 0.3), lwd=lwdval)
-text(mean(c1[2,]), 0.25, "unadjusted")
-points(mean(c1[2,]), 0.3, pch=20, cex=2, col="red")
-lines(c2[2,], c(0.5, 0.5), lwd=lwdval)
-text(mean(c2[2,]), 0.45, "adjusted")
-points(mean(c2[2,]), 0.5, pch=20, cex=2, col="red")
-
-abline(v=0, lty=2)
-```
-point estimate plus 95% confidence interval for salary slope
 
 
 
 How to include this in an intro course
 =====================================
-- stratification (quick and dirty)
+type: section
+
+## Use Stratification Rather than Regression
+
+## Simple multiple regression
+- Y ~ X + Z (parallel slopes)
+- Y ~ X * Z (interaction)
+
+SAT in Three Groups
+=================================
+title:false
+
 ```{r,echo=FALSE}
 SAT$fracgrp = cut(SAT$frac, breaks=c(0, 22, 49, 81), labels=c("low", "medium", "high"))
 xyplot(sat ~ salary, groups=fracgrp, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
 ```
 
-A reveal with the next slide.
 
-How to include this in an intro course
-=====================================
-- stratification (quick and dirty)
-- (simple) multiple regression
-    - Y ~ X + Z (parallel slopes)
-    - Y ~ X * Z (interaction)
 
 Gradual Change for an Intro Course
 =====================================
@@ -515,28 +491,14 @@ Gradual Change for an Intro Course
 - projects or extended case studies to close out the class
 
 
-=====================================
-title: false
-type: prompt
-
-Danny takes over here
-
-
-
 A More Systematic Approach to Change
 =========================================================
-
+type: section
 
 * Statistical Literacy
 * Computation/Data Literacy
 * Mathematics for modeling and description
 * Statistical modeling
-
-========================
-title: false
-type: prompt
-
-Math as a handmaiden rather than a queen.  A set of powerful tools to support inductive reasoning an end in itself.
 
 At the level of statistical literacy
 ====================================
@@ -583,33 +545,14 @@ Which covariates to include in a model?
 * Strength of Evidence
 * Causality
 
-======================
-title: false
-type: prompt
 
-Back to Nick
-
-Building on our Accomplishments
-=====================================
-
-* Interest in the pedagogy of statistics
-    * GAISE
-    * Cobb
-    * Gould
-    * Wild
-    * Next 36 Hours
-       * "Happy Statistics"
-       * Research Triangle
-
-* Developments at the primary and high-school level.
-
-
-Making Change Happen: The Common Core
+The Common Core
 =========================================================
-
-Will this become an iconic image of change in statistics education?
+type: section
 
 <img src="Images/Common-Core-states-2013.png" width="800">
+
+Will this become an iconic image of change in statistics education?
 
 Grade 8 in the Common Core
 =========================================================
@@ -618,55 +561,29 @@ Grade 8 in the Common Core
 
 High School in the Common Core
 =========================================================
-<img src="Images/CC-modeling4.png" width="800">
 
-<img src="Images/CC-modeling4.png" width="800">
-
-Statistics in the Common Core
-=========================================================
 <img src="Images/CC-stat1.png" width="1000">
 
-Don't Dis Variation.
-
-Variation is what we try to explain in statistics, partitioning it into modeled and unmodeled variation.
-
-Statistics and Decision Making
-=========================================================
-The Common Core rightly looks for utility in statistics: Decision-making
-
-But the syllabus misses some big points:
-* Decision-making is often rooted in understanding causation.
-* Need to account for covariates when making decisions.
-* Statistics is about describing variation in the context of what remain unexplained.
-* Students are often paralyzed when faced with analysis of observational data from a first course.
-* Need to empower (not disable)...
+<img src="Images/CC-modeling4.png" width="1000">
 
 
-The Common Core
+An emphasis on **decision-making**
+
+
+Supporting Action and Decision
 =========================================================
 
-An emphasis on **decision-making**.
+## Confounding is a reality: Deal with it
 
-* Modeling is important, but vaguely stated.
-* The description of statistics does not make a relationship to modeling.
-Better if it did, but in any event ...
-* Under the Common Core, your students will likely see more about **modeling** and **decision making**.
-* Build on this so that your students can use statistics.
+<center><img src="Images/DAG-draft.png", width=1000></center>
 
-Make Statistics about Modeling!
+## Make Statistics about Modeling
 
-Evolution is Change toward Fitness for the Environment
-===========================
 
-"All models are wrong; some models are useful."  --- George Box
-
-It's not a question right vs wrong, but fitness for the environment.
-
-"We are all Keynesians now." --- Pres. Richard Nixon, 1971, on removing the US from the gold standard
-
-"When the facts change, I change my mind.  What do you do, sir?" --- John Maynard Keynes
-
-The world changes.  The needs of our students change.  We are changing accordingly.
-
-"All statistics are wrong; some statistics are useful."
+========================================================
+type: section
+title: false
+## All Statistics are Wrong; Some Statistics are Useful 
+### Daniel Kaplan & Nicholas Horton
+### USCOTS May 16, 2013
 
