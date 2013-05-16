@@ -1,8 +1,14 @@
 Start Modeling with R --- Notes
-========================================================
+=====================================
 
 ```{r include=FALSE}
 require(mosaic)
+require(fastR)
+trellis.par.set(theme=col.mosaic())
+```
+
+```{r}
+mean(distance, data=trebuchet)
 ```
 
 ### Wednesday May 15, 2013
@@ -89,6 +95,35 @@ names(trebuchet)
 Any ideas?
 * What form should the function take?
 * What should the parameters be?
+
+Let's plot some data:
+```{r}
+xyplot(distance ~ projectileWt, data=trebuchet)
+```
+Making our function and adding it to the previous plot
+```{r}
+f = makeFun(8*projectileWt ~ projectileWt )
+xyplot(distance ~ projectileWt, data=trebuchet)
+plotFun( f(wt)~wt, add=TRUE)
+g <- makeFun(1200-8*projectileWt ~ projectileWt)
+plotFun( g(wt)~wt, add=TRUE,col="red")
+```
+
+Residuals ...
+
+```{r}
+myresids = with(trebuchet, distance - g(projectileWt))
+sum(myresids^2)
+mean(myresids)
+```
+
+Rs best guess:
+```{r}
+myModel = lm(distance ~ projectileWt, data=trebuchet)
+myModel
+```
+
+
 
 An example model:
 ```{r}

@@ -1,0 +1,459 @@
+\documentclass{beamer}
+\usepackage{multicol}
+
+<<include=FALSE>>=
+require(mosaic)
+houses=fetchData("SaratogaHouses.csv")
+@
+\usetheme{Warsaw}
+
+\title{Changing Times Call for Changing Stats}
+\author{Danny Kaplan}
+\date{USCOTS ``Ignite'' Session May 15, 2013}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+% ============================
+\begin{frame}
+\frametitle{A Physicist Lapsed into Statistics}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Rutherford (1871-1937)
+
+\includegraphics[width=1.5in]{images/220px-Ernest_Rutherford_cropped.jpg}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{block}{DTK}
+\begin{itemize}
+\item I studied physics, philosophy, and political science in college.  
+\item  I never took a statistics course.
+\end{itemize}
+\end{block}
+\begin{block}{Lord Rutherford}
+``If your experiment needs statistics, you ought to have done a better experiment.''
+\end{block}
+\end{column}
+\end{columns}
+
+\end{frame}
+% =========================
+\begin{frame}
+\frametitle{Biomedical Engineering and Physiology}
+
+\begin{block}{My Ph.D. work}
+Getting physiological information from signals
+\begin{itemize}
+\item ECG, EEG, Respiration and heart rate variability
+\end{itemize}
+\end{block}
+
+\includegraphics[width=4.5in]{images/ecg-exigency-003-b.jpg}
+
+\begin{itemize}
+\item Signal processing
+\item Classification and Bayes' Rule, not hypothesis testing
+\item Sensitivity and specificity, not Type I and Type II
+\end{itemize}
+\end{frame}
+% ===================
+\begin{frame}
+\frametitle{But You Need a CI to Publish}
+
+\begin{block}{Sources for scientists:}
+\begin{itemize}
+\item {\bf Numerical Recipes}
+\item Brad Efron's {\bf SIAM}
+\end{itemize}
+\end{block}
+\includegraphics[width=4in]{images/efron.png}
+\end{frame}
+% =========================
+\begin{frame}
+\frametitle{``Yes'' is the Correct Answer}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{block}{Job Interview Question:}
+``Can you teach intro stats?''
+\end{block}
+
+\bigskip
+
+Thank goodness I wasn't asked, ``What's a t-test?''
+
+
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=2in]{images/t-table.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+% =================
+\begin{frame}[fragile]
+\frametitle{Resampling Seemed the Natural Way to Teach and Learn}
+
+
+I worked to make resampling easier and more accessible:
+
+<<echo=-c(2,5),tidy=FALSE>>=
+s1 = do(100)*median( Price, data=resample(houses) )
+s1 = s1$result
+sd(s1)
+s2 = do(100)*diff( median(Price~Fireplace, 
+                          data=resample(houses)))
+names(s2) <- NULL
+sd(s2)
+@
+\end{frame}
+% ==========================
+\begin{frame}
+\frametitle{Simpson's Paradox and Philosophy}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=2in]{images/ucberkeley.png}
+\end{column}
+\begin{column}{0.5\textwidth}
+I thought students should know something about inductive reasoning and its traps. 
+
+\bigskip
+
+{\bf Simpson's Paradox} seemed a good angle to give students an appropriate level of skepticism about induction.
+
+\end{column}
+\end{columns}
+\end{frame}
+% =========================
+\begin{frame}
+\frametitle{The Wrong Lesson}
+%\begin{columns}
+%\begin{column}{0.5\textwidth}
+\begin{block}{What I was saying ...}
+Data don't speak, they inform our judgment.
+
+\bigskip
+
+Interpret data in the context of a whole system
+\end{block}
+\bigskip
+\begin{block}{What they were hearing ...}
+The data will say anything you want, depending on how you cut it.
+\end{block}
+
+
+%\end{column}
+%\begin{column}{0.5\textwidth}
+% \includegraphics[width=2in]{images/blahblah.jpg}
+%\end{column}
+%\end{columns}
+\end{frame}
+
+% =========================
+\begin{frame}
+\frametitle{Avoiding the Abstinence-Based Curriculum}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Causation is often the issue. But ...
+\begin{itemize}
+\item Confounding is common
+\item Adjustment provides insight if not proof
+\item It's very common in the literature
+\end{itemize}
+
+
+I don't want students to be powerless about covariation and causation. 
+
+\bigskip
+
+But how to do this? 
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=2in]{images/cat-cartoon.jpg}
+
+Never, ever, think outside the box.
+\end{column}
+\end{columns}
+
+\bigskip
+
+
+\end{frame}
+
+% =======================
+\begin{frame}
+\frametitle{Statistics and Geometry}
+
+\begin{block}{My epiphany}
+The links between modeling and geometry of subspaces.
+\end{block}
+
+\centerline{{\bf Case Space} versus {\bf Variable Space}}
+
+\includegraphics[width=4in]{images/adam-eve.png}
+
+\end{frame}
+
+% =======================
+\begin{frame}
+\frametitle{Correlation is an Angle}
+Statistics formulas (e.g. correlation) are based on linear algebra but fail to present the operations at a high level.
+
+\includegraphics[width=4in]{images/instructor-protractor.png}
+\end{frame}
+
+% ===========================
+\begin{frame}
+\frametitle{When it's hard, We're doing the wrong thing}
+
+The purpose of expertise should be to find ways to make it obvious.
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+{\em A difficult theoretical question ...}
+
+\bigskip
+
+Where does the t-distribution come from?
+
+\bigskip
+
+The back of the book!
+\end{column}
+\begin{column}{0.5\textwidth}
+A 7-year old eyeballs the p-value
+\bigskip
+\includegraphics[width=2in]{images/Netta-globe.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ===========================
+\begin{frame}
+\frametitle{Things Have Changed}
+
+In the 16 years since my job interview...
+\begin{itemize}
+\item Every student has access to a computer, in class and out.
+\item Software is free.
+\item Data is everywhere.
+\item People want to use data for decision-making, not just for publishing research.
+\end{itemize}
+\end{frame}
+
+% =======================
+\begin{frame}
+\frametitle{We Should Change, Too}
+\begin{itemize}
+\item Prepare students for technical computing.
+\item Mathematics should be about multiple variables.
+\item Make modeling central. 
+\end{itemize}
+\end{frame}
+% ==================
+\begin{frame}
+\frametitle{Statistics as the Science of Data}
+Insofar as we believe this, we should be helping students gain:
+\begin{itemize}
+\item The ability to access data.
+\item The ability to organize data.
+\end{itemize}
+\end{frame}
+% ===================
+\begin{frame}
+\frametitle{Basic Concepts for Decision Making}
+
+\includegraphics[width=3in]{images/gigerenzer.png}
+\end{frame}
+% ======================
+\begin{frame}
+\frametitle{Change at Macalester}
+\begin{itemize}
+\item Redirecting Calculus to support statistics.
+\item Redirecting Statistics to support science.
+\item Redirecting Computation to support data.
+\item Teaching Quantitative Literacy in context: Epidemiology
+\end{itemize}
+
+\end{frame}
+% ======================
+\begin{frame}
+\frametitle{Collaborative and Community Change}
+\begin{itemize}
+\item Colleagues at Macalester
+\item The R Project
+\item Randy Pruim \& Nick Horton and Project MOSAIC
+\item JJ Allaire and RStudio
+\end{itemize}
+
+\hbox{\includegraphics[height=1in]{images/rpruim.jpg}\hspace{.2in}\includegraphics[height=1in]{images/nhorton.jpg}\hspace{.2in}\includegraphics[height=1in]{images/jj.png}}
+
+\end{frame}
+% ===================
+\begin{frame}
+\frametitle{The Golden Age of Statistics}
+
+{\bf Now} is the golden age of statistics and scientific education.
+\begin{itemize}
+\item The demand is there.
+\item The technology is there.
+\item What's missing is the human capital.
+\end{itemize}
+
+We need a new organization of educational work
+\begin{itemize}
+\item More collaboration
+\item More ongoing training
+\end{itemize}
+
+\end{frame}
+% =============================
+\begin{frame}
+\frametitle{Statistics with Confidence}
+
+Statistics is the quantitative/scientific/technical area that most strongly unites areas of research.  
+
+\begin{itemize} 
+\item This increases our responsibility to look after education generally.
+\end{itemize}
+
+
+
+\end{frame}
+\end{document}
+\begin{frame}
+\frametitle{Title}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+text here
+\end{column}
+\begin{column}{0.5\textwidth}
+text here
+\end{column}
+\end{columns}
+\end{frame}
+% =========================
+\begin{frame}
+\frametitle{Title}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+text here
+\end{column}
+\begin{column}{0.5\textwidth}
+text here
+\end{column}
+\end{columns}
+\end{frame}
+% =========================
+\begin{frame}
+\frametitle{Title}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+text here
+\end{column}
+\begin{column}{0.5\textwidth}
+text here
+\end{column}
+\end{columns}
+\end{frame}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+Modeling, Statistics, Calculus & Computation
+=================================
+
+The MOSAIC topics.
+
+Calculus should be about description.
+\item That it's taught as an algorithmic process is a shame.
+\item There are general algorithms for accumulation.
+\item Teach **modeling-based** calculus
+
+Calculus topics essential to statistics
+\item **NOT** "area is an integral"
+\item Partial derivatives and partial difference
+\item Linear and bilinear approximation to functions of multiple variables
+
+Change at Macalester
+=================================
+
+\item Threw away Calc I.
+\item Threw away t-test statistics course
+
+\item BIG DATA
+
+Instead:
+
+\item A unified sequence: Applied Calculus and Statistical Modeling
+    \item Multivariate from the very start
+    \item De-emphasizes algebra
+    \item Strongly emphasizes computation (in R)
+    
+Collaborative and Community Change
+=================================
+
+\item The R Project
+
+\item Randy Pruim & Nick Horton and Project MOSAIC
+
+\item JJ Allaire and RStudio
+
+<img src="images/rpruim.jpg" height=400>  <img src="images/nhorton.jpg" height=400> <img src="images/jj.png" height=400>
+
+Revolution in Publishing
+=================================
+
+In college, we shared work with the seminar using a mimeograph machine.
+
+In graduate school, we used a xerox machine.
+
+Now ...
+\item Web distribution
+\item Interactivity
+\item Collaboration and revision
+
+<img src="images/gutenbergpress.jpg" width=200> <img src="images/Mimeo-User-1-Guy.jpg" width=250> <img src="images/xerox.jpeg" width=200> <img src="images/ipad.jpeg" width=300>
+
+
+The Golden Age of Statistics
+=================================
+
+**Now** is the golden age of statistics and scientific education.
+\item The demand is there.
+\item The technology is there.
+\item What's missing is the human capital.
+
+******
+
+We need a **new organization of educational work**
+\item More collaboration
+\item More ongoing training
+\item More accountability
+    
+Statistics at the Center
+================================
+
+Statistics is the quantitative/scientific/technical area that most strongly unites areas of research.  
+
+\item This increases our responsibility to look after education generally.
+
+\begin{frame}
+\frametitle{Changing Times Call for Changing Stats}
+
+author: Danny Kaplan date: USCOTS May 15, 2013
+
+\end{frame}
+
+
+\end{document}

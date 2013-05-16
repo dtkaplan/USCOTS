@@ -1,0 +1,82 @@
+Swimming World Records
+=======================
+
+```{r include=FALSE}
+require(mosaic)
+require(fastR)
+trellis.par.set(theme=col.mosaic())
+```
+
+The data set `SwimRecords` contains world records in the 100m freestyle race.
+
+Men and women have different records:
+```{r}
+mean( time ~ sex, data=SwimRecords)
+```
+
+Of course, the record varies over the years:
+```{r}
+xyplot(time ~ year, data=SwimRecords )
+```
+
+Here is a template for fitting a model and overplotting the function on a graph.  You'll modify this in various ways.
+
+
+```{r}
+xyplot(time ~ year, data=SwimRecords )
+mod0 = lm( time ~ 1+sex*year, data=SwimRecords)
+f0 = makeFun(mod0)
+plotFun(f0(sex="M",year=y)~y, add=TRUE)
+plotFun(f0(sex="F",year=y)~y, col="red",add=TRUE)
+```
+
+
+```{r}
+xyplot(time ~ year, data=SwimRecords )
+mod1 = lm( time ~ year+sex, data=SwimRecords)
+f1 = makeFun(mod1)
+plotFun(f1(year=y,sex="M")~y, add=TRUE)
+plotFun(f1(year=y,sex="F")~y, col="red",add=TRUE)
+```
+
+## Inference
+
+### Confidence intervals
+```{r}
+s = do(100)*lm(time ~ year+sex, data=resample(SwimRecords))
+densityplot(~year, data=s)
+```
+
+Or ...
+```{r}
+mod = lm(time~year+sex, data=SwimRecords)
+confint(  )
+```
+
+Or ...
+```{r}
+summary(mod)
+```
+
+#### Hypothesis Testing
+
+```{r}
+s = do(100)*lm(time ~ shuffle(year)+sex, data=resample(SwimRecords))
+densityplot(~year, data=s)
+```
+How many of the coefficients are bigger than those observed?
+
+
+See the regression report for classical technique
+
+#### ANOVA
+```{r}
+anova(mod)
+```
+## Wage Records
+
+You must do the following in the console --- just hit "run"
+```{r eval=FALSE}
+fetchData("mLM.R") # do only once
+mLM(wage ~ age*sex*educ + sector*sex, data=CPS85)
+```
