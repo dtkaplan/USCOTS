@@ -233,13 +233,17 @@ Experiments are Better than Models!
 
 > The statistician who supposes that his main contribution to the planning of an experiment will involve statistical theory, finds repeatedly that he makes his most valuable contribution simply by persuading the investigator to explain why he wishes to do the experiment. --- Gertrude Cox
 
+<center><img src="images/gcox.jpg" height=300></center>
+
+Experiments are Better than Models!
+===================================
 * Even when you do an experiment, you may want to use covariates.
 
 * Especially because experiments are generally not perfect.
 
 > Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
 
-<center><img src="images/gcox.jpg" height=300>  <img src="images/einstein.jpg" height=300> </center>
+<center><img src="images/einstein.jpg" height=300> </center>
 
 
 Statistics Should Not Be Nihilistic
@@ -405,7 +409,6 @@ xyplot(sat ~ salary, type=c("p", "r"), xlab="average teacher salary\n(in thousan
 Case study: Teacher Salaries and SAT scores
 =========================================================
 
-HTML FORMAT
 ```
 > summary(lm(sat ~ salary, data=SAT))
 
@@ -438,8 +441,6 @@ Coefficients:
 (Intercept)  987.900     31.877   30.99   <2e-16
 salary         2.180      1.029    2.12    0.039   
 frac          -2.779      0.228  -12.16    4e-16 
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 33.7 on 47 degrees of freedom
 ```
@@ -500,7 +501,7 @@ type: section
 At the Level of Statistical Literacy
 ====================================
 
-Epidemiology
+## Epidemiology
 
 <center><img src="images/EE-Fig-8-3.png" width=500></center>
 
@@ -523,7 +524,7 @@ At the level of data computation
 Introductory Calculus
 ====================================
 
-<center><img src="images/contour-plot.png" width=500></center>
+<center><img src="images/contour-plot.png" width=350></center>
 
 * Modeling
 * Multiple variables, linear algebra/geometry
