@@ -209,6 +209,7 @@ Statistics formulas (e.g. correlation) are based on linear algebra but fail to p
 
 The purpose of expertise should be to find ways to make it obvious.
 
+\bigskip
 \begin{columns}
 \begin{column}{0.5\textwidth}
 
@@ -223,9 +224,11 @@ Where does the t-distribution come from?
 The back of the book!
 \end{column}
 \begin{column}{0.5\textwidth}
-A 7-year old eyeballs the p-value
+
 \bigskip
 \includegraphics[width=2in]{images/Netta-globe.jpg}
+\bigskip
+A 7-year old eyeballs the p-value
 \end{column}
 \end{columns}
 \end{frame}
