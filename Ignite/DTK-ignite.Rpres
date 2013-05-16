@@ -3,91 +3,124 @@ Changing Times Call for Changing Stats
 author: Danny Kaplan
 date: USCOTS May 15, 2013
 
-A Lapsed Physicist
+```{r include=FALSE}
+require(mosaic)
+houses=fetchData("SaratogaHouses.csv")
+```
+
+A Physicist Lapsed into Statistics
 ========================================================
 
+![Lord Rutherford](images/220px-Ernest_Rutherford_cropped.jpg)
+<center>Rutherford (1871-1937)</center>
+<img src="images/220px-Ernest_Rutherford_cropped.jpg" width=600>
+
+**********
+
+## DTK
 * I studied physics, philosophy, and political science in college.  
 * I never took a statistics course.
 
-Why would I?  As Lord Rutherford said,
+## Lord Rutherford
 
-"If your experiment needs statistics, you ought to have done a better experiment."
+**"If your experiment needs statistics, you ought to have done a better experiment."**
+
+
+
 
 Biomedical Engineering and Physiology
 ========================================================
 
-My Ph.D. work was on the extraction of physiological information from signals such as the ECG, EEG, respiration, and Heart Rate
+My Ph.D. work : getting physiological information from signals
+* ECG
+* EEG
+* Respiration and heart rate variability
+
+<img src="images/ecg-exigency-003-b.jpg" width=1200>
+
 * Signal processing
 * Classification and Bayes' Rule, not hypothesis testing
 * Sensitivity and specificity, not Type I and Type II
 
-But You Need a p-value
+But You Need a CI to Publish
 ========================================================
-
-Editors ask for p-values and confidence intervals.  Graduate students must comply.
 
 Sources for scientists:
 * *Numerical Recipes*
 * Brad Efron's *SIAM* "Thinking the Unthinkable"
 
+<img src="images/efron.png" width=1100>
+
 "Yes" is the Correct Answer
 =========================================================
 
-At a job interview in a Math/CS department, I was asked, 
+## Job Interview Question: 
 
-- "Can you teach intro stats?"
 
-I answered appropriately for getting a job.
+- **"Can you teach intro stats?"**
 
-Thank goodness I wasn't asked, "What's a t-test?" 
 
-Students are Outsiders, Too
+## Thank goodness I wasn't asked, 
+
+- **"What's a t-test?"**
+
+********
+
+<img src="images/t-table.jpg" width=500>
+
+Resampling Notation
 =========================================================
 
-Not knowing anything about statistics was an advantage:
+The difficulty with resampling is expressing the computation.  
 
-* I could imagine what the students were thinking, since I had the same misconceptions.
+* Worked to make this easier:
 
-I was somewhat more mathematically and computationally sophisticated than most of my students.
-* I know an algorithm when I see one.
-* I asked "Why?" not just "How?"
+```{r echo=-c(2,5),tidy=FALSE}
+s1 = do(100)*median( Price, data=resample(houses) )
+s1 = s1$result
+sd(s1)
+s2 = do(100)*diff( median(Price~Fireplace, 
+                          data=resample(houses)))
+names(s2) <- NULL
+sd(s2)
+```
 
-Mathematicians and Experiment
-====================================
-
-Odd that statistics is taught so much by mathematically trained people who have little experience with experiments ...
-
-... and yet they present experiment as the dominant form of information gathering.
-
-We present inductive reasoning as if it were deductive.  Experiment tries to connect the two, but it doesn't necessarily work.
-
-*"A theory is something nobody believes, except the person who made it. An experiment is something everybody believes, except the person who made it."* -- Albert Einstein
+Students found this pretty accessible.
 
 Simpson's Paradox and Philosophy
 =========================================================
+
+<img src="images/ucberkeley.png" width=600>
+
+*****
+
 I thought students should know something about inductive reasoning and its traps. 
 
-Simpson's Paradox seemed a good angle to give students an appropriate level of skepticism about induction.
+**Simpson's Paradox** seemed a good angle to give students an appropriate level of skepticism about induction.
 
 The Wrong Lesson
 =========================================================
 
 I thought I was teaching students about careful reasoning.
-* They were learning, "The data say anything you want, depending on how you cut it."
+* They were learning, **"The data say anything you want, depending on how you cut it."**
 
-Resampling Success
-=========================================================
+I thought I wanted them to think outside the box, but sometimes you want them in the box!
 
-In my research, I had used resampling and permutation tests.(With Fourier magnitudes and phases, as befits a signal processor.)
+****
 
-I figured students would find resampling and randomization accessible, if only they could do the computations.
-* So I wrote software to make this straightforward and natural, building on R.
+<img src="images/cat-cartoon.jpg" width=500pt>Never, ever, think outside the box.</img>
 
-This worked.
+
 
 "Why is it called a 'Paradox'?"
 =========================================================
 
+A design goal: **Students should understand covariation**
+* Confounding is common
+* Adjustment provides insight if not proof
+* It's very common in the literature
+
+**Question** 
 I didn't want students to be powerless about covariation. They need to be able to deal with it.
 
 Calling it "Simpson's **Paradox**" suggests that it's mysterious.
@@ -96,16 +129,23 @@ I set as my goal that students should think about covariation as an essential pa
 
 How to do this?  Could it be done?
 
-Linear algebra
+Statistics and Geometry
 ==========================
 
-My statistical epiphany came when I realized the connections between linear algebra and statistics.  I was trying to learn stats from intro stats books.
+My epiphany: links between modeling and geometry of subspaces.
 
-Linear algebra education (at least, computational linear algebra) has changed a lot in the last 40 years, along with the changes in computation.
+**Case Space** versus **Variable Space**
+<center>
+<img src="images/adam-eve.png" width=1000>
+</center>
 
 Statistics formulas (e.g. correlation) are based on linear algebra but fail to present the operations at a high level.
 
-Example: Correlation is an angle.
+<center>
+<img src="images/instructor-protractor.png" width=600>
+</center>
+
+Correlation is an angle.
 
 Ubiquitous Computation and Big Data
 ==============================
@@ -123,7 +163,13 @@ Suggestions for Positive Change
 * Prepare students for technical computing.
 * Mathematics should be about multiple variables.
 * Make modeling central. 
-* Don't isolate related topics
+* Don't isolate related topics.
+* Easy is good.  Work from students' strengths.
+
+*********
+
+<img src="images/Netta-globe.jpg" width=500>
+A 7-year old eyeballs the p-value
 
 Modeling, Statistics, Calculus & Computation
 =================================
@@ -158,11 +204,13 @@ Instead:
 Collaborative and Community Change
 =================================
 
-The R Project
+* The R Project
 
-Randy Pruim & Nick Horton and Project MOSAIC
+* Randy Pruim & Nick Horton and Project MOSAIC
 
-JJ Allaire and RStudio
+* JJ Allaire and RStudio
+
+<img src="images/rpruim.jpg" height=400>  <img src="images/nhorton.jpg" height=400> <img src="images/jj.png" height=400>
 
 Revolution in Publishing
 =================================
@@ -176,6 +224,9 @@ Now ...
 * Interactivity
 * Collaboration and revision
 
+<img src="images/gutenbergpress.jpg" width=200> <img src="images/Mimeo-User-1-Guy.jpg" width=250> <img src="images/xerox.jpeg" width=200> <img src="images/ipad.jpeg" width=300>
+
+
 The Golden Age of Statistics
 =================================
 
@@ -184,9 +235,9 @@ The Golden Age of Statistics
 * The technology is there.
 * What's missing is the human capital.
 
-“The world we have created today as a result of our thinking thus far has problems which cannot be solved by thinking the way we thought when we created them.” – Albert Einstein
+******
 
-We need a new organization of educational work
+We need a **new organization of educational work**
 * More collaboration
 * More ongoing training
 * More accountability
@@ -199,4 +250,18 @@ Statistics is the quantitative/scientific/technical area that most strongly unit
 * This increases our responsibility to look after education generally.
 
 
+Mathematicians and Experiment
+====================================
+
+Odd that statistics is taught so much by mathematically trained people who have little experience with experiments ...
+
+<br>
+... and yet they present experiment as the dominant form of information gathering.
+
+<br>
+
+We present **inductive** reasoning as if it were **deductive**.  Experiment tries to connect the two, but it doesn't necessarily work.
+
+<br>
+**"A theory is something nobody believes, except the person who made it. An experiment is something everybody believes, except the person who made it."** -- Albert Einstein
 
