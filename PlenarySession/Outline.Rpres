@@ -51,49 +51,48 @@ Work and Communication
 ========================================================
 
 ## Work is based in teams
-    * Collaboration, evaluation, specialization
-    * The model of exchanged notes (e.g. email) has broken down
+* Collaboration, evaluation, specialization
+* The model of exchanged notes (e.g. email) has broken down
 ## Publication is instant
-    * Old model: Get data, draft, redraft, publish
-    * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
+* Old model: Get data, draft, redraft, publish
+* New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
 
     
 Work and Communication
 ========================================================
 
 ## Work is based in teams
-    * Collaboration, evaluation, specialization
-    * The model of exchanged notes (e.g. email) has broken down
+* Collaboration, evaluation, specialization
+* The model of exchanged notes (e.g. email) has broken down
 ## Publication is instant
 * Old model: Get data, draft, redraft, publish
 * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
 
 ## Topics are more complex
-    * From gene to genomics
-    * From inventory to logistics
-    * From treatment to medical systems
+* From gene to genomics
+* From inventory to logistics
+* From treatment to medical systems
     
 
 Technology Changes. We Change with It.
 ========================================================
 
-Arithmetic became a standard part of the university curriculum (the "Quadrivium") only in medieval times.
+Arithmetic became part of the university curriculum in medieval times: the "Quadrivium"
 * Improved notation: from Roman numerals to Arabic
 * Improved algorithms: place based with a zero
 * Improved technology: the slate and pencil
 * Increased need: double-entry book-keeping and complex commerce
-Eventually, arithmetic moved from a university topic to an elementary topic
+
+Now it's elementary
 
 *******
 
-Image, Arithmetic in 1508
+<center><img src="images/arithmetic1508.png" width=400></center>
+<center>Arithmetic in 1508</center>
 
 Computation is Essential
 ===================================  
 ## The need to compute **with data** has increased dramatically.
-
-
-
 
 ## What do people need to know about computing?
 * The organization of data.
@@ -104,8 +103,6 @@ Computation is Essential
 * Computer scientists and programming
 * Mathematicians and computer algebra
 * Statistics and p-values
-
-
 
     
 Statistics is Essential to Critical Thinking
@@ -178,7 +175,7 @@ type:section
 Iconic Graphics of Stats Education
 ========================================================
 <center>
-<img src="Images/BiasVariance.png" height=800>
+<img src="Images/BiasVariance.png" height=700>
 </center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
@@ -186,7 +183,7 @@ Iconic Graphics of Stats Education
 Iconic Graphics of Stats Education
 ========================================================
 <center>
-<img src="Images/Correlation-draft.png" height=800>
+<img src="Images/Correlation-draft.png" height=700>
 </center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
@@ -202,7 +199,7 @@ What Do You Think?
 
 Share this with your neighbors!
 
-<img src="Images/BiasVariance.png" height=400> <img src="Images/Correlation-draft.png" height=400>
+<center><img src="Images/BiasVariance.png" height=400> <img src="Images/Correlation-draft.png" height=400></center>
 
 
 Iconic is not Necessarily Schematic
@@ -255,16 +252,15 @@ From <http://XKCD.com/552>
 Stat Course Flow Chart?
 =========================================================
 
-(render into tikz)
+<center><img src="Images/flowchart.png" width=400></center>
 
-Can you randomize X?    ----->  yes: Hooray
+******
 
------> no : note *other factors a concern* and wait for Stat 2?
+**But how many take Stat 2?**
 
-
-But how many take Stat 2?
-
-Look what happened with Calculus.  Five semester calc sequence.  Half-life is one course.
+Look what happened with Calculus.  
+* Five semester calc sequence.  
+* Half-life is one course.
 
 
 
@@ -379,16 +375,13 @@ What are the important questions?
 
 A Vanishingly Low Ink-to-Information Ratio
 =========================================================
-![AP 1](Images/ap-solution.png)
+<center><img src="Images/ap-solution.png" width=800></center>
 
-* Is this a meaningful alternative?  
+## Is this a meaningful alternative?  
 
 There is one letter different between H$_0$ and H$_a$
 
-* Possible role of other factors?
-
-
-
+## Possible role of other factors?
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
@@ -400,6 +393,7 @@ Is there an association between average teacher salaries and average SAT scores 
 
 ```{r sat1,echo=FALSE,message=FALSE,fig.width=6}
 require(mosaic)
+require(xtable)
 trellis.par.set(theme=col.mosaic())
 options(digits=3)
 options(show.signif.stars=FALSE)
@@ -495,52 +489,55 @@ A More Systematic Approach to Change
 =========================================================
 type: section
 
-* Statistical Literacy
-* Computation/Data Literacy
-* Mathematics for modeling and description
-* Statistical modeling
+##  Statistical Literacy
 
-At the level of statistical literacy
+##  Computation/Data Literacy
+
+## Mathematics for modeling and description
+
+## Statistical modeling
+
+At the Level of Statistical Literacy
 ====================================
 
 Epidemiology
 
+<center><img src="images/EE-Fig-8-3.png" width=500></center>
+
+* Description, e.g. mortality rates
+* Study design, e.g. Case-Control
+* Statistics, e.g. relative risk, odds-ratios and CI
+
 At the level of data computation
 ====================================
-DCF course
+## Data and Computing Fundamentals short course
 
-Putting Math and Stat on an Equal Footing
+* Tabular organization of data
+* Joining tables
+* Graphical descriptions of multiple variables
+
+********************
+
+<center><img src="images/traffic-map.png" width=500></center>
+
+Introductory Calculus
 ====================================
-12 years ago, with support of HHMI and Keck, we decided to change our entire introductory Math/Stats curriculum
-* Was: Calc I, II, III, t-test course
 
-**Applied Calculus** a no-prerequisite course about 
+<center><img src="images/contour-plot.png" width=500></center>
+
 * Modeling
-* Multiple variables
-* Computation
-* De-emphasis on algebra in favor of computation
+* Multiple variables, linear algebra/geometry
+* Oriented to support follow-up statistics course
 
-Contour plot for Calculus
-
-Statistics 
-=========================
-**Introduction to Statistical Modeling**
-* Modeling
-* Multiple variables
-* Computation
-* Resampling/Randomization approach to introduce inference
 
 Intro to Statistical Modeling
 =========================================================
-The same method from Week 3: **Linear Models**
 
-A consistent computer notation that lets students quickly generalize from simple settings (means, proportions) to multivariable linear models.
+```{r results="asis",echo=FALSE}
+print.xtable(xtable(summary(lm(sat~expend+frac,data=SAT))),type="html")
+```
 
-Swim Records graphics
-
-**Central Question**:
-Which covariates to include in a model?
-
+**Central Question**: Which covariates to include in a model?
 * Partial versus total change.
 * Strength of Evidence
 * Causality
