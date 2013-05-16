@@ -132,29 +132,25 @@ Our Intellectual and Pedagogical Model
 * "The Ptolemaic Curriculum" of *t*-tests and tables
 * "No causation without experimentation"
 
-<img src="images/220px-Ptolemaeus.jpg" height=200> <img src=
+<img src="images/220px-Ptolemaeus.jpg" height=200> <img src="images/cobb.jpg" height=200>
 
 What Do You Think?
 =========================================================
-type: prompt
 
-We'll have a hand-out with the above four slides printed on one side.
+## You have a handout.
 
-Ask the audience to draw a star by points they agree with and an X through points they disagree with.  
+* Draw a star by points you agree with and an X through points you disagree with.  
 
-Also feel free to list other trends you think are important and should inform the design of statistics education.
+* Feel free to list other trends you think are important and should inform the design of statistics education.
 
-The reason we ask ...
+## Take a Couple of Minutes
 
-=======================================
-title: false
-type: prompt
+Talk to your neighbors!  
 
-We give people a few minutes to write.
+## The reason we ask ...
 
-Nick takes over while Danny collects papers
 
-We Believe We should be the Agents of Change
+Should We be the Agents of Change?
 =======================================
 
 * If not now, when?
@@ -173,33 +169,41 @@ There are other points of view ...
 
 What can we do?
 ==================================
+type:section
 
-* Let's start by looking at where we are.
-* Then we can decide if this leads where we want to be.
+## Let's start by looking at where we are.
 
-Notes
-========================================================
-type: prompt
-
-Nick takes over for iconic graphics
+## Then we can decide if this leads where we want to be.
 
 Iconic Graphics of Stats Education
 ========================================================
-![Bias and variance](Images/BiasVariance.png)
+<center>
+<img src="Images/BiasVariance.png" height=800>
+</center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
 Iconic Graphics of Stats Education
 ========================================================
-![Correlation](Images/Correlation-draft.png)
+<center>
+<img src="Images/Correlation-draft.png" height=800>
+</center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
+What Do You Think?
 =========================================================
-title: false
-type: prompt
 
-Quickly look through the papers to see what iconic graphics have been added.
+## Turn over your handout
+
+* Sketch out a graphic you think is iconic.  
+
+## Take a Couple of Minutes
+
+Share this with your neighbors!
+
+<img src="Images/BiasVariance.png" height=400> <img src="Images/Correlation-draft.png" height=400>
+
 
 Iconic is not Necessarily Schematic
 ========================================================
@@ -215,13 +219,7 @@ An Emerging Iconic Graphic
 
 [Source: Chris Wild, USCOTS 2011]
 
-=====================================
-title: false
-type: prompt
 
-The middle of a plenary is not a good place for a nuanced and thoughtful evaluation of submissions.  So our apologies to anyone we overlook in our rush.
-
-Present a couple of submissions for iconic graphics.
 
 Critical Thinking and Statistics
 ========================================================
@@ -230,7 +228,7 @@ One aspect of Critical Thinking: The evaluation of evidence.
 
 ![Two meanings of random](Images/sleuth.png)
 
-It's right, but does it paralyze us?
+## It's right, but does it paralyze us?
 
 
 Experiments are Better than Models!
@@ -242,6 +240,8 @@ Yes, when you can do them.
 * Especially because experiments are generally not perfect.
 
 > Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
+
+<img src="images/gcox.jpg" height=300> |  <img src="images/einstein.jpg" height=300> 
 
 Statistics Should Not Be Nihilistic
 =========================================================
