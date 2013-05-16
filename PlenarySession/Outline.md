@@ -429,13 +429,8 @@ Pick situations where you care!
 
 Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
 
-```{r, echo=FALSE,message=FALSE}
-require(mosaic)
-trellis.par.set(theme=col.mosaic())
-options(digits=3)
-options(show.signif.stars=FALSE)
-xyplot(sat ~ salary, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
-```
+![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
+
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
@@ -487,23 +482,8 @@ Importance of teaching multiple regression
 
 DELETE Ask the wrong question... 
 =========================================================
-```{r,echo=FALSE}
-lm1 = lm(sat ~ salary, data=SAT)
-lm2 = lm(sat ~ salary + frac, data=SAT)
-c1 = confint(lm1)
-c2 = confint(lm2)
-ds = data.frame(y=c(1,1,2,2), x=c(c1[2,],c2[2,]))
-plot(c(-8.8, 4.2), c(0.2,.55), ylab="model", yaxt="n", xlab="slope", type="n")
-lwdval = 3
-lines(c1[2,], c(0.3, 0.3), lwd=lwdval)
-text(mean(c1[2,]), 0.25, "unadjusted")
-points(mean(c1[2,]), 0.3, pch=20, cex=2, col="red")
-lines(c2[2,], c(0.5, 0.5), lwd=lwdval)
-text(mean(c2[2,]), 0.45, "adjusted")
-points(mean(c2[2,]), 0.5, pch=20, cex=2, col="red")
+![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
 
-abline(v=0, lty=2)
-```
 point estimate plus 95% confidence interval for salary slope
 
 
@@ -511,10 +491,8 @@ point estimate plus 95% confidence interval for salary slope
 How to include this in an intro course
 =====================================
 - stratification (quick and dirty)
-```{r,echo=FALSE}
-SAT$fracgrp = cut(SAT$frac, breaks=c(0, 22, 49, 81), labels=c("low", "medium", "high"))
-xyplot(sat ~ salary, groups=fracgrp, type=c("p", "r"), xlab="average teacher salary\n(in thousand $)", ylab="average SAT score", pch=20, lwd=3,data=SAT)
-```
+![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
+
 
 A reveal with the next slide.
 
