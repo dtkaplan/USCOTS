@@ -3,91 +3,57 @@ All Statistics are Wrong; Some Statistics are Useful
 author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
 
-Notes
-========================================================
-type: prompt
 
-Nick will say something about our being honored to be here.
-
-Danny will say something brief about gratefulness for the support he's received from the statistics community over the past four difficult months.
-
-Notes
-========================================================
-type: prompt
-
-Notes... We're going to talk about the changes we've participated in.
-
-We may each have different personal objectives, and our institutions have different objectives, but there is likely a lot of overlap among us and our institutions.
-
-Making Change Happen
+Addressing the Needs of Our Students D
 ========================================================
 type: section
 
-Addressing the Needs of Our Students 
-
-* What do our students need to know to make informed decisions?
-   * Personal decisions --- e.g. medical, financial
-   * Professional decisions --- e.g. what skills to seek
-* What skills will our students need broadly?
-   * In the workplace
-   * In interpreting the news
-   * In relating to scientific findings
-
-Notes
-========================================================
-type: prompt
-
-Nick to do world of data plus work and communication
 
 
-The World of Data
-========================================================
-
-* Huge amounts of data are being generated,
-    * Outside of experimental settings
-    * Often without a design
+## What do our students need to know to make informed decisions?
+* Personal decisions --- e.g. medical, financial
+* Professional decisions --- e.g. what skills to seek
 
 
-The World of Data
-========================================================
+## What broad skills will our students need?
+* In the workplace
+* In interpreting the news
+* In relating to scientific findings
 
-* Huge amounts of data are being generated,
-    * Outside of experimental settings
-    * Often without a design.
-* Students need to be prepared for a world in which:
-    * The economy is more  invested in drawing useful conclusions from data than ever before
-    * Science is more driven by large amounts of data.
-    * Personal decisions --- medical, educational --- connect with the research literature.
 
+## What is the bottleneck for our students?
+* Not finding a p-value
     
 The World of Data
-========================================================
+=====================================================
 
-* Huge amounts of data are being generated,
-    * Outside of experimental settings
-    * Often without a design
-* Students need to be prepared for a world in which:
-    * The economy is more  invested in drawing useful conclusions from data than ever before
-    * Science is more driven by large amounts of data
-    * Personal decisions --- medical, educational --- connect with the research literature
-* Individuals and the media believe that data is knowledge
-    * They want to know how to extract useful knowledge from data
-    * They generally are not aware of the limitations of observational data
+## Huge amounts of data are being generated
+* Outside of experimental settings
+* Often without a design
+
+## Students need to be prepared for a world in which:
+* The economy is more  invested in drawing useful conclusions from data than ever before
+* Science is more driven by large amounts of data
+* Personal decisions --- medical, educational --- connect with the research literature
+
+## Individuals and the media believe that data is knowledge
+* They want to know how to extract useful knowledge from data
+* They generally are not aware of the limitations of observational data
 
 Work and Communication
 ========================================================
 
-* Work is based in teams
-    * Collaboration, evaluation, specialization
-    * The model of exchanged notes (e.g. email) has broken down
+## Work is based in teams
+* Collaboration, evaluation, specialization
+* The model of exchanged notes (e.g. email) has broken down
     
 Work and Communication
 ========================================================
 
-* Work is based in teams
+## Work is based in teams
     * Collaboration, evaluation, specialization
     * The model of exchanged notes (e.g. email) has broken down
-* Publication is instant
+## Publication is instant
     * Old model: Get data, draft, redraft, publish
     * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
 
@@ -95,25 +61,20 @@ Work and Communication
 Work and Communication
 ========================================================
 
-* Work is based in teams
+## Work is based in teams
     * Collaboration, evaluation, specialization
     * The model of exchanged notes (e.g. email) has broken down
-* Publication is instant
-    * Old model: Get data, draft, redraft, publish
-    * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
-* Topics are more complex
+## Publication is instant
+* Old model: Get data, draft, redraft, publish
+* New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
+
+## Topics are more complex
     * From gene to genomics
     * From inventory to logistics
     * From treatment to medical systems
     
-Notes
-========================================================
-type: prompt
 
-Danny to do Computation is essential and Statistics is Essential, as well as lead "What do you Think"
-
-
-Technology Changes and We Change with It
+Technology Changes. We Change with It.
 ========================================================
 
 Arithmetic became a standard part of the university curriculum (the "Quadrivium") only in medieval times.
@@ -121,23 +82,27 @@ Arithmetic became a standard part of the university curriculum (the "Quadrivium"
 * Improved algorithms: place based with a zero
 * Improved technology: the slate and pencil
 * Increased need: double-entry book-keeping and complex commerce
-Eventually, arithmetic moved from a university topic to an elementary topic.
+Eventually, arithmetic moved from a university topic to an elementary topic
 
+*******
+
+Image, Arithmetic in 1508
 
 Computation is Essential
 ===================================
 Computational notation, algorithms, technology have improved in our lifetimes.  Need has increased dramatically.
 
-What do people widely need to know about computing?
+## What do people widely need to know about computing?
 * The organization of data.
 * A basis for learning what else they need to know about computing
 
-But who is teaching computing?  Everyone teaches narrowly to their purposes:
+## But who is teaching computing?  
+### Everyone teaches narrowly to their purposes:
 * Computer scientists and programming
 * Mathematicians and computer algebra
 * Statistics and p-values
 
-Are these what students need?
+## Are these what students need?
 
     
 Statistics is Essential to Critical Thinking
