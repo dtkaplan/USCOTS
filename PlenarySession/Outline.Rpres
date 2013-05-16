@@ -89,10 +89,13 @@ Eventually, arithmetic moved from a university topic to an elementary topic
 Image, Arithmetic in 1508
 
 Computation is Essential
-===================================
-Computational notation, algorithms, technology have improved in our lifetimes.  Need has increased dramatically.
+===================================  
+## The need to compute **with data** has increased dramatically.
 
-## What do people widely need to know about computing?
+
+
+
+## What do people need to know about computing?
 * The organization of data.
 * A basis for learning what else they need to know about computing
 
@@ -102,22 +105,34 @@ Computational notation, algorithms, technology have improved in our lifetimes.  
 * Mathematicians and computer algebra
 * Statistics and p-values
 
-## Are these what students need?
+
 
     
 Statistics is Essential to Critical Thinking
 ========================================================
 
-The laboratory statistics skills introduced by Fisher are now available by software.
+## Laboratory Skills
+* Traditional motivation (e.g. Fisher's "Techniques")
+* Now available by software
 
-The trends in the evolving world position the concepts of statistics more centrally than ever.
+
+## Statistical Concepts
+* Evidence from Data
+* Covariation and Adjustment
+* Inference about causation
+
+### Trends in the evolving world position the concepts of statistics more centrally than ever
 * But these changes have not been driven by statistics
 
-Our intellectual and pedagogical model is still rooted in the needs of the laboratory and in the pedagogy of traditional mathematics
+Our Intellectual and Pedagogical Model
+============================
+### Still rooted in the needs of the laboratory and in the pedagogy of traditional mathematics
 
 * An interest in provable statements and traditional curricula
 * "The Ptolemaic Curriculum" of *t*-tests and tables
 * "No causation without experimentation"
+
+<img src="images/220px-Ptolemaeus.jpg" height=200> <img src=
 
 What Do You Think?
 =========================================================
