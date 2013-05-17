@@ -20,7 +20,7 @@
     % Place nodes
     \node [decision] (decide) {Can you randomize X?};
     \node [block,fill=red!20,below of=decide,node distance=3cm] (stop) {Wait for Stat 2};
-    \node [block,right of=decide,node distance=4cm](horray){Horray!};
+    \node [block,right of=decide,node distance=4cm](horray){Hurrah!};
     % Draw edges
     \path [line] (decide) -- node {No}(stop);
     \path [line] (decide) -- node {Yes}(horray);
