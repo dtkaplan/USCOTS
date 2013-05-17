@@ -77,6 +77,8 @@ colors of their covers:
 
 ### Thursday morning
 
+ * Resources posted by Presenters and Participants on [RPubs](http://http://rpubs.com/uscots2013/)
+
 ### Other Resources
 #### R Minis
 These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source Rnw files (but not all of their dependencies) are available so you can see how these were done.
