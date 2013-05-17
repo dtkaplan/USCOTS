@@ -4,11 +4,9 @@ author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
 
 
-Addressing the Needs of Our Students D
+
+Addressing the Needs of Our Students
 ========================================================
-type: section
-
-
 
 ## What do our students need to know to make informed decisions?
 * Personal decisions --- e.g. medical, financial
@@ -30,6 +28,42 @@ The World of Data
 ## Huge amounts of data are being generated
 * Outside of experimental settings
 * Often without a design
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
+
+## What do our students need to know to make informed decisions?
+* Personal decisions --- e.g. medical, financial
+* Professional decisions --- e.g. what skills to seek
+
+<<<<<<< HEAD
+
+## What broad skills will our students need?
+* In the workplace
+* In interpreting the news
+* In relating to scientific findings
+=======
+The World of Data
+=====================================================
+
+## Huge amounts of data are being generated
+* Outside of experimental settings
+* Often without a design
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
+
+## Students need to be prepared for a world in which:
+* The economy is more  invested in drawing useful conclusions from data than ever before
+* Science is more driven by large amounts of data
+* Personal decisions --- medical, educational --- connect with the research literature
+
+## What is the bottleneck for our students?
+* Not finding a p-value
+    
+The World of Data
+=====================================================
+
+## Huge amounts of data are being generated
+<<<<<<< HEAD
+* Outside of experimental settings
+* Often without a design
 
 ## Students need to be prepared for a world in which:
 * The economy is more  invested in drawing useful conclusions from data than ever before
@@ -39,6 +73,15 @@ The World of Data
 ## Individuals and the media believe that data is knowledge
 * They want to know how to extract useful knowledge from data
 * They generally are not aware of the limitations of observational data
+=======
+
+## Students need to be prepared for a new world
+
+## Individuals and the media believe that data is knowledge
+* They want to know how to extract useful knowledge from data
+* They generally are not aware of the limitations of observational data
+
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 Work and Communication
 ========================================================
@@ -53,6 +96,10 @@ Work and Communication
 ## Work is based in teams
 * Collaboration, evaluation, specialization
 * The model of exchanged notes (e.g. email) has broken down
+<<<<<<< HEAD
+=======
+
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 ## Publication is instant
 * Old model: Get data, draft, redraft, publish
 * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
@@ -64,6 +111,10 @@ Work and Communication
 ## Work is based in teams
 * Collaboration, evaluation, specialization
 * The model of exchanged notes (e.g. email) has broken down
+<<<<<<< HEAD
+=======
+
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 ## Publication is instant
 * Old model: Get data, draft, redraft, publish
 * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
@@ -95,7 +146,11 @@ Computation is Essential
 ## The need to compute **with data** has increased dramatically.
 
 ## What do people need to know about computing?
+<<<<<<< HEAD
 * The organization of data.
+=======
+* The organization of data
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 * A basis for learning what else they need to know about computing
 
 ## But who is teaching computing?  
@@ -136,9 +191,15 @@ What Do You Think?
 
 ## You have a handout.
 
+<<<<<<< HEAD
 * Draw a star by points you agree with and an X through points you disagree with.  
 
 * Feel free to list other trends you think are important and should inform the design of statistics education.
+=======
+* Draw a star by points you agree with and an X through points you disagree with 
+
+* Feel free to list other trends you think are important and should inform the design of statistics education
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 ## Take a Couple of Minutes
 
@@ -158,10 +219,10 @@ If we are not the agents of change, who will be?
 There are other points of view ...
 ==========================================================
 
-* The computer scientists should teach computation.
-* Pedagogy should follow historical development: ontogeny recapitulates phylogeny. 
-* Statistics receiving appropriate status a peer of the classical disciplines.
-* There is only so much we can do.  Others have to step up to the plate as well.
+* The computer scientists should teach computation
+* Pedagogy should follow historical development: ontogeny recapitulates phylogeny
+* Statistics receiving appropriate status a peer of the classical disciplines
+* There is only so much we can do.  Others have to step up to the plate as well
 * We will need more resources to do ...
 
 What can we do?
@@ -175,7 +236,11 @@ type:section
 Iconic Graphics of Stats Education
 ========================================================
 <center>
+<<<<<<< HEAD
 <img src="Images/BiasVariance.png" height=700>
+=======
+<img src="Images/BiasVariance.png" height=600>
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 </center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
@@ -183,7 +248,11 @@ Iconic Graphics of Stats Education
 Iconic Graphics of Stats Education
 ========================================================
 <center>
+<<<<<<< HEAD
 <img src="Images/Correlation-draft.png" height=700>
+=======
+<img src="Images/Correlation-draft.png" height=600>
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 </center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
@@ -199,7 +268,11 @@ What Do You Think?
 
 Share this with your neighbors!
 
+<<<<<<< HEAD
 <center><img src="Images/BiasVariance.png" height=400> <img src="Images/Correlation-draft.png" height=400></center>
+=======
+<img src="Images/BiasVariance.png" height=350> <img src="Images/Correlation-draft.png" height=350>
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 
 Iconic is not Necessarily Schematic
@@ -221,11 +294,14 @@ An Emerging Iconic Graphic
 Critical Thinking and Statistics
 ========================================================
 
-One aspect of Critical Thinking: The evaluation of evidence.
+It's right, but does it paralyze us (and our students)?
 
 ![Two meanings of random](Images/sleuth.png)
 
+<<<<<<< HEAD
 ## It's right, but does it paralyze us?
+=======
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 
 Experiments are Better than Models!
@@ -262,9 +338,15 @@ Stat Course Flow Chart?
 
 **But how many take Stat 2?**
 
+<<<<<<< HEAD
 Look what happened with Calculus.  
 * Five semester calc sequence.  
 * Half-life is one course.
+=======
+Look what happened with Calculus
+* Five semester calc sequence 
+* Half-life is one course
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 
 
@@ -292,7 +374,7 @@ Epidemiology!
 Originated as the study of the spread of disease: epidemics.
 
 Much more broadly construed now:
-* The study of the determinants of health and disease for the purpose of useful intervention.
+* The study of the determinants of health and disease for the purpose of useful intervention
 
 Decisions need to be made
 * with data that are limited and dirty
@@ -357,29 +439,49 @@ Skills for Future Coffee-ologists
 
 * How to take covariates into account
 * How to choose covariates
+<<<<<<< HEAD
 * How to discount previous studies without discounting statistical method.
+=======
+* How to discount previous studies without discounting statistical method
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 
 But What are We Teaching?
 =========================================================
+<<<<<<< HEAD
 <center><img src="Images/ap-ques1.png" width=800></center>
+=======
+<center><img src="Images/ap-ques1.png" width=950></center>
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 [Source: 2011 Form B AP Statistics exam]
 
 We Should Describe before We Test   
 =========================================================
+<<<<<<< HEAD
 <center><img src="Images/ap-ques2.png" width=800></center>
 
 What are the important questions?
 =========================================================
 <center><img src="Images/ap-ques3.png" width=800></center>
+=======
+<center><img src="Images/ap-ques2.png" width=950></center>
+
+What are the important questions?
+=========================================================
+<center><img src="Images/ap-ques3.png" width=950></center>
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 * What's the purpose of collecting the data?
 * What covariates are there?
 
 A Vanishingly Low Ink-to-Information Ratio
 =========================================================
+<<<<<<< HEAD
 <center><img src="Images/ap-solution.png" width=800></center>
+=======
+<center><img src="Images/ap-solution.png" width=950></center>
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 ## Is this a meaningful alternative?  
 
@@ -390,7 +492,6 @@ There is one letter different between H$_0$ and H$_a$
 Case study: Teacher Salaries and SAT scores
 =========================================================
 
-Pick situations where you care!
 
 Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
 
@@ -407,11 +508,9 @@ Case study: Teacher Salaries and SAT scores
 > summary(lm(sat ~ salary, data=SAT))
 
 Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)  1158.86      57.66   20.10   <2e-16 
-salary         -5.54       1.63   -3.39   0.0014 
-
-Residual standard error: 67.9 on 48 degrees of freedom
+            Estimate  Std. Error  p-value   
+(Intercept)  1158.86      57.66   <0.0001 
+salary         -5.54       1.63    0.0014 
 ```
 
 What should the advisory board conclude?
@@ -431,14 +530,21 @@ Case study: Teacher Salaries and SAT scores
 =========================================================
 ```
 Coefficients:
+<<<<<<< HEAD
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept)  987.900     31.877   30.99   <2e-16
 salary         2.180      1.029    2.12    0.039   
 frac          -2.779      0.228  -12.16    4e-16 
 
 Residual standard error: 33.7 on 47 degrees of freedom
+=======
+            Estimate  Std. Error  p-value   
+(Intercept)  987.900     31.877   <0.0001
+salary         2.180      1.029    0.039   
+frac          -2.779      0.228   <0.0001
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 ```
-Conclusion: A somewhat positive relationship of SAT scores with teacher salary
+Conclusion: A somewhat positive relationship of SAT scores with teacher salary (after controlling for fraction taking the SAT)
 
 Importance of teaching multiple regression
 =====================================
@@ -454,6 +560,7 @@ How to include this in an intro course
 type: section
 
 ## Use Stratification Rather than Regression
+<<<<<<< HEAD
 
 ## Simple multiple regression
 - Y ~ X + Z (parallel slopes)
@@ -467,6 +574,24 @@ title:false
 
 
 
+=======
+
+
+SAT in Three Groups
+=================================
+
+![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
+
+
+How to include this in an intro course
+=====================================
+
+## Use Stratification Rather than Regression
+
+## Simple multiple regression
+- Y ~ X + Z (parallel slopes)
+- Y ~ X * Z (interaction)
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 
 Gradual Change for an Intro Course
 =====================================
@@ -526,8 +651,13 @@ Introductory Calculus
 Intro to Statistical Modeling
 =========================================================
 
+<<<<<<< HEAD
 <!-- html table generated in R 2.15.1 by xtable 1.7-0 package -->
 <!-- Thu May 16 15:56:08 2013 -->
+=======
+<!-- html table generated in R 3.0.0 by xtable 1.7-1 package -->
+<!-- Thu May 16 17:57:14 2013 -->
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> Estimate </TH> <TH> Std. Error </TH> <TH> t value </TH> <TH> Pr(&gt |t|) </TH>  </TR>
   <TR> <TD align="right"> (Intercept) </TD> <TD align="right"> 993.8317 </TD> <TD align="right"> 21.8332 </TD> <TD align="right"> 45.52 </TD> <TD align="right"> 0.0000 </TD> </TR>
@@ -537,7 +667,11 @@ Intro to Statistical Modeling
 
 
 **Central Question**: Which covariates to include in a model?
+<<<<<<< HEAD
 * Partial versus total change.
+=======
+* Partial versus total change
+>>>>>>> fcea71784c97d23978acbe508e2697ef3fe7b996
 * Strength of Evidence
 * Causality
 
