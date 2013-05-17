@@ -3,178 +3,153 @@ All Statistics are Wrong; Some Statistics are Useful
 author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
 
-Notes
-========================================================
-type: prompt
 
-Nick will say something about our being honored to be here.
-
-Danny will say something brief about gratefulness for the support he's received from the statistics community over the past four difficult months.
-
-Notes
-========================================================
-type: prompt
-
-Notes... We're going to talk about the changes we've participated in.
-
-We may each have different personal objectives, and our institutions have different objectives, but there is likely a lot of overlap among us and our institutions.
-
-Making Change Happen
+Addressing the Needs of Our Students
 ========================================================
 type: section
 
-Addressing the Needs of Our Students 
-
-* What do our students need to know to make informed decisions?
-   * Personal decisions --- e.g. medical, financial
-   * Professional decisions --- e.g. what skills to seek
-* What skills will our students need broadly?
-   * In the workplace
-   * In interpreting the news
-   * In relating to scientific findings
-
-Notes
-========================================================
-type: prompt
-
-Nick to do world of data plus work and communication
 
 
-The World of Data
-========================================================
-
-* Huge amounts of data are being generated,
-    * Outside of experimental settings
-    * Often without a design
+## What do our students need to know to make informed decisions?
+* Personal decisions --- e.g. medical, financial
+* Professional decisions --- e.g. what skills to seek
 
 
-The World of Data
-========================================================
+## What broad skills will our students need?
+* In the workplace
+* In interpreting the news
+* In relating to scientific findings
 
-* Huge amounts of data are being generated,
-    * Outside of experimental settings
-    * Often without a design.
-* Students need to be prepared for a world in which:
-    * The economy is more  invested in drawing useful conclusions from data than ever before
-    * Science is more driven by large amounts of data.
-    * Personal decisions --- medical, educational --- connect with the research literature.
 
+## What is the bottleneck for our students?
+* Not finding a p-value
     
 The World of Data
-========================================================
+=====================================================
 
-* Huge amounts of data are being generated,
-    * Outside of experimental settings
-    * Often without a design
-* Students need to be prepared for a world in which:
-    * The economy is more  invested in drawing useful conclusions from data than ever before
-    * Science is more driven by large amounts of data
-    * Personal decisions --- medical, educational --- connect with the research literature
-* Individuals and the media believe that data is knowledge
-    * They want to know how to extract useful knowledge from data
-    * They generally are not aware of the limitations of observational data
+## Huge amounts of data are being generated
+* Outside of experimental settings
+* Often without a design
+
+## Students need to be prepared for a world in which:
+* The economy is more  invested in drawing useful conclusions from data than ever before
+* Science is more driven by large amounts of data
+* Personal decisions --- medical, educational --- connect with the research literature
+
+## Individuals and the media believe that data is knowledge
+* They want to know how to extract useful knowledge from data
+* They generally are not aware of the limitations of observational data
 
 Work and Communication
 ========================================================
 
-* Work is based in teams
-    * Collaboration, evaluation, specialization
-    * The model of exchanged notes (e.g. email) has broken down
+## Work is based in teams
+* Collaboration, evaluation, specialization
+* The model of exchanged notes (e.g. email) has broken down
     
 Work and Communication
 ========================================================
 
-* Work is based in teams
-    * Collaboration, evaluation, specialization
-    * The model of exchanged notes (e.g. email) has broken down
-* Publication is instant
-    * Old model: Get data, draft, redraft, publish
-    * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
+## Work is based in teams
+* Collaboration, evaluation, specialization
+* The model of exchanged notes (e.g. email) has broken down
+
+## Publication is instant
+* Old model: Get data, draft, redraft, publish
+* New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
 
     
 Work and Communication
 ========================================================
 
-* Work is based in teams
-    * Collaboration, evaluation, specialization
-    * The model of exchanged notes (e.g. email) has broken down
-* Publication is instant
-    * Old model: Get data, draft, redraft, publish
-    * New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
-* Topics are more complex
-    * From gene to genomics
-    * From inventory to logistics
-    * From treatment to medical systems
+## Work is based in teams
+* Collaboration, evaluation, specialization
+* The model of exchanged notes (e.g. email) has broken down
+
+## Publication is instant
+* Old model: Get data, draft, redraft, publish
+* New model: Get data, draft, publish, comment, revise, publish, new data and comment, revise and update, publish, ...
+
+## Topics are more complex
+* From gene to genomics
+* From inventory to logistics
+* From treatment to medical systems
     
-Notes
-========================================================
-type: prompt
 
-Danny to do Computation is essential and Statistics is Essential, as well as lead "What do you Think"
-
-
-Technology Changes and We Change with It
+Technology Changes. We Change with It.
 ========================================================
 
-Arithmetic became a standard part of the university curriculum (the "Quadrivium") only in medieval times.
+Arithmetic became part of the university curriculum in medieval times: the "Quadrivium"
 * Improved notation: from Roman numerals to Arabic
 * Improved algorithms: place based with a zero
 * Improved technology: the slate and pencil
 * Increased need: double-entry book-keeping and complex commerce
-Eventually, arithmetic moved from a university topic to an elementary topic.
 
+Now it's elementary
+
+*******
+
+<center><img src="images/arithmetic1508.png" width=400></center>
+<center>Arithmetic in 1508</center>
 
 Computation is Essential
-===================================
-Computational notation, algorithms, technology have improved in our lifetimes.  Need has increased dramatically.
+===================================  
+## The need to compute **with data** has increased dramatically.
 
-What do people widely need to know about computing?
+## What do people need to know about computing?
 * The organization of data.
 * A basis for learning what else they need to know about computing
 
-But who is teaching computing?  Everyone teaches narrowly to their purposes:
+## But who is teaching computing?  
+### Everyone teaches narrowly to their purposes:
 * Computer scientists and programming
 * Mathematicians and computer algebra
 * Statistics and p-values
-
-Are these what students need?
 
     
 Statistics is Essential to Critical Thinking
 ========================================================
 
-The laboratory statistics skills introduced by Fisher are now available by software.
+## Laboratory Skills
+* Traditional motivation (e.g. Fisher's "Techniques")
+* Now available by software
 
-The trends in the evolving world position the concepts of statistics more centrally than ever.
+
+## Statistical Concepts
+* Evidence from Data
+* Covariation and Adjustment
+* Inference about causation
+
+### Trends in the evolving world position the concepts of statistics more centrally than ever
 * But these changes have not been driven by statistics
 
-Our intellectual and pedagogical model is still rooted in the needs of the laboratory and in the pedagogy of traditional mathematics
+Our Intellectual and Pedagogical Model
+============================
+### Still rooted in the needs of the laboratory and in the pedagogy of traditional mathematics
 
 * An interest in provable statements and traditional curricula
 * "The Ptolemaic Curriculum" of *t*-tests and tables
 * "No causation without experimentation"
 
+<img src="images/220px-Ptolemaeus.jpg" height=200> <img src="images/cobb.jpg" height=200>
+
 What Do You Think?
 =========================================================
-type: prompt
 
-We'll have a hand-out with the above four slides printed on one side.
+## You have a handout.
 
-Ask the audience to draw a star by points they agree with and an X through points they disagree with.  
+* Draw a star by points you agree with and an X through points you disagree with.  
 
-Also feel free to list other trends you think are important and should inform the design of statistics education.
+* Feel free to list other trends you think are important and should inform the design of statistics education.
 
-The reason we ask ...
+## Take a Couple of Minutes
 
-=======================================
-title: false
-type: prompt
+Talk to your neighbors!  
 
-We give people a few minutes to write.
+## The reason we ask ...
 
-Nick takes over while Danny collects papers
 
-We Believe We should be the Agents of Change
+Should We be the Agents of Change?
 =======================================
 
 * If not now, when?
@@ -193,33 +168,41 @@ There are other points of view ...
 
 What can we do?
 ==================================
+type:section
 
-* Let's start by looking at where we are.
-* Then we can decide if this leads where we want to be.
+## Let's start by looking at where we are.
 
-Notes
-========================================================
-type: prompt
-
-Nick takes over for iconic graphics
+## Then we can decide if this leads where we want to be.
 
 Iconic Graphics of Stats Education
 ========================================================
-![Bias and variance](Images/BiasVariance.png)
+<center>
+<img src="Images/BiasVariance.png" height=700>
+</center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
 Iconic Graphics of Stats Education
 ========================================================
-![Correlation](Images/Correlation-draft.png)
+<center>
+<img src="Images/Correlation-draft.png" height=700>
+</center>
 
 [Source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
 
+What Do You Think?
 =========================================================
-title: false
-type: prompt
 
-Quickly look through the papers to see what iconic graphics have been added.
+## Turn over your handout
+
+* Sketch out a graphic you think is iconic.  
+
+## Take a Couple of Minutes
+
+Share this with your neighbors!
+
+<center><img src="Images/BiasVariance.png" height=400> <img src="Images/Correlation-draft.png" height=400></center>
+
 
 Iconic is not Necessarily Schematic
 ========================================================
@@ -235,13 +218,7 @@ An Emerging Iconic Graphic
 
 [Source: Chris Wild, USCOTS 2011]
 
-=====================================
-title: false
-type: prompt
 
-The middle of a plenary is not a good place for a nuanced and thoughtful evaluation of submissions.  So our apologies to anyone we overlook in our rush.
-
-Present a couple of submissions for iconic graphics.
 
 Critical Thinking and Statistics
 ========================================================
@@ -250,18 +227,26 @@ One aspect of Critical Thinking: The evaluation of evidence.
 
 ![Two meanings of random](Images/sleuth.png)
 
-It's right, but does it paralyze us?
+## It's right, but does it paralyze us?
 
 
 Experiments are Better than Models!
 =========================================================
-Yes, when you can do them.
 
+> The statistician who supposes that his main contribution to the planning of an experiment will involve statistical theory, finds repeatedly that he makes his most valuable contribution simply by persuading the investigator to explain why he wishes to do the experiment. --- Gertrude Cox
+
+<center><img src="images/gcox.jpg" height=300></center>
+
+Experiments are Better than Models!
+===================================
 * Even when you do an experiment, you may want to use covariates.
 
 * Especially because experiments are generally not perfect.
 
 > Nobody believes a theory, except the person who made it.  Everybody believes an experiment, except the person who made it. --- Albert Einstein
+
+<center><img src="images/einstein.jpg" height=300> </center>
+
 
 Statistics Should Not Be Nihilistic
 =========================================================
@@ -273,16 +258,15 @@ From <http://XKCD.com/552>
 Stat Course Flow Chart?
 =========================================================
 
-(render into tikz)
+<center><img src="Images/flowchart.png" width=400></center>
 
-Can you randomize X?    ----->  yes: Hooray
+******
 
------> no : note *other factors a concern* and wait for Stat 2?
+**But how many take Stat 2?**
 
-
-But how many take Stat 2?
-
-Look what happened with Calculus.  Five semester calc sequence.  Half-life is one course.
+Look what happened with Calculus.  
+* Five semester calc sequence.  
+* Half-life is one course.
 
 
 
@@ -293,9 +277,9 @@ type: section
 
 The "Directed Acyclic Graph"
 
-![DAG](Images/DAG-draft.png)
+<center><img src="Images/DAG-draft.png", width=1000></center>
 
-[source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]
+<small>[source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]</small>
 
 Looking for Inspiration
 =========================================================
@@ -318,33 +302,29 @@ Decisions need to be made
 * constructing the best study from available resources
 * in the presence of uncontrollable conditions
 
-========================================================
-title: false
-type: prompt
-
-Danny takes over
-
 
 Ronald Fisher & Austin Bradford Hill
 ========================================================
 
-<img src="Images/ronald-fisher.jpg" width="300">
+<img src="Images/ronald-fisher.jpg" width="500">
 
 ***
 
-<img src="Images/hill-lecturing.jpg" width="310">
+<img src="Images/hill-lecturing.jpg" width="510">
 
-NOTES
+Austin Bradford Hill
 ========================================================
-type: prompt
 
-ABH succeeded RF at president of the Royal Society
+Succeeded Fisher as president of the Royal Society
 
-Different positions smoking and cancer
 
-> "[I]n passing from association to causation I believe in 'real life' we shall have to consider what flows from that decision. ... In asking for very strong evidence I would, however, repeat emphatically that this does not imply crossing every `t', and swords with every critic, before we act." AB Hill, "The environment and disease: association or causation?" (1965) *Proceedings of the Royal Society of Medicine* 58:295-300 [link](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1898525/)
+> "[I]n passing from association to causation I believe in 'real life' we shall have to consider what flows from that decision. ... In asking for very strong evidence I would, however, repeat emphatically that this does not imply crossing every `t', and swords with every critic, before we act." AB Hill, 
 
-Quote about t-tests: "[T]he glitter of the *t* table diverts attention from the inadequacies of the fare."
+<br>
+
+> "[T]he glitter of the *t* table diverts attention from the inadequacies of the fare." --- AB Hill
+
+<small>"The environment and disease: association or causation?" (1965) *Proceedings of the Royal Society of Medicine* 58:295-300 [link](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1898525/) </small>
 
 A Simple Cup of Coffee
 =========================================================
@@ -375,52 +355,39 @@ Skills for Future Coffee-ologists
 =========================================================
 > Researchers say there's still a lot to learn here --- they haven't nailed down all the mechanisms by which coffee and tea influence our health. Nor have they ruled out that it may be other lifestyle habits among coffee and tea drinkers that's leading to the reduced risk of disease.
 
+<br> 
+
 * How to take covariates into account
 * How to choose covariates
 * How to discount previous studies without discounting statistical method.
 
-=======================
-title: false
-type: prompt
 
-Nick takes over here
-
-
-What's the Pattern Here?
+But What are We Teaching?
 =========================================================
-![AP 1](Images/ap-ques1.png)
+<center><img src="Images/ap-ques1.png" width=800></center>
 
 [Source: 2011 Form B AP Statistics exam]
 
-NOTES
+We Should Describe before We Test   
 =========================================================
-type: prompt
-
-We have to say something about this being a straw man.  It's an exam question taken in isolation.  But if this is representative of student knowledge after a course ...
-
-We should Describe before We Test   
-=========================================================
-![AP 1](Images/ap-ques2.png)
+<center><img src="Images/ap-ques2.png" width=800></center>
 
 What are the important questions?
 =========================================================
-![AP 1](Images/ap-ques3.png)
+<center><img src="Images/ap-ques3.png" width=800></center>
 
 * What's the purpose of collecting the data?
 * What covariates are there?
 
 A Vanishingly Low Ink-to-Information Ratio
 =========================================================
-![AP 1](Images/ap-solution.png)
+<center><img src="Images/ap-solution.png" width=800></center>
 
-* Is this a meaningful alternative?  
+## Is this a meaningful alternative?  
 
 There is one letter different between H$_0$ and H$_a$
 
-* Possible role of other factors?
-
-
-
+## Possible role of other factors?
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
@@ -429,11 +396,15 @@ Pick situations where you care!
 
 Is there an association between average teacher salaries and average SAT scores at the state level (Guber, *JSE*, 1999)?
 
-![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
+
+![plot of chunk sat1](Outline-figure/sat1.png) 
+
+
 
 
 Case study: Teacher Salaries and SAT scores
 =========================================================
+
 ```
 > summary(lm(sat ~ salary, data=SAT))
 
@@ -466,8 +437,6 @@ Coefficients:
 (Intercept)  987.900     31.877   30.99   <2e-16
 salary         2.180      1.029    2.12    0.039   
 frac          -2.779      0.228  -12.16    4e-16 
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 33.7 on 47 degrees of freedom
 ```
@@ -475,33 +444,31 @@ Conclusion: A somewhat positive relationship of SAT scores with teacher salary
 
 Importance of teaching multiple regression
 =====================================
-- allows students to delve into more complex causal relationships
-- prepares them to ask leading questions when analyzing observational data
-- doesn't *paralyze* them (a la XKCD)
+- Allows students to delve into more complex causal relationships
+- Prepares them to ask leading questions when analyzing observational data
+- Doesn't *paralyze* them (a la XKCD)
 
-
-DELETE Ask the wrong question... 
-=========================================================
-![plot of chunk unnamed-chunk-2](Outline-figure/unnamed-chunk-2.png) 
-
-point estimate plus 95% confidence interval for salary slope
 
 
 
 How to include this in an intro course
 =====================================
-- stratification (quick and dirty)
-![plot of chunk unnamed-chunk-3](Outline-figure/unnamed-chunk-3.png) 
+type: section
+
+## Use Stratification Rather than Regression
+
+## Simple multiple regression
+- Y ~ X + Z (parallel slopes)
+- Y ~ X * Z (interaction)
+
+SAT in Three Groups
+=================================
+title:false
+
+![plot of chunk unnamed-chunk-1](Outline-figure/unnamed-chunk-1.png) 
 
 
-A reveal with the next slide.
 
-How to include this in an intro course
-=====================================
-- stratification (quick and dirty)
-- (simple) multiple regression
-    - Y ~ X + Z (parallel slopes)
-    - Y ~ X * Z (interaction)
 
 Gradual Change for an Intro Course
 =====================================
@@ -513,101 +480,77 @@ Gradual Change for an Intro Course
 - projects or extended case studies to close out the class
 
 
-=====================================
-title: false
-type: prompt
-
-Danny takes over here
-
-
-
 A More Systematic Approach to Change
 =========================================================
+type: section
 
+##  Statistical Literacy
 
-* Statistical Literacy
-* Computation/Data Literacy
-* Mathematics for modeling and description
-* Statistical modeling
+##  Computation/Data Literacy
 
-========================
-title: false
-type: prompt
+## Mathematics for modeling and description
 
-Math as a handmaiden rather than a queen.  A set of powerful tools to support inductive reasoning an end in itself.
+## Statistical modeling
 
-At the level of statistical literacy
+At the Level of Statistical Literacy
 ====================================
 
-Epidemiology
+## Epidemiology
+
+<center><img src="images/EE-Fig-8-3.png" width=500></center>
+
+* Description, e.g. mortality rates
+* Study design, e.g. Case-Control
+* Statistics, e.g. relative risk, odds-ratios and CI
 
 At the level of data computation
 ====================================
-DCF course
+## Data and Computing Fundamentals short course
 
-Putting Math and Stat on an Equal Footing
+* Tabular organization of data
+* Joining tables
+* Graphical descriptions of multiple variables
+
+********************
+
+<center><img src="images/traffic-map.png" width=500></center>
+
+Introductory Calculus
 ====================================
-12 years ago, with support of HHMI and Keck, we decided to change our entire introductory Math/Stats curriculum
-* Was: Calc I, II, III, t-test course
 
-**Applied Calculus** a no-prerequisite course about 
+<center><img src="images/contour-plot.png" width=350></center>
+
 * Modeling
-* Multiple variables
-* Computation
-* De-emphasis on algebra in favor of computation
+* Multiple variables, linear algebra/geometry
+* Oriented to support follow-up statistics course
 
-Contour plot for Calculus
-
-Statistics 
-=========================
-**Introduction to Statistical Modeling**
-* Modeling
-* Multiple variables
-* Computation
-* Resampling/Randomization approach to introduce inference
 
 Intro to Statistical Modeling
 =========================================================
-The same method from Week 3: **Linear Models**
 
-A consistent computer notation that lets students quickly generalize from simple settings (means, proportions) to multivariable linear models.
+<!-- html table generated in R 3.0.0 by xtable 1.7-1 package -->
+<!-- Thu May 16 17:57:14 2013 -->
+<TABLE border=1>
+<TR> <TH>  </TH> <TH> Estimate </TH> <TH> Std. Error </TH> <TH> t value </TH> <TH> Pr(&gt |t|) </TH>  </TR>
+  <TR> <TD align="right"> (Intercept) </TD> <TD align="right"> 993.8317 </TD> <TD align="right"> 21.8332 </TD> <TD align="right"> 45.52 </TD> <TD align="right"> 0.0000 </TD> </TR>
+  <TR> <TD align="right"> expend </TD> <TD align="right"> 12.2865 </TD> <TD align="right"> 4.2243 </TD> <TD align="right"> 2.91 </TD> <TD align="right"> 0.0055 </TD> </TR>
+  <TR> <TD align="right"> frac </TD> <TD align="right"> -2.8509 </TD> <TD align="right"> 0.2151 </TD> <TD align="right"> -13.25 </TD> <TD align="right"> 0.0000 </TD> </TR>
+   </TABLE>
 
-Swim Records graphics
 
-**Central Question**:
-Which covariates to include in a model?
-
+**Central Question**: Which covariates to include in a model?
 * Partial versus total change.
 * Strength of Evidence
 * Causality
 
-======================
-title: false
-type: prompt
 
-Back to Nick
-
-Building on our Accomplishments
-=====================================
-
-* Interest in the pedagogy of statistics
-    * GAISE
-    * Cobb
-    * Gould
-    * Wild
-    * Next 36 Hours
-       * "Happy Statistics"
-       * Research Triangle
-
-* Developments at the primary and high-school level.
-
-
-Making Change Happen: The Common Core
+The Common Core
 =========================================================
-
-Will this become an iconic image of change in statistics education?
+type: section
 
 <img src="Images/Common-Core-states-2013.png" width="800">
+
+Will this become an iconic image of change in statistics education?
 
 Grade 8 in the Common Core
 =========================================================
@@ -616,55 +559,29 @@ Grade 8 in the Common Core
 
 High School in the Common Core
 =========================================================
-<img src="Images/CC-modeling4.png" width="800">
 
-<img src="Images/CC-modeling4.png" width="800">
-
-Statistics in the Common Core
-=========================================================
 <img src="Images/CC-stat1.png" width="1000">
 
-Don't Dis Variation.
-
-Variation is what we try to explain in statistics, partitioning it into modeled and unmodeled variation.
-
-Statistics and Decision Making
-=========================================================
-The Common Core rightly looks for utility in statistics: Decision-making
-
-But the syllabus misses some big points:
-* Decision-making is often rooted in understanding causation.
-* Need to account for covariates when making decisions.
-* Statistics is about describing variation in the context of what remain unexplained.
-* Students are often paralyzed when faced with analysis of observational data from a first course.
-* Need to empower (not disable)...
+<img src="Images/CC-modeling4.png" width="1000">
 
 
-The Common Core
+An emphasis on **decision-making**
+
+
+Supporting Action and Decision
 =========================================================
 
-An emphasis on **decision-making**.
+## Confounding is a reality: Deal with it
 
-* Modeling is important, but vaguely stated.
-* The description of statistics does not make a relationship to modeling.
-Better if it did, but in any event ...
-* Under the Common Core, your students will likely see more about **modeling** and **decision making**.
-* Build on this so that your students can use statistics.
+<center><img src="Images/DAG-draft.png", width=1000></center>
 
-Make Statistics about Modeling!
+## Make Statistics about Modeling
 
-Evolution is Change toward Fitness for the Environment
-===========================
 
-"All models are wrong; some models are useful."  --- George Box
-
-It's not a question right vs wrong, but fitness for the environment.
-
-"We are all Keynesians now." --- Pres. Richard Nixon, 1971, on removing the US from the gold standard
-
-"When the facts change, I change my mind.  What do you do, sir?" --- John Maynard Keynes
-
-The world changes.  The needs of our students change.  We are changing accordingly.
-
-"All statistics are wrong; some statistics are useful."
+========================================================
+type: section
+title: false
+## All Statistics are Wrong; Some Statistics are Useful 
+### Daniel Kaplan & Nicholas Horton
+### USCOTS May 16, 2013
 
