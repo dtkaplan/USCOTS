@@ -53,6 +53,15 @@ displayFile <- function(path, text=path, type=c('html','Rmd','Rpres')) {
 
 This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned for updates.  
 
+### The Purple, the Yellow, and the Blue
+
+Workshop participants were given copies of three "books", affectionately referred to by the 
+colors of their covers:
+
+ * Purple: [Start Teaching with R](http://mosaic-web.org/go/Master-Starting.pdf)
+ * Yellow: [A Compendium of Commands to Teach Statistics with R](http://mosaic-web.org/go/Master-Core.pdf)
+ * Blue: [Start Modeling with R](http://mosaic-web.org/go/Master-Modeling.pdf)
+
 ### Tuesday
 
  * `r I(displayFile("Workshop/Welcome/Welcome", "Welcome and Introductions"))`
