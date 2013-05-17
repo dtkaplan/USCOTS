@@ -99,6 +99,9 @@ These are some slides that Randy Pruim put together for some recent talks.  They
 ([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.pdf), 
  [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.Rnw) )
 
+### Materials from the main USCOTS Meeting
+
+ * [Danny and Nick's Plenary Slides](http://rpubs.com/dtkaplan/6177)
 
 ### Files By Topic
 
