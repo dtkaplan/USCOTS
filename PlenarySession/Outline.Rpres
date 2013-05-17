@@ -3,6 +3,8 @@ All Statistics are Wrong; Some Statistics are Useful
 author: Daniel Kaplan & Nicholas Horton
 date: USCOTS May 16, 2013
 
+Project MOSAIC with support from NSF DUE-0920350
+
 
 Addressing the Needs of Our Students
 ========================================================
@@ -296,6 +298,11 @@ The "Directed Acyclic Graph"
 
 <small>[source: Introduction to the Practice of Statistics (Moore, McCabe and Craig)]</small>
 
+Not So Radical
+========================================================
+
+<center><img src="Images/flashcard.png" width=1000></center>
+
 Looking for Inspiration
 =========================================================
 We need a new source of inspiration and guidance
@@ -558,6 +565,15 @@ print.xtable(xtable(summary(lm(sat~expend+frac,data=SAT))),type="html")
 * Strength of Evidence
 * Causality
 
+
+Project MOSAIC
+=========================================================
+
+An NSF supported collaboration to increase connections among 
+
+## Modeling Statistics Computation & Calculus
+
+<http://uscots2013.mosaic-web.org/>
 
 The Common Core
 =========================================================
