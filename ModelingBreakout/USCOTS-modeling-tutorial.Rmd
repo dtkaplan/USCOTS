@@ -1,0 +1,149 @@
+A Tutorial on Multivariable Modeling
+========================================================
+
+```{r include=FALSE}
+require(mosaic)
+fetchData("mLM.R")
+```
+
+### Nick Horton and Danny Kaplan
+### USCOTS May 17, 2013
+
+## Preliminaries
+
+### What are you reading?
+This is a short narrative of the tutorial as planned.  It's main purpose to is give you a record of the computer commands in a form that can be directly executed.  
+
+### An RStudio Account
+
+As capacity permits, you will be given an account on the RStudio server at `dahl.calvin.edu` for you to follow along.  But if that's not possible, you have this document for later reference.
+
+### The mosaic package
+
+We've tried to create a systematic approach to the commands used in basic statistics and those used in multivariate modeling. This is distributed using the standard mechanism in R: the package.  
+
+Our package, `mosaic`, written with Randall Pruim of Calvin College, also gives a easy way to extract out the mathematical function implicit when a model is created, an easy way to graph such functions (in one and two variables), and to evaluate them to examine partial and total differences.
+
+```{r messages=FALSE}
+require(mosaic)
+```
+
+## Start Simply
+
+We're going to start by working with some data on the prices of used cars, collected from the [`cars.com`](cars.com) site by some of our students for a course exercise.  The focus of the exercise was on how the price depends on age and mileage.  
+```{r}
+cars = fetchData("used-hondas.csv")
+names(cars)
+summary(cars)
+```
+
+It's worth pointing out a similar dataset and the associated teaching plan developed by Shonda Kuiper at Grinnell College, published online in the [Journal of Statistical Education](http://www.amstat.org/publications/jse/v16n3/datasets.kuiper.html).  That dataset has many other variables, but deals only with cars that are one year old.
+
+Of course, you might want to start by looking at the `Price` data itself:
+```{r fig.height=3,fig.width=3}
+mean( Price, data=cars )
+sd( Price, data=cars )
+histogram(~Price, data=cars )
+```
+
+You might also want to consider breaking down the price by an explanatory variable, e.g. the `Location` where the car is being offered for sale.
+```{r}
+mean( Price ~ Location, data=cars )
+```
+
+Or some graphics:
+```{r fig.height=3,fig.width=3}
+bwplot( Price ~ Location, data=cars )
+xyplot( Price ~ Mileage, data=cars )
+```
+
+Fitting a regression line to the `Price` versus `Mileage` relationship:
+```{r}
+mod0 = lm( Price ~ Mileage, data=cars )
+```
+This model has the standard things you associate with a model: coefficients, residuals, fitted values, etc.
+```{r}
+coef(mod0)
+```
+
+Implicit in the form of the function and the coefficients is a straight-line function that takes `Mileage` as the input.  You can produce that function explicitly, name it, evaluate it. and graph it:
+```{r fig.height=3,fig.width=3}
+f0 = makeFun(mod0)
+f0(Mileage=50000)
+xyplot( Price ~ Mileage, data=cars )
+plotFun( f0(Mileage) ~ Mileage, add=TRUE)
+```
+
+You can add in more explanatory variables.  For instance, perhaps the price depends on both `Mileage` and `Location`
+```{r fig.height=3,fig.width=3}
+mod1 = lm( Price ~ Mileage + Location, data=cars )
+f1 = makeFun(mod1)
+xyplot( Price ~ Mileage, data=cars)
+plotFun( f1(M, Location="Durham") ~ M, add=TRUE)
+plotFun( f1(M, Location="Santa Cruz") ~ M, add=TRUE, col="red")
+plotFun( f1(M, Location="St.Paul") ~ M, add=TRUE, col="green")
+```
+
+It's not a coincidence that the tree lines are parallel. We didn't include an interaction term between `Mileage` and `Location` in the model.  Here's another model:
+```{r fig.height=3,fig.width=3}
+mod2 = lm( Price ~ Mileage * Location, data=cars )
+f2 = makeFun(mod2)
+xyplot( Price ~ Mileage, data=cars)
+plotFun( f2(M, Location="Durham") ~ M, add=TRUE)
+plotFun( f2(M, Location="Santa Cruz") ~ M, add=TRUE, col="red")
+plotFun( f2(M, Location="St.Paul") ~ M, add=TRUE, col="green")
+```
+
+Which of these models is better, `mod1` or `mod2` or, for that matter, `mod0`?
+
+Before addressing that, let's consider a model with two quantitative explanatory variables: `Mileage` and `Price`.  This is fit using the same syntax:
+```{r}
+mod3 = lm( Price ~ Mileage * Age, data=cars )
+```
+
+One way to plot out this function is to pick several ages, and make a plot of price versus mileage for each of those ages:
+
+```{r fig.height=3,fig.width=3}
+f3 = makeFun(mod3)
+xyplot( Price ~ Mileage, data=cars)
+plotFun( f3(M, Age=1) ~ M, add=TRUE)
+plotFun( f3(M, Age=5) ~ M, add=TRUE, col="red")
+plotFun( f3(M, Age=10) ~ M, add=TRUE, col="green")
+```
+
+Another way to make the plot uses contours to display the output, so that both input variables can be used:
+```{r fig.height=3,fig.width=3}
+plotFun( f3(Mileage=M,Age=A)~A&M, A.lim=range(0,15), M.lim=range(0,200000))
+```
+We included an interaction term, just because it's easy to do.  Notice that older cars see a less steep reduction in price with mileage.
+
+#### Standard Inference Reports
+
+We'll talk about these briefly in the breakout session.  Here are examples of the commands:
+
+```{r}
+summary(mod2)
+anova(mod2)
+```
+
+### House Prices and a Fireplace
+
+Dick De Veaux originated this exercise and shared it with us.  It concerns the prices of houses in Saratoga Springs, NY.
+
+The particular question we want to address is the extent to which a fireplace increases the value of a house.  Perhaps we fixing up a house for sale and trying to decide whether to retro-fit a fireplace into an existing house, or close off an old fireplace.  What are the implications of this on the sales price of the house?
+
+```{r}
+houses = fetchData("SaratogaHouses.csv")
+names(houses)
+```
+
+The mean prices are quite different for the houses with and without a fireplace:
+```{r}
+mean( Price ~ Fireplace, data=houses)
+```
+
+Is this a useful estimate of the value of a fireplace?
+
+Then Saratoga data to work on
+
+### Selecting model terms with mLM?
