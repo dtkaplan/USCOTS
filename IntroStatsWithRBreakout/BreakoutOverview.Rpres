@@ -1,0 +1,50 @@
+Teaching Intro Stats with R and RStudio
+========================================================
+author: Randy Pruim, Ben Baumer, Michael Bulmer
+date: 2013-May 18
+
+### An Improvisational Comedy in Three Acts
+
+Infrastructure
+========================================================
+
+## Wireless
+* username: San060417
+* password: 25565
+
+## Access to RStudio in the Cloud
+* URL:  [dahl.calvin.edu](http://dahl.calvin.edu)
+* You will need a username and password
+    * Do not try to share IDs (It won't work)
+    * If you have one from earlier in the week, it is still good
+
+Act 1
+========================================================
+
+ * Scene 1: [Focussing on Essentials](ROneThing.html) [Randy Pruim]
+ * Scene 2: RMarkdown [Ben Baumer]
+ * Scene 3: Scaling Up [Michael Bulmer]
+
+Act 2
+========================================================
+
+Question and Answer Session
+
+Act 3
+========================================================
+
+Hands-On
+  * Give RStudio a try with the `mosaic` package
+  * Give RMarkdown a try
+  * Continue Discussions
+
+
+Epilogue
+========================================================
+
+You can find links to these slides and other materials at 
+
+ * [uscots2013.mosaic-web.org](http://uscots2013.mosaic-web.org)
+ * [mosaic-web.org](http://mosaic-web.org)
+ 
+
