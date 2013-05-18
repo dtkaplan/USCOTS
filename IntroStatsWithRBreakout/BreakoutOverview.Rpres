@@ -22,7 +22,11 @@ Act 1
 ========================================================
 
  * Scene 1: [Focussing on Essentials](ROneThing.html) [Randy Pruim]
+<<<<<<< HEAD
  * Scene 2: [RMarkdown](http://math.smith.edu/~bbaumer/uscots/slides.pdf) [Ben Baumer]
+=======
+ * Scene 2: RMarkdown [Ben Baumer]
+>>>>>>> 2a31fba5e98dc8005223dc57fb5bc11074938b5c
  * Scene 3: Scaling Up [Michael Bulmer]
 
 Act 2
