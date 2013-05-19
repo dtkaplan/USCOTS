@@ -1,6 +1,6 @@
 <head>
 <meta charset="UTF-8" />
-<title>2012 MAA PREP Workshop Materials | Project MOSAIC</title>
+<title>Teaching Statistics with R (USCOTS 2013)</title>
 
 <script type='text/javascript' src='http://www.google.com/jsapi'></script>
 
