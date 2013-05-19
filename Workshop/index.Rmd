@@ -46,7 +46,7 @@ Materials from a 2013 USCOTS Workshop
 
 You can find materials from other Project MOSAIC presentations
 at the main USCOTS meeting at 
-[uscots.mosaic-web.org](http://uscots.mosaic-web.org)
+[uscots2013.mosaic-web.org](http://uscots2013.mosaic-web.org)
 
 ```{r, echo=FALSE}
 displayFile <- function(path, text=path, type=c('html','Rmd','Rpres')) {
