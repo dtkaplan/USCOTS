@@ -72,7 +72,7 @@ colors of their covers:
  
  * [Roadless America Data Reporting](https://docs.google.com/forms/d/1bMYIQNkB-A4aT5fzE1L39hUN3UQ5iPVxSoQpIG0U8e0/viewform)
 
- * Resources posted by Presenters and Participants on [RPubs](http://http://rpubs.com/uscots2013/)
+ * Resources posted by Presenters and Participants on [RPubs](http://rpubs.com/uscots2013/)
 
 ### R Minis
 These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source Rnw files (but not all of their dependencies) are available so you can see how these were done.
