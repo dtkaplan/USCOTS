@@ -1,0 +1,120 @@
+<head>
+<meta charset="UTF-8" />
+<title>2012 MAA PREP Workshop Materials | Project MOSAIC</title>
+
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+
+<script type='text/javascript' src='http://mosaic-web.org/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+
+
+<link rel='canonical' href='http://prep2012.mosaic-web.org/' />
+<script type='text/javascript' src='http://mosaic-web.org/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+
+
+<!-- Add your own CSS snippets between the style tags. -->
+<style type="text/css">
+body{  
+  text-width: 940px;
+  align: center;
+  background-color: #C7B491;
+  }
+  
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+  width: 940px;
+  background-color: #FEF3DD;
+  padding: 1.5em;
+  border-radius:1em
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+<img src="http://mosaic-web.org/wp-content/uploads/2012/01/cropped-greek-header.jpg" width="940" height="198" alt="Project MOSAIC" />
+
+Teaching Statistics with R
+======================================
+Materials from a 2013 USCOTS Workshop
+------------------
+
+You can find materials from other Project MOSAIC presentations
+at the main USCOTS meeting at 
+[uscots.mosaic-web.org](http://uscots.mosaic-web.org)
+
+```{r, echo=FALSE}
+displayFile <- function(path, text=path, type=c('html','Rmd','Rpres')) {
+  result <- paste(text, paste("[[", type, "] ](", path, ".", type, ")", sep="", collapse="" ) )
+  return(result)
+  }
+```
+
+### The Purple, the Yellow, and the Blue
+
+Workshop participants were given copies of three "books", affectionately referred to by the 
+colors of their covers:
+
+ * Purple: [Start Teaching with R](http://mosaic-web.org/go/Master-Starting.pdf)
+ 
+ * Yellow: [A Compendium of Commands to Teach Statistics with R](http://mosaic-web.org/go/Master-Core.pdf)
+ 
+ * Blue: [Start Modeling with R](http://mosaic-web.org/go/Master-Modeling.pdf)
+
+### Other things
+
+ * `r I(displayFile("Workshop/Welcome/Welcome", "Welcome and Introductions"))`
+ 
+ * [Roadless America Data Reporting](https://docs.google.com/forms/d/1bMYIQNkB-A4aT5fzE1L39hUN3UQ5iPVxSoQpIG0U8e0/viewform)
+
+ * Resources posted by Presenters and Participants on [RPubs](http://http://rpubs.com/uscots2013/)
+
+### R Minis
+These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source Rnw files (but not all of their dependencies) are available so you can see how these were done.
+
+* Getting Started with R 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.Rnw))
+ 
+* Formulas in R 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/FormulasInR.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/FormulasInR.Rnw))
+ 
+* Modeling and Simulation 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/ModelingAndSimulation.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/ModelingAndSimulation.Rnw))
+ 
+* A Mosaic Sampler 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/MosaicSampler.pdf),
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/MosaicSampler.Rnw))
+ 
+* Linear Algebra for Statistics 
+([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.pdf), 
+ [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.Rnw) )
+
+
+<!-- ### Files by topic -->
+```{r, results='asis', echo=FALSE, eval=FALSE}
+directories <- dir('Workshop')
+files <- c()
+for (d in directories){
+  inProgress <- FALSE
+  files <- dir(paste('Workshop/',d, sep=""))
+  for (f in files) {
+    if (grepl('.html', f) ) {
+      if (!inProgress)  cat(paste('\n####', d, "\n"))
+      inProgress <- TRUE
+      cat(paste(' * [',d, "/", f,']', sep=""))
+      cat(paste('(',d, "/", f,')\n', sep=""))
+      }
+  }
+}
+```
+
+<div>
+</body>

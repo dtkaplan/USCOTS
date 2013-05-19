@@ -39,93 +39,21 @@ body{
 
 <img src="http://mosaic-web.org/wp-content/uploads/2012/01/cropped-greek-header.jpg" width="940" height="198" alt="Project MOSAIC" />
 
-Teaching Statistics with R
+Project MOSAIC at USCOTS 2013
 ======================================
-Materials from a 2013 USCOTS Workshop
-------------------
 
-```{r, echo=FALSE}
-displayFile <- function(path, text=path, type=c('html','Rmd','Rpres')) {
-  result <- paste(text, paste("[[", type, "] ](", path, ".", type, ")", sep="", collapse="" ) )
-  return(result)
-  }
-```
+Danny Kaplan, Nick Horton, and Randy Pruim offered a pre-USCOTS workshop entitled **Teaching Statistics Using R**.  Materials used
+or referenced at that workshop are available at 
+[uscots2013.mosaic-web.org/workshop/](http://uscots2013.mosaic-web.org/workshop).
 
-This is where we will post materials from our 2013 USCOTS Workshop.  Stay tuned for updates.  
-
-### The Purple, the Yellow, and the Blue
-
-Workshop participants were given copies of three "books", affectionately referred to by the 
-colors of their covers:
-
- * Purple: [Start Teaching with R](http://mosaic-web.org/go/Master-Starting.pdf)
- * Yellow: [A Compendium of Commands to Teach Statistics with R](http://mosaic-web.org/go/Master-Core.pdf)
- * Blue: [Start Modeling with R](http://mosaic-web.org/go/Master-Modeling.pdf)
-
-### Tuesday
-
- * `r I(displayFile("Workshop/Welcome/Welcome", "Welcome and Introductions"))`
- * Getting Started with R and RStudio
- * Getting the most out of Formulas
- * Getting Started with RMarkdown
- 
-### Wednesday morning
-
-### Wednesday afternoon
-
-* [Roadless America Data Reporting](https://docs.google.com/forms/d/1bMYIQNkB-A4aT5fzE1L39hUN3UQ5iPVxSoQpIG0U8e0/viewform)
-
-### Thursday morning
-
- * Resources posted by Presenters and Participants on [RPubs](http://http://rpubs.com/uscots2013/)
-
-### Other Resources
-#### R Minis
-These are some slides that Randy Pruim put together for some recent talks.  They are produced using beamer/latex/knitr.  The source Rnw files (but not all of their dependencies) are available so you can see how these were done.
-
-* Getting Started with R 
-([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.pdf),
- [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/RStartingUp.Rnw))
-* Formulas in R 
-([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/FormulasInR.pdf),
- [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/FormulasInR.Rnw))
-* Modeling and Simulation 
-([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/ModelingAndSimulation.pdf),
- [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/ModelingAndSimulation.Rnw))
-* A Mosaic Sampler 
-([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/MosaicSampler.pdf),
- [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/MosaicSampler.Rnw))
-* Linear Algebra for Statistics 
-([pdf](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.pdf), 
- [Rnw](http://www.calvin.edu/~rpruim/talks/Rminis/LinearAlgebraForStats.Rnw) )
-
-### Materials from the main USCOTS Meeting
+We also made several presentations at the main USCOTS workshop.
+Materials from these presentations are available below.
 
  * [Danny and Nick's Plenary Slides](http://rpubs.com/dtkaplan/6177)
  * Saturday Breakout Session
     * [Opening Slides](BreakoutOverview.html)
     * [Less Volume, More Creativity](LessVolume.html)
     * [Using RMarkdown in Intro Stats](http://math.smith.edu/~bbaumer/uscots/slides.pdf)
-
-### Files By Topic
-
-<!-- ### Files by topic -->
-```{r, results='asis', echo=FALSE, eval=TRUE}
-directories <- dir('Workshop')
-files <- c()
-for (d in directories){
-  inProgress <- FALSE
-  files <- dir(paste('Workshop/',d, sep=""))
-  for (f in files) {
-    if (grepl('.html', f) ) {
-      if (!inProgress)  cat(paste('\n####', d, "\n"))
-      inProgress <- TRUE
-      cat(paste(' * [',d, "/", f,']', sep=""))
-      cat(paste('(',d, "/", f,')\n', sep=""))
-      }
-  }
-}
-```
 
 <div>
 </body>
