@@ -48,6 +48,7 @@ Danny Kaplan, Nick Horton, and Randy Pruim offered a pre-USCOTS workshop entitle
 or referenced at that workshop are available at 
 [uscots2013.mosaic-web.org/Workshop/](http://uscots2013.mosaic-web.org/Workshop).
 
+
 ## Other Presentations at USCOTS
 
 We also made several presentations at the main USCOTS workshop.
