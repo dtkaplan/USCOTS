@@ -42,9 +42,13 @@ body{
 Project MOSAIC at USCOTS 2013
 ======================================
 
+## Teaching Statistics with R Workshop
+
 Danny Kaplan, Nick Horton, and Randy Pruim offered a pre-USCOTS workshop entitled **Teaching Statistics Using R**.  Materials used
 or referenced at that workshop are available at 
 [uscots2013.mosaic-web.org/workshop/](http://uscots2013.mosaic-web.org/workshop).
+
+## Other Presentations at USCOTS
 
 We also made several presentations at the main USCOTS workshop.
 Materials from these presentations are available below.
