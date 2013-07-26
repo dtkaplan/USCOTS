@@ -56,8 +56,8 @@ Materials from these presentations are available below.
 
  * [Danny and Nick's Plenary Slides](http://rpubs.com/dtkaplan/6177)
  * Saturday Breakout Session
-    * [Opening Slides](BreakoutOverview.html)
-    * [Less Volume, More Creativity](LessVolume.html)
+    * [Opening Slides](IntroStatsWithRBreakout/BreakoutOverview.html)
+    * [Less Volume, More Creativity](IntroStatsWithRBreakout/LessVolume.html)
     * [Using RMarkdown in Intro Stats](http://math.smith.edu/~bbaumer/uscots/slides.pdf)
 
 <div>
